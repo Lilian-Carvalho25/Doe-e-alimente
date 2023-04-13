@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2? family= Raleway:wght@700 & family= Roboto+Condensed & display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+body { font-family: "Noto sans",'Courier New', Courier, monospace;   
+}
+
+body, h1, h2, p, figure, .menu, img {
+    margin: 0;
+    padding: 0;
+}
+
+a { text-decoration: none; }
+
+header {
+   margin-top: 0.4rem;
+    position: sticky;
+    top: 0;
+    background-color: #fffffa;
+
+    z-index: 10;
+}
+
+header nav h2 a {
+    font-size: 35px;
+    font-weight: normal;
+}
+
+header .limitador {
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 a {
+    color: black;
+    font-size: 1.2rem;
+    padding: 1rem;
+    display: inline-block;
+}
+
+/* nav h2 a:hover, nav h2 a:focus, */
+.menu a:hover, .menu a:focus {
+    background-color: #bbbbbb;
+}
+
+.menu {
+    list-style: none;
+    display: none;
+}
+
+.menu a {
+    color: black;
+    font-weight: bold;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu.aberto {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+.destaque {
+    background-image: url(../imagens/Imagem-destaque.png);
+    height: 85vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.destaque p {
+    color: white;
+}
+
+#container-home {
+    background-color: #8C0303;
+    text-align: center; 
+    color: white;
+}
+.conteudo {
+    padding: 1rem;
+}
+
+.rodape {
+    text-align: center;
+    padding-top: 0.7rem;
+    padding-bottom: 0.5rem;
+}
+
+.rodape p {
+    padding-bottom: 6px;
+}
+
+.limitador {
+    width: 95vw;
+    margin: auto;
+}
+
+/* Oq fazemos */
+
+#main-oq-fazemos {
+    background-color: #A69851;
+}
+
+.oq-fazemos-texto{
+    padding-top: 1.5rem;
+    padding-bottom: 1.3rem;
+    text-align: center;
+    color: #fffffa;
+}
+
+.aumento {
+    text-align: center;
+    padding-bottom: 1.6rem;
+    font-family: "Raleway",'Courier New', Courier, monospace;
+}
+
+.aumento #sinal-mais {
+    font-size: 45px;
+    color: #8C0303;
+    font-weight: 700;
+    
+}
+
+.aumento #milhoes {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.aumento p {
+    color: #8C0303;
+    font-weight: bold;
+}
+
+
+
+
+
+
+

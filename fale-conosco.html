@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>SHC</title>
+</head>
+
+<body>
+
+
+   <!-- Cabeçalho principal
+    (ficará com largura total) -->
+    <header>
+        <!-- Subcabeçalho (ficará limitado) -->
+        <div class="limitador">
+            <a href="index.html"><img src="imagens/fundo_logo.png" alt=""></a>
+            <nav>
+                <h2><a href=""> &equiv; </a></h2>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="oq-fazemos.html">O que fazemos</a></li>
+                    <li><a href="contribuicao.html">Contribuição</a></li>
+                    <li><a href="fale-conosco.html">Fale conosco</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <main>
+        <h2>Fale conosco</h2>
+
+
+        <figure>
+            <img src="imagens/ft-lilian.png" alt="Lilian">
+            <img src="imagens/ft-plinio.png" alt="Plínio">
+            <img src="imagens/ft-salatiel.png" alt="Salatiel">
+        </figure>
+        <a href="mailto:saalatiel@gmail.com">salatiel@gmail.com</a>
+        <a href="mailto:plinio.t.vasconcellos@gmail.com">plinio.t.vasconcellos@gmail.com</a>
+        <a href="mailto:liliancarvalho@gmail.com">liliancarvalho@gmail.com</a>
+
+        <h2>Qual é a sua dúvida?</h2>
+        <div>
+            <label for="fname">Nome completo</label>
+                <input type="text" id="fname" name="fname" placeholder="Digite seu nome completo...">
+        </div>
+
+           <div>
+               <label for="email">E-mail</label>
+                <input type="text" id="email" name="email" placeholder="Digite seu e-mail...">
+           </div>
+
+
+           <div>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" maxlength="15" onkeyup="handlePhone(event)" placeholder="Digite seu telefone...">
+           </div>
+
+            <div><textarea name="message" rows="10" cols="30" placeholder="Digite aqui sua dúvida"></textarea></div> 
+
+            <p><input type="submit" value="Submit"></p>
+        
+        
+    </main>
+
+
+    <footer>
+        <p>Nos acompanhe em nossas redes sociais:</p>
+        <img src="imagens/logo-instagram.png" alt="">
+        <img src="imagens/logo-facebook.png" alt="">
+    </footer>
+
+
+
+    <script src="js/menu.js"></script>
+</body>
+
+</html>
