@@ -149,6 +149,42 @@ nav h2 a {
     font-weight: bold;
 }
 
+/* Contribução */
+
+#container-contribuicao p {
+    text-align: left;
+    margin-top: 1.6rem;
+} 
+
+#espaco-texto {
+    max-width: 90%;
+    text-align: center;
+    margin-left: 25px;
+}
+
+#espaco-texto h2 {
+    margin-top: 2rem;
+}
+
+#container-contribuicao figure {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#contribuicao h2 {
+    text-align: center;
+}
+
+#contribuicao {
+
+}
+
+
+
+
+
+
 
 
 
