@@ -2,6 +2,7 @@
 
 * {
     box-sizing: border-box;
+    
 }
 
 html {
@@ -24,10 +25,10 @@ body, h1, h2, p, figure, .menu, img {
 a { text-decoration: none; }
 
 header {
-   margin-top: 0.4rem;
+   /* margin-top: 0.4rem; */
     position: sticky;
     top: 0;
-    background-color: #fffffa;
+    background-color: #f5f5f5;
 
     z-index: 10;
 }
@@ -237,7 +238,7 @@ nav h2 a {
     max-width: 150px;
 }
 
-/* Formulário */
+/* Formulário/ Contribuição*/
 #container-formulario {
     display: flex;
     justify-content: center;
@@ -306,6 +307,52 @@ nav h2 a {
     text-transform: uppercase;
     padding: 10px 15px;
 }
+
+/* Contato vinicius */
+
+main h2{
+    text-align: center;
+    text-transform: inherit;
+}
+figure{
+    display: flex;
+    justify-content: space-around;
+
+}
+.nome{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Fira Sans";
+    margin:3px 0 3px 5px ;
+    
+}
+.email{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.8rem;
+    height: 1rem;
+    font-weight: bold;
+}
+a{
+    color: black;
+}
+a:hover{
+    color:rgb(25, 25, 155);
+}
+.duvida{
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+form{
+    margin: 1rem;
+}
+.forme{
+    margin-top: 20px;
+}
+
+
 
 
 
