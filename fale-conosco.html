@@ -30,7 +30,7 @@
 
 
     <main>
-        <h2>Fale conosco</h2>
+        <h2 class="duvida">Fale conosco</h2>
 
 
         <figure>
@@ -53,32 +53,33 @@
             </div>
         
 
-        <h2>Qual é a sua dúvida?</h2>
-        <div>
-            <label for="fname">Nome completo</label>
-                <input type="text" id="fname" name="fname" placeholder="Digite seu nome completo...">
-        </div>
+        <h2 class="duvida">Qual é a sua dúvida?</h2>
+        <section id="container-formulario">
+            <form action="" method="post">
+                <div class="caixas">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" required class="inputs" placeholder="Digite seu nome completo">
+                </div>
 
-           <div>
-               <label for="email">E-mail</label>
-                <input type="text" id="email" name="email" placeholder="Digite seu e-mail...">
-           </div>
+                <div class="caixas">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" required class="inputs" placeholder="Digite seu e-mail">
+                </div>
 
+                <div class="caixas">
+                    <label for="telefone">Telefone fixo:</label>
+                    <input type="tel" name="telefone" id="telefone" class="inputs" placeholder="Digite seu telefone">
+                </div>
 
-           <div>
-            <label for="telefone">Telefone:</label>
-            <input type="tel" maxlength="15" onkeyup="handlePhone(event)" placeholder="Digite seu telefone...">
-           </div>
+                <div class="caixas">
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea placeholder="Digite aqui sua dúvida..." name="" id="" cols="45" rows="8"></textarea>
+                </div>
 
-            <div><textarea name="message" rows="10" cols="30" placeholder="Digite aqui sua dúvida"></textarea></div> 
-
-            <p><input type="submit" value="Submit"></p>
-        
-        
     </main>
 
 
-    <footer>
+    <footer class="rodape">
         <p>Nos acompanhe em nossas redes sociais:</p>
         <img src="imagens/logo-instagram.png" alt="">
         <img src="imagens/logo-facebook.png" alt="">

@@ -313,11 +313,10 @@ nav h2 a {
 main h2{
     text-align: center;
     text-transform: inherit;
-    margin: 20px 0px;
 }
 figure{
     display: flex;
-    justify-content: space-around
+    justify-content: space-around;
 
 }
 .nome{
@@ -342,6 +341,17 @@ a{
 a:hover{
     color:rgb(25, 25, 155);
 }
+.duvida{
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+form{
+    margin: 1rem;
+}
+.forme{
+    margin-top: 20px;
+}
+
 
 
 
