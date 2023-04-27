@@ -220,6 +220,7 @@ nav h2 a {
 
 #container-selecao .caixas textarea::placeholder {
     color: #fffffa;
+    font-family: "fira sans", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #container-selecao input {
