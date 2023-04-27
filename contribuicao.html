@@ -97,24 +97,39 @@
 
 
             <div id="container-selecao">
-                <div class="dinheiro">
-                    <input type="radio" name="trinta-reais" value="trinta-reais" id="trinta-reais">
-                    <label for="trinta-reais">R$ 30,00</label>
-                </div>
-                <div class="dinheiro">
-                    <input type="radio" name="60-reais" id="60-reais">
-                    <label for="60">R$ 60,00</label>
-                </div>
-                <div class="dinheiro">
-                    <input type="radio" name="90-reais" id="90-reais">
-                    <label for="90">R$ 90,00</label>
+
+                <div>
+                    <label for="trinta-reais">
+                        <input type="radio" name="trinta-reais" value="trinta-reais" id="trinta-reais">
+                        R$ 30,00
+                    </label>
                 </div>
 
-                <div class="dinheiro">
-                    <form action="">
-                        <textarea name="valor" id="valor" cols="15" rows="1" placeholder="insira um valor"></textarea>
-                    </form>
+
+                <div>
+                    <label for="60">
+                        <input type="radio" name="60-reais" id="60-reais">
+                        R$ 60,00
+                    </label>
                 </div>
+
+
+                <div>
+                    <label for="90">
+                        <input type="radio" name="90-reais" id="90-reais">
+                        R$ 90,00
+                    </label>
+                </div>
+
+
+
+                <label for="valor-inserido">
+                    <form action="">
+                         Doação personalizada:
+                        <textarea name="valor-inserido" id="valor-inserido" cols="15" rows="1" placeholder="insira um valor"></textarea>
+                    </form>
+                </label>
+
             </div>
         </section>
 
@@ -124,16 +139,20 @@
 
             <div id="container-formas">
                 <div class="pagamento">
-                    <input type="radio" name="pix" value="pix" id="pix">
-                    <label for="pix">PIX</label>
+                    <label for="pix">
+                        <input type="radio" name="pix" value="pix" id="pix">
+                        PIX
+                    </label>
                 </div>
                 <div class="pagamento">
-                    <input type="radio" name="cartao-credito" id="cartao-credito">
-                    <label for="cartao-credito">Cartão de crédito</label>
+                    <label for="cartao-credito">
+                        <input type="radio" name="cartao-credito" id="cartao-credito"> Cartão de crédito
+                    </label>
                 </div>
                 <div class="pagamento">
-                    <input type="radio" name="cartao-debito" id="cartao-debito">
-                    <label for="cartao-debito">Cartão de débito</label>
+                    <label for="cartao-debito">
+                        <input type="radio" name="cartao-debito" id="cartao-debito"> Cartão de débito
+                    </label>
                 </div>
             </div>
         </section>
