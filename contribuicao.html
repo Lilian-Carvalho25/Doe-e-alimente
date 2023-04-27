@@ -98,40 +98,59 @@
 
             <div id="container-selecao">
 
-                <div>
                     <label for="trinta-reais">
                         <input type="radio" name="trinta-reais" value="trinta-reais" id="trinta-reais">
                         R$ 30,00
                     </label>
-                </div>
 
-
-                <div>
                     <label for="60">
                         <input type="radio" name="60-reais" id="60-reais">
                         R$ 60,00
                     </label>
-                </div>
 
-
-                <div>
                     <label for="90">
                         <input type="radio" name="90-reais" id="90-reais">
                         R$ 90,00
                     </label>
+
+                <div class="caixas">
+                    <label for="valor-inserido">
+                        <form action="">
+                             Doação personalizada:
+                            <textarea name="valor-inserido" id="valor-inserido" cols="15" rows="1" class="inputs" placeholder="Insira um valor"></textarea>
+                        </form>
+                    </label>
                 </div>
-
-
-
-                <label for="valor-inserido">
-                    <form action="">
-                         Doação personalizada:
-                        <textarea name="valor-inserido" id="valor-inserido" cols="15" rows="1" placeholder="insira um valor"></textarea>
-                    </form>
-                </label>
 
             </div>
         </section>
+
+        <section id="container-formulario">
+            <form action="" method="post">
+                <div class="caixas">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" required class="inputs" placeholder="Digite seu nome completo">
+                </div>
+
+                <div class="caixas">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" required class="inputs" placeholder="Digite seu e-mail">
+                </div>
+
+                <div class="caixas">
+                    <label for="telefone">Telefone fixo:</label>
+                    <input type="tel" name="telefone" id="telefone" class="inputs" placeholder="Digite seu telefone">
+                </div>
+
+                <div class="caixas">
+                    <label for="celular">Celular:</label>
+                    <input type="tel" name="celular" id="celular" required class="inputs" placeholder="Digite seu celular">
+                </div>
+
+            </form>
+        </section>
+
+
 
         <section id="formas-de-pagamento">
             <h2>Formas de pagamento</h2>
@@ -154,10 +173,16 @@
                         <input type="radio" name="cartao-debito" id="cartao-debito"> Cartão de débito
                     </label>
                 </div>
+
+                <div class="pagamento">
+                    <label for="transferencia">
+                        <input type="radio" name="transferencia" id="transferencia"> Transferência bancária
+                    </label>
+                </div>
+
+                <button type="submit">Doe agora</button>
             </div>
         </section>
-
-
     </main>
 
 
