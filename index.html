@@ -13,6 +13,18 @@
 
 <body>
 
+    <style>
+    .slider {
+        background-color: yellow;
+        text-align: center;
+        border: solid 1px red;
+        width: 640px;
+        margin: auto;
+    }
+
+        figure { margin: 0;}
+</style>
+
 
     <header>
         
@@ -25,7 +37,7 @@
                     <li><a href="oq-fazemos.html">O que fazemos</a></li>
                     <li><a href="contribuicao.html">Contribuição</a></li>
                     <li><a href="fale-conosco.html">Fale conosco</a></li>
-                </ul>
+                </ul>   
             </nav>
         </div>
     </header>
@@ -33,9 +45,27 @@
     <main id="container-home">
 
         <section class="destaque">
-            <h1>Self Help Community</h1>
-            <p>Arrecadação de doações para instituições gastronômicas para a distribuição de marmitas.</p>
-        </section><br>
+
+            <div class="slider"> <!-- grupo personalizado (tamanho, posição etc) -->
+        
+                <div class="exemplo"> <!-- não mexe, porque é necessário pro slick -->
+                    <figure>
+                        <img src="imagens/bife-de-carne.jpg" alt="">
+                        <figcaption>Legenda 1</figcaption>
+                    </figure>
+                
+                    <figure>
+                        <img src="imagens/Imagem-destaque.png" alt="">
+                        <figcaption>Legenda 2</figcaption>
+                    </figure>
+                
+                    <figure>
+                        <img src="imagens/distribuindo-comida.png" alt="">
+                        <figcaption>Legenda 3</figcaption>
+                    </figure>    
+                </div>
+            </div>
+        </section>
 
         <section class="conteudo">
             <h2>O Projeto</h2><br>
@@ -66,7 +96,18 @@
         <p>2023</p>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="slick/slick.min.js"></script>
     <script src="js/menu.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.exemplo').slick({
+                autoplay: true,
+                autoplaySpeed: 2000
+            });
+        });
+        </script>
 </body>
 
 </html>

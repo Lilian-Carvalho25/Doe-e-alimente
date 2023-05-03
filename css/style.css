@@ -43,7 +43,9 @@ header .limitador {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 100%;
 }
+
 
 nav h2 a {
     color: black;
@@ -54,12 +56,14 @@ nav h2 a {
 
 /* nav h2 a:hover, nav h2 a:focus, */
 .menu a:hover, .menu a:focus {
-    background-color: #bbbbbb;
+    background-color: #e64e4e8f;
+    border-radius: 6px;
 }
 
 .menu {
     list-style: none;
     display: none;
+    max-width: 100%;
 }
 
 .menu a {
@@ -74,13 +78,18 @@ nav h2 a {
 .menu.aberto {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: #8C0303;
+    margin-top: 10px;
     position: absolute;
     right: 0;
     left: 0;
 }
 
-.destaque {
+.menu.aberto a {
+    color: #fffffa;
+}
+
+/* .destaque {
     background-image: url(../imagens/Imagem-destaque.png);
     height: 85vh;
     max-width: 100%;
@@ -89,7 +98,7 @@ nav h2 a {
     justify-content: center;
     align-items: center;
     background-size: cover;
-}
+} */
 
 .destaque p {
     color: white;
@@ -315,10 +324,13 @@ main h2{
     text-align: center;
     text-transform: inherit;
 }
+.container-contato {
+    max-width: 100%;
+}
 figure{
     display: flex;
     justify-content: space-around;
-
+    
 }
 .nome{
     display: flex;
@@ -355,9 +367,37 @@ form{
 
 
 
+/* responsividade */
+
+@media screen and (min-width: 530px){
+    nav h2{
+        display:none;
+    }
+    .menu{
+        display: flex;
+        justify-content: end;
+    }
+    .menu li{
+        width: 100%
+    }
+    nav{
+        width: 70%;
+    }
+
+    nav .menu li{
+        background-color: #8C0303;
+        margin-left: 6px;
+        border-radius: 6px;
+        width: 160px;
+    }
 
 
 
+    .menu li a {
+        color: #fffffa;
+    }
+
+}
 
 
 
