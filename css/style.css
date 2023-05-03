@@ -159,13 +159,13 @@ nav h2 a {
 
 #container-contribuicao p {
     text-align: left;
-    margin-top: 1.6rem;
+    margin-top: 22px;
 } 
 
 #espaco-texto {
     max-width: 90%;
     text-align: center;
-    margin-left: 25px;
+    margin-left: 1.7rem;
 }
 
 #espaco-texto h2 {
@@ -173,6 +173,7 @@ nav h2 a {
 }
 
 #container-contribuicao figure {
+    /* Atenção */
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -200,13 +201,14 @@ nav h2 a {
     flex-direction: column;
     align-items: center;
     border-radius: 26px;
+    /* Atenção */
     height: 8rem;
     width: 10rem;
     margin: 5px 3px;
 }
 
 #container-selecao .caixas .inputs {
-    width: 90%;
+    max-width: 90%;
     padding: 5px;
     /* color: rgb(150,150,150); */
     border: 0;
@@ -290,13 +292,12 @@ nav h2 a {
     display: flex;
     align-items: center;
     gap: 30px;
-    width: 28rem;
-    height: 4rem;
+    width: 392px;
+    height: 56px;
 }
 
 #container-formas input {
     width: 40px;
-    height: 4opx;
 }
 
 #container-formas button {
@@ -351,6 +352,8 @@ form{
 .forme{
     margin-top: 20px;
 }
+
+
 
 
 
