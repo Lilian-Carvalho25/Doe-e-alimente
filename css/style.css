@@ -219,16 +219,11 @@ nav h2 a {
 #container-selecao .caixas .inputs {
     max-width: 90%;
     padding: 5px;
-    /* color: rgb(150,150,150); */
     border: 0;
     background-color: #F28705;
     border-bottom: 2px solid white;
     outline: 0;
 }
-
-/* #container-selecao .caixas .inputs:focus {
-    border-bottom: 2px solid cornflowerblue;
-} */
 
 #container-selecao .caixas textarea::placeholder {
     color: #fffffa;
@@ -316,6 +311,7 @@ nav h2 a {
     border-radius: 15px;
     text-transform: uppercase;
     padding: 10px 15px;
+    cursor: pointer;
 }
 
 /* Contato vinicius */
@@ -369,7 +365,8 @@ form{
 
 /* responsividade */
 
-@media screen and (min-width: 530px){
+/* RESPONSIVIDADE MENU */
+@media screen and (min-width: 600px){
     nav h2{
         display:none;
     }
@@ -396,7 +393,127 @@ form{
     .menu li a {
         color: #fffffa;
     }
+}
 
+/* RESPONSIVIDADE DA PÁGINA CONTRIBUIÇÃO */
+@media screen and (min-width:540px) {
+    #espaco-texto{
+        margin-left: 2rem;
+    }
+
+    .img-contribuicao{
+        text-align: center;
+    }
+
+    #container-contribuicao img{
+        width: 500px;
+    }
+}
+
+/* A PARTIR DE 700PX */
+@media screen and (min-width:700px) {
+    #espaco-texto {
+        max-width: 80%;
+        margin-left: 65px
+    }
+
+    #container-contribuicao img{
+        width: 550px;
+    }
+
+    #container-formulario {
+        max-width: 1400px;
+    }
+
+
+}
+
+/* A PARTIR DE 778PX */
+@media screen and (min-width:778px) {
+    #espaco-texto {
+        margin-left: 75px;
+    }
+}
+
+/* A PARTIR DE 1158PX */
+@media screen and (min-width:1158px) {
+    #espaco-texto p {
+        font-size: 18px;
+    }
+
+    #espaco-texto {
+        max-width: 70%;
+        margin-left: 190px;
+    }
+
+    #container-contribuicao img{
+        width: 700px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #container-selecao label {
+        height: 10rem;
+        width: 12rem;
+        font-size: 26px;
+    }
+
+    #container-formulario form{
+        max-width: 570px;
+    }
+
+    #container-formas label {
+        width: 520px;
+        height: 57px;
+        font-size: 20px;
+    }
+
+    #container-formas button{
+        padding: 15px 20px;
+    }
+
+    #container-selecao form {
+        font-size: 16px;
+        line-height: 2rem;
+        max-width: 150px;
+    }
+
+    #container-selecao .caixas textarea{
+        margin-top: 7px;
+    }
+
+    #container-selecao input {
+        margin-bottom: 26px;
+    }
+    
+}
+
+/* A PARTIR DE 1334PX */
+@media screen and (min-width:1334px){
+    #espaco-texto{
+        margin-left: 210px;
+    }
+}
+
+/* A PARTIR DE 1450PX */
+@media screen and (min-width:1450px){
+    #espaco-texto{
+        max-width: 62%;
+        margin-left: 285px;
+    }
+
+    #container-contribuicao img {
+        height: 460px;
+        width: 790px;
+    }
+
+    #container-formulario form{
+        max-width: 600px;
+    }
+
+    #container-formulario label {
+        font-size: 20px;
+    }
 }
 
 
