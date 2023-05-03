@@ -89,16 +89,16 @@ nav h2 a {
     color: #fffffa;
 }
 
-/* .destaque {
+.destaque {
     background-image: url(../imagens/Imagem-destaque.png);
-    height: 85vh;
+    height: 55vh;
     max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-size: cover;
-} */
+}
 
 .destaque p {
     color: white;
