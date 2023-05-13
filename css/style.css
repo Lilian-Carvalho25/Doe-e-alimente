@@ -230,6 +230,11 @@ nav h2 a {
     font-family: "fira sans", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#container-selecao .caixas textarea{
+    border: none;
+    border-bottom: white 1px solid;
+}
+
 #container-selecao input {
     margin: 1.3rem;
     width: 20px;
@@ -513,6 +518,116 @@ form{
 
     #container-formulario label {
         font-size: 20px;
+    }
+}
+
+/* A PARTIR DE 1450px */
+@media screen and (min-width:1450px){
+    nav a {
+        font-size: 20px;
+    }
+    
+    #espaco-texto{
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+    #espaco-texto h2, #contribuicao h2, #formas-de-pagamento h2 {
+        font-size: 26px;
+    }
+
+    #espaco-texto p {
+        font-size: 20px;
+    }
+
+    .rodape p {
+        font-size: 20px;
+    }
+
+    #container-contribuicao img {
+        height: 430px;
+        width: 810px;
+    }
+
+    #container-selecao input {
+        margin: 1.9rem 1rem;
+        width: 23px;
+        height: 23px;
+    }
+
+    #container-selecao label {
+        background-color: #F28705;
+        font-size: 24px;
+        height: 11rem;
+        width: 15rem;
+    }
+
+    #container-selecao .caixas textarea::placeholder{
+        font-size: 16px;
+    }
+
+    #container-formulario label {
+        font-size: 24px;
+    }
+
+    #container-formulario ::placeholder{
+        font-size: 16px;
+    }
+
+    #container-formas label {
+        width: 700px;
+        margin-top: 4px;
+    } 
+
+    #container-formas input {
+        height: 1.3rem;
+        width: 1.5rem;
+        margin-left: 13px;
+        margin-bottom: 5px; 
+    }
+
+    #container-formas button {
+        width: 130px;
+    }
+}
+
+/* A PARTIR DE 1540PX */
+@media screen and (min-width:1540px){
+    nav a {
+        font-size: 24px;
+    }
+
+    #espaco-texto{
+        max-width: 75%;
+    }
+
+    #espaco-texto h2, #contribuicao h2, #formas-de-pagamento h2 {
+        font-size: 30px;
+    }
+
+    #espaco-texto p {
+        font-size: 25px;
+    }
+
+    .rodape p {
+        font-size: 25px;
+    }
+
+    #container-contribuicao img {
+        height: 400px;
+        width: 830px;
+    }
+
+    #container-formulario .caixas {
+        margin-left: 90px;
+    }
+}
+
+/* A PARTIR DE 2021PX */
+@media screen and (min-width:2010px){
+    #container-formulario .caixas {
+        margin-left: 300px;
+        max-width: 900px;
     }
 }
 
