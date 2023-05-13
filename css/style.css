@@ -255,7 +255,17 @@ nav h2 a {
     justify-content: center;
 }
 
+#container-formulario2 {
+    display: flex;
+    justify-content: center;
+}
+
 #container-formulario form {
+    width: 100%;
+    max-width: 350px;
+}
+
+#container-formulario2 form {
     width: 100%;
     max-width: 350px;
 }
@@ -265,7 +275,16 @@ nav h2 a {
     margin: 30px 0;
 }
 
+#container-formulario2 .caixas {
+    width: 100%;
+    margin: 30px 0;
+}
+
 #container-formulario label {
+    font-size: 17px;
+}
+
+#container-formulario2 label {
     font-size: 17px;
 }
 
@@ -278,8 +297,36 @@ nav h2 a {
     outline: 0;
 }
 
+#container-formulario2 .caixas .inputs {
+    width: 100%;
+    padding: 5px;
+    color: rgb(150,150,150);
+    border: 0;
+    border-bottom: 2px solid rgb(200,200,200);
+    outline: 0;
+}
+
 #container-formulario .caixas .inputs:focus {
+    border: none;
     border-bottom: 2px solid cornflowerblue;
+
+}
+
+#container-formulario2 .caixas .inputs:focus {
+    border: none;
+    border-bottom: 2px solid cornflowerblue;
+}
+
+#container-formulario2 .caixas textarea {
+    border: none;
+    border: 2px solid rgb(200,200,200);
+    outline: 0;
+    font-family: "fira sans", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#container-formulario2 .caixas textarea:focus {
+    border: none;
+    border: 2px solid cornflowerblue;
 }
 
 /* Formas de pagamento */
@@ -594,7 +641,7 @@ form{
 /* A PARTIR DE 1540PX */
 @media screen and (min-width:1540px){
     nav a {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     #espaco-texto{
@@ -630,6 +677,46 @@ form{
         max-width: 900px;
     }
 }
+
+
+/* RESPONSIVIDADE FALE CONOSCO */
+
+/* A PARTIR DE 740PX */
+@media screen and (min-width:740px){
+    .container-contato figure img {
+        margin-bottom: 6px;
+        width: 100px;
+    }
+    
+    .container-contato p {
+        font-size: 20px;
+    }
+
+    .email a {
+        font-size: 13px;
+        margin-top: 5px;
+    }
+
+    .duvida {
+        font-size: 22px;
+        margin-top: 25px;
+    }
+
+    #container-formulario2 .caixas textarea::placeholder{
+        font-size: 14px;
+    }
+
+    #container-formulario2 ::placeholder{
+        font-size: 13px;
+    }
+
+    #container-formulario2 label {
+        font-size: 22px;
+        margin-top: 4px;
+    }
+
+}
+
 
 
 
