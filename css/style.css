@@ -89,28 +89,57 @@ nav h2 a {
     color: #fffffa;
 }
 
-.destaque {
-    background-image: url(../imagens/Imagem-destaque.png);
-    height: 55vh;
+#carouselExampleAutoplaying {
     max-width: 100%;
+}
+
+#container-home {
+    text-align: center; 
+    color: black;
+}
+
+#alinhamento-paragrafo-home {
+    text-align: left;
+    margin-left: 14px;
+    padding: 1rem;
+}
+
+#container-contexto {
+    margin-top: 19px;
+    margin-bottom: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-size: cover;
+
 }
 
-.destaque p {
-    color: white;
+.contexto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    margin-bottom: 25px;
 }
 
-#container-home {
-    background-color: #8C0303;
-    text-align: center; 
-    color: white;
+.alinhamento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    max-width: 70%;
 }
-.conteudo {
-    padding: 1rem;
+
+.alinhamento h6 {
+    color: #8C0303;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contexto img {
+    width: 65px;
+    height: 62px;
 }
 
 .rodape {
