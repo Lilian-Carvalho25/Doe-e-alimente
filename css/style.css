@@ -95,7 +95,7 @@ nav h2 a {
 /* Destaque */
 #destaque-home {
     background:url(../imagens/menina-na-porta.jpg);
-    position: center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 90vh;
@@ -177,15 +177,13 @@ nav h2 a {
     background-color: #A69851;
 }
 
-/* .oq-fazemos-texto{
-    padding-top: 1.5rem;
-    padding-bottom: 1.3rem;
-    text-align: center;
+.cor {
     color: #fffffa;
-} */
+}
 
 .aumento {
     text-align: center;
+    margin: 0 auto;
     padding-bottom: 1.6rem;
     font-family: "Raleway",'Courier New', Courier, monospace;
 }
