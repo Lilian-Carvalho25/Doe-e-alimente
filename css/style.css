@@ -507,6 +507,29 @@ form{
 
 }
 
+@media screen and (min-width:1402px){
+    #container-contexto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .parte-de-cima {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .parte-de-baixo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
 /* A PARTIR DE 1601PX */
 @media screen and (min-width:1601px){
     #carrossel-home {
