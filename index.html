@@ -35,33 +35,17 @@
 
     <main id="container-home">
 
-        <section id="container-carrossel">
-            <div id="carouselExampleAutoplaying" class="carousel slide container my-5" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="imagens/bife-de-carne.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="imagens/chef-de-cozinha.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="imagens/imagembatatas.jpg" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </section>
+       <section id="destaque-home">
+        <div id="escrita">
+            <h2>Self help Community</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, velit!</p>
+        </div>
+       </section>
 
         <section class="conteudo">
-            <h2>O Projeto</h2><br>
-            <div id="alinhamento-paragrafo-home">
+            
+            <div id="alinhamento-paragrafo-home" class="espaco-texto">
+                <h2>O Projeto</h2>
                 <p>Self Help Cummunity é um espaço que oferece refeições gratuitas para pessoas que enfrentam dificuldades
                     financeiras, sem-teto ou em situação de vulnerabilidade social. Esses projetos de solidariedade são
                     importantes para garantir que todos tenham acesso a alimentos saudáveis e nutritivos, independentemente da
@@ -74,44 +58,87 @@
                     para ajudar com a preparação de alimentos, limpeza e serviços de atendimento também é essencial.</p>
                 <p>Além disso, a divulgação da cozinha solidária para a comunidade é fundamental para garantir que aqueles que
                     precisam tenham conhecimento da disponibilidade de alimentos e serviços.</p>
-                A criação de uma cozinha solidária é uma forma de ajudar a construir uma comunidade mais unida, garantindo que
+                <p>A criação de uma cozinha solidária é uma forma de ajudar a construir uma comunidade mais unida, garantindo que
                 ninguém seja deixado para trás quando se trata de ter acesso a alimentos saudáveis e nutritivos, sabendo que
                 mais de 33 milhões de pessoas passam fome no Brasil.</p>
             </div>
         </section>
 
+        <section id="carrossel-home">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="imagens/homem-deitado-sem-camisa.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <!-- <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p> -->
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagens/criancas-magras.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <!-- <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p> -->
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagens/crianca-comendo-no-lixao.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <!-- <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p> -->
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Prévia</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Avançar</span>
+                </button>
+              </div>
+        </section>
+
         <section id="container-contexto">
-            <article class="contexto">
-                <img src="imagens/icone-inseguranca-alimentar.png" alt="ícone insegurança alimentar">
-                <div class="alinhamento">
-                    <h6>Insegurança alimentar no Brasil</h6>
-                    <p>Pouco mais da metade da população brasileira, mais precisamente 58,7% ou 125,2 milhões de pessoas, convivem com a insegurança alimentar.</p>
-                </div>
-            </article>
+            <div class="parte-de-cima">
+                <article class="contexto">
+                    <img src="imagens/icone-inseguranca-alimentar.png" alt="ícone insegurança alimentar">
+                    <div class="alinhamento">
+                        <h6>Insegurança alimentar no Brasil</h6>
+                        <p>Pouco mais da metade da população brasileira, mais precisamente 58,7% ou 125,2 milhões de pessoas, convivem com a insegurança alimentar.</p>
+                    </div>
+                </article>
+                <article class="contexto">
+                    <img src="imagens/icone-linha-de-pobreza.png" alt="ícone insegurança alimentar">
+                    <div class="alinhamento">
+                        <h6>Pessoas em situação de extrema pobreza</h6>
+                        <p>27,6 milhões de pessoas no Brasil vivem em uma situação de extrema pobreza.</p>
+                    </div>
+                </article>
+            </div>
 
-            <article class="contexto">
-                <img src="imagens/icone-linha-de-pobreza.png" alt="ícone insegurança alimentar">
-                <div class="alinhamento">
-                    <h6>Pessoas em situação de extrema pobreza</h6>
-                    <p>27,6 milhões de pessoas no Brasil vivem em uma situação de extrema pobreza.</p>
-                </div>
-            </article>
-
-            <article class="contexto">
-                <img src="imagens/icone-coronavirus.png" alt="ícone insegurança alimentar">
-                <div class="alinhamento">
-                    <h6>Fome na pandemia</h6>
-                    <p>No contexto da pandemia de Covid-19 no Brasil 33,1 milhões de pessoas não têm garantido o que comer o que representa 14 milhões de brasileiros em situação de fome.</p>
-                </div>
-            </article>
-
-            <article class="contexto">
-                <img src="imagens/icone-feminino.png" alt="ícone insegurança alimentar">
-                <div class="alinhamento">
-                    <h6>A fome tem gênero</h6>
-                    <p>Hoje, 6 em cada 10 domicílios liderados por mulheres estão em algum grau de insegurança alimentar.</p>
-                </div>
-            </article>
+            <div class="parte-de-baixo">
+                <article class="contexto">
+                    <img src="imagens/icone-coronavirus.png" alt="ícone insegurança alimentar">
+                    <div class="alinhamento">
+                        <h6>Fome na pandemia</h6>
+                        <p>No contexto da pandemia de Covid-19 no Brasil 33,1 milhões de pessoas não têm garantido o que comer o que representa 14 milhões de brasileiros em situação de fome.</p>
+                    </div>
+                </article>
+                <article class="contexto">
+                    <img src="imagens/icone-feminino.png" alt="ícone insegurança alimentar">
+                    <div class="alinhamento">
+                        <h6>A fome tem gênero</h6>
+                        <p>Hoje, 6 em cada 10 domicílios liderados por mulheres estão em algum grau de insegurança alimentar.</p>
+                    </div>
+                </article>
+            </div>
         </section>
 
     </main>

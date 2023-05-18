@@ -10,7 +10,8 @@ html {
 }
 
 body { 
-    font-family: "Fira Sans",'Courier New', Courier, monospace,;   
+    font-family: "Fira Sans",'Courier New', Courier, monospace,; 
+    height: 100vh;  
 }
 
 h2 {
@@ -89,8 +90,23 @@ nav h2 a {
     color: #fffffa;
 }
 
-#carouselExampleAutoplaying {
-    max-width: 100%;
+/* PÁGINA HOME */
+
+/* Destaque */
+#destaque-home {
+    background:url(../imagens/menina-na-porta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    margin-bottom: 25px;
+}
+
+#destaque-home h2 {
+    color: #fffffa;
+}
+
+#destaque-home p {
+    color: #fffffa;
 }
 
 #container-home {
@@ -98,20 +114,17 @@ nav h2 a {
     color: black;
 }
 
-#alinhamento-paragrafo-home {
-    text-align: left;
-    margin-left: 14px;
-    padding: 1rem;
+#carrossel-home {
+    max-width: 85%;
+    margin: 10px auto;
 }
 
 #container-contexto {
-    margin-top: 19px;
-    margin-bottom: 15px;
+    margin: 19px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .contexto {
@@ -163,12 +176,12 @@ nav h2 a {
     background-color: #A69851;
 }
 
-.oq-fazemos-texto{
+/* .oq-fazemos-texto{
     padding-top: 1.5rem;
     padding-bottom: 1.3rem;
     text-align: center;
     color: #fffffa;
-}
+} */
 
 .aumento {
     text-align: center;
@@ -194,18 +207,18 @@ nav h2 a {
 }
 
 /* Contribução */
-#container-contribuicao p {
+#container-contribuicao p, #alinhamento-paragrafo-home p, #main-oq-fazemos p {
     text-align: left;
     margin-top: 22px;
 } 
 
-#espaco-texto {
+.espaco-texto {
     max-width: 90%;
     text-align: center;
     margin-left: 1.7rem;
 }
 
-#espaco-texto h2 {
+.espaco-texto h2 {
     margin-top: 2rem;
 }
 
@@ -460,9 +473,116 @@ form{
     }
 }
 
+/* RESPONSIVIDADE DA PÁGINA HOME */
+@media screen and (min-width:1214px){
+    #destaque-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } 
+    
+    #carrossel-home {
+        max-width: 80%;
+        margin: 45px auto;
+    } 
+
+    .contexto {
+        max-width: 70%;
+        text-align: start;
+        margin-bottom: 35px;
+    }
+
+    .contexto h6 {
+        font-size: 22px;
+    }
+
+    .contexto p {
+        font-size: 17px;
+    }
+
+    .contexto img {
+        width: 73px;
+        height: 70px;
+    }
+
+}
+
+/* A PARTIR DE 1601PX */
+@media screen and (min-width:1601px){
+    #carrossel-home {
+        max-width: 87%;
+        margin: 55px auto;
+    } 
+
+    #container-contexto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .parte-de-cima {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .parte-de-baixo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .contexto {
+        max-width: 50%;
+    }
+
+    .contexto h6 {
+        font-size: 29px;
+    }
+
+    .contexto p {
+        font-size: 24px;
+    }
+
+    .contexto img {
+        width: 95px;
+        height: 89px;
+    }
+
+}
+
+@media screen and (min-width:2021px) {
+
+    .contexto {
+        max-width: 40%;
+    }
+
+    .parte-de-cima {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 80%;
+        margin: 0 auto;
+        gap: 80px;
+    }
+
+    .parte-de-baixo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 80%;
+        margin: 0 auto;
+        gap: 80px;
+    }
+}
+
 /* RESPONSIVIDADE DA PÁGINA CONTRIBUIÇÃO */
 @media screen and (min-width:540px) {
-    #espaco-texto{
+    .espaco-texto{
         margin-left: 2rem;
     }
 
@@ -477,7 +597,7 @@ form{
 
 /* A PARTIR DE 700PX */
 @media screen and (min-width:700px) {
-    #espaco-texto {
+    .espaco-texto {
         max-width: 80%;
         margin-left: 65px
     }
@@ -495,18 +615,18 @@ form{
 
 /* A PARTIR DE 778PX */
 @media screen and (min-width:778px) {
-    #espaco-texto {
+    .espaco-texto {
         margin-left: 75px;
     }
 }
 
 /* A PARTIR DE 1158PX */
 @media screen and (min-width:1158px) {
-    #espaco-texto p {
+    .espaco-texto p {
         font-size: 18px;
     }
 
-    #espaco-texto {
+    .espaco-texto {
         max-width: 70%;
         margin-left: 190px;
     }
@@ -555,14 +675,14 @@ form{
 
 /* A PARTIR DE 1334PX */
 @media screen and (min-width:1334px){
-    #espaco-texto{
+    .espaco-texto{
         margin-left: 210px;
     }
 }
 
 /* A PARTIR DE 1450PX */
 @media screen and (min-width:1450px){
-    #espaco-texto{
+    .espaco-texto{
         max-width: 62%;
         margin-left: 285px;
     }
@@ -587,16 +707,16 @@ form{
         font-size: 20px;
     }
     
-    #espaco-texto{
+    .espaco-texto{
         max-width: 70%;
         margin: 0 auto;
     }
 
-    #espaco-texto h2, #contribuicao h2, #formas-de-pagamento h2 {
+    .espaco-texto h2, #contribuicao h2, #formas-de-pagamento h2 {
         font-size: 26px;
     }
 
-    #espaco-texto p {
+    .espaco-texto p {
         font-size: 20px;
     }
 
@@ -657,15 +777,15 @@ form{
         font-size: 22px;
     }
 
-    #espaco-texto{
+    .espaco-texto{
         max-width: 75%;
     }
 
-    #espaco-texto h2, #contribuicao h2, #formas-de-pagamento h2 {
+    .espaco-texto h2, #contribuicao h2, #formas-de-pagamento h2 {
         font-size: 30px;
     }
 
-    #espaco-texto p {
+    .espaco-texto p {
         font-size: 25px;
     }
 
