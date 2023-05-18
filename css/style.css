@@ -110,14 +110,55 @@ nav h2 a {
     color: #fffffa;
 }
 
-#container-home {
-    text-align: center; 
-    color: black;
+#container-inseguranca {
+    background-color: #8C0303;
+    color: #fffffa;
+    margin: 30px 0;
+    padding: 40px;
 }
 
-#carrossel-home {
-    max-width: 85%;
-    margin: 10px auto;
+.alinhamento-inseguranca p {
+    text-align: start;
+    margin-top: 15px;
+    max-width: 400px;
+    border-left: #f5f5f5 4px solid; 
+    padding-left: 15px;
+}
+
+#leve {
+    background-color: #F2CB05;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 6px;
+    border-radius: 5px;
+    margin-top: 28px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#moderada {
+    background-color: #F27405;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 6px;
+    border-radius: 5px;
+    margin-top: 28px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#grave {
+    background-color: #A43D1C;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 6px;
+    border-radius: 5px;
+    margin-top: 28px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #container-contexto {
@@ -480,11 +521,6 @@ form{
         align-items: center;
         justify-content: center;
     } 
-    
-    #carrossel-home {
-        max-width: 80%;
-        margin: 45px auto;
-    } 
 
     .contexto {
         max-width: 70%;
@@ -497,6 +533,10 @@ form{
     }
 
     .contexto p {
+        font-size: 17px;
+    }
+
+    .alinhamento-inseguranca p {
         font-size: 17px;
     }
 
@@ -570,6 +610,10 @@ form{
         font-size: 24px;
     }
 
+    .alinhamento-inseguranca p {
+        font-size: 24px;
+    }
+
     .contexto img {
         width: 95px;
         height: 89px;
@@ -608,6 +652,10 @@ form{
         margin-left: 2rem;
     }
 
+    .alinhamento-inseguranca p {
+        font-size: 17px;
+    }
+
     .img-contribuicao{
         text-align: center;
     }
@@ -640,11 +688,26 @@ form{
     .espaco-texto {
         margin-left: 75px;
     }
+
+    #leve, #moderada, #grave {
+        padding: 11px;
+        border-radius: 9px;
+        max-width: 80%;
+    }
+
+    .alinhamento-inseguranca p {
+        margin-left: 130px;
+    }
+    
 }
 
 /* A PARTIR DE 1158PX */
 @media screen and (min-width:1158px) {
     .espaco-texto p {
+        font-size: 18px;
+    }
+
+    .alinhamento-inseguranca p {
         font-size: 18px;
     }
 
@@ -742,6 +805,10 @@ form{
         font-size: 20px;
     }
 
+    .alinhamento-inseguranca p {
+        font-size: 20px;
+    }
+
     .rodape p {
         font-size: 20px;
     }
@@ -796,7 +863,7 @@ form{
 /* A PARTIR DE 1540PX */
 @media screen and (min-width:1540px){
     nav a {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .espaco-texto{
@@ -808,6 +875,10 @@ form{
     }
 
     .espaco-texto p {
+        font-size: 25px;
+    }
+
+    .alinhamento-inseguranca p {
         font-size: 25px;
     }
 
@@ -844,6 +915,10 @@ form{
     }
     
     .container-contato p {
+        font-size: 20px;
+    }
+
+    .alinhamento-inseguranca p {
         font-size: 20px;
     }
 
