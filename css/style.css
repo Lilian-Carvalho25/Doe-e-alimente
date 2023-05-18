@@ -95,6 +95,7 @@ nav h2 a {
 /* Destaque */
 #destaque-home {
     background:url(../imagens/menina-na-porta.jpg);
+    position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 90vh;
