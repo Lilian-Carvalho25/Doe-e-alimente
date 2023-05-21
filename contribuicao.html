@@ -123,31 +123,28 @@
             </div>
         </section>
 
-        <section id="container-formulario">
+        <section>
             <form action="" method="post">
-                <div class="input-group" class="caixas">
-                    <input type="text" name="nome" class="inputs" required/>
-                    <label name="nome">Nome Completo:</label>
-                </div>
-
-                <div class="input-group" class="caixas">
-                    <input type="email" name="email" class="inputs" required/>
-                    <label name="email">Seu E-mail</label>
-                </div>
-
-                <div class="input-group" class="caixas">
-                    <input type="tel" name="telefone" class="inputs"/>
-                    <label name="telefone">Telefone fixo</label>
-                </div>
-
-                <div class="input-group" class="caixas">
-                    <input type="tel" name="celular" class="inputs" required/>
-                    <label name="celular">Celular</label>
+                <div class="container-formularios">
+                    <div class="inputBox">
+                        <input type="text" name="nome" autocomplete="off" class="nomes" required>
+                        <span>Nome completo</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="email" name="email" autocomplete="off" class="emails" required>
+                        <span>E-mail</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="number" name="telefone" autocomplete="off" class="telefones">
+                        <span>Telefone</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="number" name="celular" autocomplete="off" class="celulares" required>
+                        <span>Celular</span>
+                    </div>
                 </div>
             </form>
         </section>
-
-
 
         <section id="formas-de-pagamento">
             <h2>Formas de pagamento</h2>

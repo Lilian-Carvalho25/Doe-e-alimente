@@ -55,28 +55,30 @@
 
         <h2 class="duvida">Qual é a sua dúvida?</h2>
         
-            <section id="container-formulario2">
+           <section>
+            <section>
                 <form action="" method="post">
-                    <div class="input-group" class="caixas">
-                        <input type="text" name="nome" class="inputs" required/>
-                        <label name="nome">Nome Completo:</label>
+                    <div class="container-formularios">
+                        <div class="inputBox">
+                            <input type="text" name="nome" autocomplete="off" class="nomes" required>
+                            <span>Nome completo</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="email" name="email" autocomplete="off" class="emails" required>
+                            <span>E-mail</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="number" name="telefone" autocomplete="off" class="telefones">
+                            <span>Telefone</span>
+                        </div>
+                       
+                         <div class="inputTextarea">
+                           <textarea name="mensagem" id="mensagem" cols="30" rows="7" autocomplete="off" placeholder="Digite sua dúvida"></textarea>
+                        </div>
                     </div>
-    
-                    <div class="input-group" class="caixas">
-                        <input type="email" name="email" class="inputs" required/>
-                        <label name="email">Seu E-mail</label>
-                    </div>
-    
-                    <div class="input-group" class="caixas">
-                        <input type="tel" name="telefone" class="inputs"/>
-                        <label name="telefone">Telefone fixo</label>
-                    </div>
-                    <div class="caixas">
-                        <label for="mensagem">Mensagem:</label><br>
-                        <textarea placeholder="Digite aqui sua dúvida..."  name="" id="" cols="45" rows="8"></textarea>
-                    </div>
+                </form>
             </section>
-
+           </section>
     </main>
 
 
