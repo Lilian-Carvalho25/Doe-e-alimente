@@ -94,19 +94,40 @@ nav h2 a {
 
 /* Destaque */
 #destaque-home {
-    background:url(../imagens/panelas-vazias.jpg);
+    background:url(../imagens/destaque-home.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
     margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#escrita {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 #destaque-home h2 {
     color: #fffffa;
+    font-size: 35px;
 }
 
 #destaque-home p {
+    color: #fffffa;
+    font-size: 19px;
+}
+
+#doe-agora {
+    padding: 11px;
+    background-color: #8C0303;
+    border-radius: 18px;
     color: #fffffa;
 }
 
@@ -169,6 +190,13 @@ nav h2 a {
     align-items: center;
 }
 
+hr {
+    max-width: 90%;
+    margin: 0 auto;
+    border: none;
+    border: 1px solid rgb(162, 157, 157);
+}
+
 .contexto {
     display: flex;
     justify-content: center;
@@ -211,7 +239,6 @@ nav h2 a {
     width: 95vw;
     margin: auto;
 }
-
 /* Oq fazemos */
 
 #main-oq-fazemos {
@@ -804,7 +831,7 @@ form{
     #container-selecao input {
         margin-bottom: 26px;
     }
-    
+
 }
 
 /* A PARTIR DE 1334PX */

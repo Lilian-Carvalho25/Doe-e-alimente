@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/panelinha.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <title>SHC - Contribuição</title>
+    <title>Doe e alimente - Contribuição</title>
 
 <body>
 
     <header>
         
         <div class="limitador">
-            <a href="index.html"><img src="imagens/fundo_logo.png" alt=""></a>
+            <a href="index.php"><img src="imagens/Logo.png" alt=""></a>
             <nav>
                 <h2><a href="" class="icone"> &equiv; </a></h2>
                 <ul class="menu">
@@ -91,7 +92,7 @@
         <figure class="img-contribuicao"><img src="imagens/img-contribuicao.png" alt="Marmitas com comida"></figure>
 
         <section id="contribuicao">
-            <h2>Contribuição</h2>
+            <h2 id="caminho-rapido">Contribuição</h2>
 
 
             <div id="container-selecao">

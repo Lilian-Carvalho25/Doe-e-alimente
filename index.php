@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagens/Logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/panelinha.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Doe e alimente</title>
@@ -37,8 +37,9 @@
 
        <section id="destaque-home">
         <div id="escrita">
-            <h2>Self help Community</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, velit!</p>
+            <h2>Doe e alimente</h2>
+            <p>Sua doação pode salvar a vida de alguém.</p>
+            <a href="contribuicao.php"><button id="doe-agora">DOE AGORA</button></a>
         </div>
        </section>
 
@@ -121,6 +122,16 @@
                         <p>Hoje, 6 em cada 10 domicílios liderados por mulheres estão em algum grau de insegurança alimentar.</p>
                     </div>
                 </article>
+
+                <hr>
+            </div>
+
+        </section>
+
+        <section id="container-a-fome-tem-cor">
+            <div id="alinhamento-paragrafo-home" class="espaco-texto">
+                <h2>A fome tem cor</h2>
+                <p>Enquanto 53,2% dos domicílios onde a pessoa de referência se autodeclara branca vivem em segurança alimentar, nos lares com responsáveis de raça/cor preta ou parda ela cai para 35%. Em outras palavras, 65% dos lares comandados por pessoas pretas ou pardas convivem com restrição de alimentos em algum nível. Ou seja, seis a cada dez domicílios cujos os responsáveis se identificam como pretos ou pardos vivem com algum grau de insegurança alimentar, seja leve, moderada ou grave.</p>
             </div>
         </section>
 

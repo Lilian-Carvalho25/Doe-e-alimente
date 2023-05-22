@@ -12,4 +12,3 @@ botao.addEventListener("click", function(event){
         icone.innerHTML = "&equiv;";
     }
 });
-
