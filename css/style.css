@@ -98,7 +98,7 @@ nav h2 a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 70vh;
     margin-bottom: 25px;
     display: flex;
     flex-direction: column;
@@ -229,6 +229,7 @@ hr {
     text-align: center;
     padding-top: 0.7rem;
     padding-bottom: 0.5rem;
+    max-height: 5vh;
 }
 
 .rodape p {
@@ -503,9 +504,10 @@ figure{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 0.8rem;
-    height: 1rem;
-    font-weight: bold;
+}
+
+.email img {
+    width: 27px;
 }
 a{
     color: black;

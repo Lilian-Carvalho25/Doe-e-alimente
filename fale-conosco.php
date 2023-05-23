@@ -48,9 +48,9 @@
 
 
             <div class="email">
-                <a href="mailto:liliancarvalho@gmail.com">liliancarvalho@gmail.com</a>
-                <a href="mailto:plinio.t.vasconcellos@gmail.com">plinio.vasconcellos@gmail.com</a>
-                <a href="mailto:viniciusdemirandabarbosa@gmail.com">viniciusmiranda@gmail.com</a>
+                <a href="mailto:kleidk74@gmail.com"><img src="imagens/gmail-icone.png" alt="ícone gmail"></a>
+                <a href="mailto:plinio.t.vasconcellos@gmail.com"><img src="imagens/gmail-icone.png" alt="ícone gmail"></a>
+                <a href="mailto:viniciusdemirandabarbosa@gmail.com"><img src="imagens/gmail-icone.png" alt="ícone gmail"></a>
             </div>
         </div>
 
