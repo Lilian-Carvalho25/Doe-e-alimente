@@ -55,11 +55,11 @@ nav h2 a {
     display: inline-block;
 }
 
-/* nav h2 a:hover, nav h2 a:focus, */
-.menu a:hover, .menu a:focus {
+
+/* .menu a:hover, .menu a:focus {
     background-color: #e64e4e8f;
     border-radius: 6px;
-}
+} */
 
 .menu {
     list-style: none;
@@ -544,18 +544,34 @@ form{
         width: 70%;
     }
 
-    nav .menu li{
+    nav ul li {
+        display: inline-block;
+        margin: 0 10px;
+      }
+      
+      nav a {
+        position: relative;
+        transition: 0.3s ease;
+      }
+      
+      nav a:before {
+        content: '';
+        position: absolute;
+        width: 88%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
         background-color: #8C0303;
-        margin-left: 6px;
-        border-radius: 6px;
-        width: 160px;
-    }
-
-
-
-    .menu li a {
-        color: #fffffa;
-    }
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: 0.3s ease;
+      }
+      
+      nav a:hover:before {
+        visibility: visible;
+        transform: scaleX(1);
+        text-decoration: none;
+      }
 }
 
 /* RESPONSIVIDADE DA PÁGINA HOME */
@@ -866,6 +882,10 @@ form{
 @media screen and (min-width:1450px){
     nav a {
         font-size: 20px;
+    }
+
+    header a img {
+        width: 180px;
     }
     
     .espaco-texto{
