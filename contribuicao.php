@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="imagens/panelinha.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <title>Doe e alimente - Contribuição</title>
+    <script src="https://donorbox.org/widget.js" paypalExpress="false"></script>
 
 <body>
 
@@ -94,7 +95,10 @@
         <section id="contribuicao">
             <h2 id="caminho-rapido">Contribuição</h2>
 
-
+            
+            <iframe class="caixa-doacao" src="https://donorbox.org/embed/doe-e-alimente" name="donorbox" allowpaymentrequest="allowpaymentrequest" seamless="seamless" frameborder="0" scrolling="no" height="900px" width="100%" style="max-width: 500px; min-width: 250px; max-height:none!important" ></iframe>
+        </section>
+<!-- 
             <div id="container-selecao">
 
                     <label for="trinta-reais">
@@ -121,10 +125,9 @@
                     </label>
                 </div>
 
-            </div>
-        </section>
+            </div> -->
 
-        <section>
+        <!-- <section>
             <form action="" method="post">
                 <div class="container-formularios">
                     <div class="inputBox">
@@ -177,7 +180,8 @@
 
                 <button type="submit">Doe agora</button>
             </div>
-        </section>
+        </section> -->
+
     </main>
 
 

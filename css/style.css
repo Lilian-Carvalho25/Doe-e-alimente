@@ -283,6 +283,14 @@ hr {
 }
 
 /* Contribução */
+#contribuicao iframe {
+    margin-left: 600px;
+    height: 900px;
+    width: 100%; 
+    max-width: 500px; 
+    min-width: 250px;
+}
+
 #container-contribuicao p, #alinhamento-paragrafo-home p, #main-oq-fazemos p {
     text-align: left;
     margin-top: 22px;
