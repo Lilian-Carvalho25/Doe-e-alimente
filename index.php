@@ -39,7 +39,7 @@
         <div id="escrita">
             <h2>Doe e alimente</h2>
             <p>Sua doação pode salvar a vida de alguém.</p>
-            <a href="contribuicao.php"><button id="doe-agora">DOE AGORA</button></a>
+            <button id="botao-rapido"><a href="contribuicao.php"><span>DOE AGORA</span><i></i></a></button>
         </div>
        </section>
 
