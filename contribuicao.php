@@ -96,8 +96,14 @@
             <h2 id="caminho-rapido">Contribuição</h2>
 
             
-            <iframe class="caixa-doacao" src="https://donorbox.org/embed/doe-e-alimente" name="donorbox" allowpaymentrequest="allowpaymentrequest" seamless="seamless" frameborder="0" scrolling="no" height="900px" width="100%" style="max-width: 500px; min-width: 250px; max-height:none!important" ></iframe>
-        </section>
+            <div id="container-iframe">
+                <iframe class="caixa-doacao" src="https://donorbox.org/embed/doe-e-alimente" name="donorbox" allowpaymentrequest="allowpaymentrequest" seamless="seamless" frameborder="0" scrolling="no" height="900px" width="100%" style="max-width: 500px; min-width: 250px; max-height:none!important" ></iframe>
+
+                
+                        </section>
+            </div>
+
+           
 <!-- 
             <div id="container-selecao">
 
@@ -181,6 +187,8 @@
                 <button type="submit">Doe agora</button>
             </div>
         </section> -->
+
+        <a class="link-tentativa" href="https://checkout.stripe.com/c/pay/cs_live_a1RAzfb0e7XAFQXgTPsHLVj8WlprEM77D25uyMyoOGUUMj3fRLVJdwwx7n#fidkdWxOYHwnPyd1blppbHNgWjA0S0Y0SlBGTlFta3ViMT1%2FdWJNUmEyZH9xQE5HdDNCMFVzUm5LQEBfN2dRTmRzMlZVblVnMVdTVW40X1ZxY05AdFdsNnZ1SWxhf2N%2FSjdKVXRXSW5kNUdUNTVwUTdDVFRgXycpJ3VpbGtuQH11anZgYUxhJz8nNz1qM3dGYEdjMGJDMENgMWJiJ3gl" target="_blank">Está tendo problemas para doar? Clique neste link.</a>
 
     </main>
 

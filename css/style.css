@@ -283,12 +283,21 @@ hr {
 }
 
 /* Contribução */
+#container-iframe {
+    text-align: center;
+}
 #contribuicao iframe {
-    margin-left: 600px;
+    margin-bottom: 43px;
+    margin-top: 43px;
     height: 900px;
     width: 100%; 
     max-width: 500px; 
     min-width: 250px;
+}
+
+.link-tentativa {
+    margin: 0 auto;
+    color: #8C0303;
 }
 
 #container-contribuicao p, #alinhamento-paragrafo-home p, #main-oq-fazemos p {
