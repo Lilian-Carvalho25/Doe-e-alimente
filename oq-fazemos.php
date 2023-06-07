@@ -34,25 +34,22 @@
     <main id="main-oq-fazemos">
         <img src="imagens/dando-pote.jpg" alt="">
         <section class="espaco-texto">
-            <p class="cor">O objetivo principal da Self Help Community é fornecer refeições gratuitas para pessoas em situação de
+            <p class="cor">O objetivo principal da Doe e alimente é redirecionar doações em dinheiro para projetos e ONG`s focados na luta contra a fome no Brasil. O público-alvo é direcionado para pessoas em situação de
                 vulnerabilidade social, como pessoas sem-teto, desempregadas ou com baixa renda. Essa iniciativa tem como
                 objetivo garantir que todas as pessoas tenham acesso a alimentos saudáveis e nutritivos.</p>
-            <p class="cor">ém disso, a Self Help Community pode ajudar a construir uma comunidade mais unida, onde as pessoas se ajudam
-                mutuamente e trabalham juntas para enfrentar os desafios sociais. Esses espaços podem ser uma fonte de apoio
-                emocional e prático para aqueles que enfrentam dificuldades financeiras e sociais. </p>
-            <p class="cor">Outro objetivo da Self Help Community é reduzir o desperdício de alimentos. Muitas vezes, os alimentos que
+            <p class="cor">Além disso, podemos ajudar a construir uma comunidade mais unida, inclusiva e justa, onde as pessoas se ajudam
+                mutuamente e trabalham juntas para enfrentar os desafios sociais. A sua doação é uma fonte de apoio
+                nutricional e emocional para aqueles que enfrentam dificuldades financeiras e sociais, e com certeza, salva vidas. </p>
+            <p class="cor">O foco da Doe e alimente também é reduzir o desperdício de alimentos, já que em alguns casos, os alimentos que
                 são doados para essas cozinhas são produtos que de outra forma seriam jogados fora, mas que ainda estão em
-                boas condições para consumo. Ao aproveitar esses alimentos, as cozinhas solidárias podem ajudar a reduzir o
+                perfeitas condições de consumo. Ao aproveitar esses alimentos, as cozinhas solidárias podem ajudar a reduzir o
                 desperdício e o impacto ambiental negativo. </p>
-            <p class="cor">A Self Help Community está com objetivo de fornecer alimentos nutritivos e acessíveis para aqueles que
-                precisam, enquanto constrói uma comunidade mais forte e reduz o desperdício de alimentos.
-            </p>
         </section>
 
-        <div class="aumento">
+        <!-- <div class="aumento">
             <p id="milhoes"><span id="sinal-mais">+</span> 32 milhões</p>
             <p id="fome">De pessoas passam fome no Brasil</p>
-        </div>
+        </div> -->
     </main>
 
     <footer class="rodape">
