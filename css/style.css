@@ -253,12 +253,12 @@ hr {
 
 #main-oq-fazemos {
     background-color: #A69851; 
-    margin-bottom: 40px;
+    padding-bottom: 40px;
 }
 
 #main-oq-fazemos img {
     width: 100%;
-    height: 100%;
+    height: 60vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
