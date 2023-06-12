@@ -1,3 +1,15 @@
+<?php 
+require_once "includes/conecta.php";
+require_once "includes/funcoes-usuarios.php";
+
+if(isset($_GET["logout"])){
+    logout();
+}
+
+$doadores = lerTodosOsDoadores($conexao);
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -17,7 +29,7 @@
     <header>
         
         <div class="limitador">
-            <a href="index.ph"><img src="imagens/Logo.png" alt=""></a>
+            <a href="index.php"><img src="imagens/Logo.png" alt=""></a>
             <nav>
                 <h2><a href="" class="icone"> &equiv; </a></h2>
                 <ul class="menu">
@@ -25,7 +37,7 @@
                     <li><a href="oq-fazemos.php">O que fazemos</a></li>
                     <li><a href="contribuicao.php">Contribuição</a></li>
                     <li><a href="fale-conosco.php">Fale conosco</a></li>
-                    <li><a href="login.php">Sair</a></li>
+                    <li><a href="?logout">Sair</a></li>
                 </ul>
             </nav>
         </div>
@@ -37,7 +49,7 @@
         <article class="col-10 m-auto mt-5 bg-white rounded shadow my-1 py-4 doadores">
     
             <h2 class="text-center mb-3">
-                Doadores <span class="badge">X</span>
+                Doadores <span class="badge"> <?= count($doadores) ?> </span>
             </h2>
     
             <div class="table-responsive">
@@ -51,12 +63,14 @@
                     </thead>
     
                     <tbody>
+                    <?php
+					foreach ($doadores as $doador) { ?>
     
                             <tr>
-                                <td>  </td>
-                                <td>  </td>
+                                <td> <?= $doadores["nome"] ?> </td>
+                                <td> <?= formataData($doadores["data"]) ?> </td>
                             </tr>
-    
+                        <?php } ?>
                     </tbody>
                 </table>
             </div>

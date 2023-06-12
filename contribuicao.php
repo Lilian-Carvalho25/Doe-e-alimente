@@ -6,9 +6,8 @@ require_once "includes/funcoes-usuarios.php";
 if(isset($_POST['prosseguir'])){
 
 	$nome = $_POST['name'];
-	$data = $_POST['data'];
 	
-	inserirDoadores($conexao, $nome, $data);
+	inserirDoadores($conexao, $nome);
 }
 ?>
 
@@ -111,6 +110,7 @@ if(isset($_POST['prosseguir'])){
         <div class="payment-title">
         <h2>Contribuição</h2>
     </div>
+
     <div class="container preload">
         <div class="creditcard">
             <div class="front">
@@ -209,34 +209,36 @@ if(isset($_POST['prosseguir'])){
             </div>
         </div>
     </div>
+    <form action="" method="post">
     <div class="form-container">
-        <div class="field-container">
-            <label for="name" name="name">Nome</label>
-            <input id="name" maxlength="20" type="text" autocomplete="off" name="name">
-        </div>
-        <div class="field-container">
-            <label for="cardnumber">Número do cartão</label><span id="generatecard">alatório</span>
-            <input id="cardnumber" type="text" pattern="[0-9]*" inputmode="numeric">
-            <svg id="ccicon" class="ccicon" width="750" height="471" viewBox="0 0 750 471" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
-
-            </svg>
-        </div>
-        <div class="field-container">
-            <label for="expirationdate">Expiração (mm/yy)</label>
-            <input id="expirationdate" type="text" pattern="[0-9]*" inputmode="numeric">
-        </div>
-        <div class="field-container">
-            <label for="securitycode">Código de segurança</label>
-            <input id="securitycode" type="text" pattern="[0-9]*" inputmode="numeric">
-        </div>
-    </div>
-
-</section>
-    <article id="container-confirmar">
-        <h3>Confirmar dados e determinar a quantia</h3>
-        <button id="prosseguir" name="prosseguir"><a href="https://checkout.stripe.com/c/pay/cs_live_a1RAzfb0e7XAFQXgTPsHLVj8WlprEM77D25uyMyoOGUUMj3fRLVJdwwx7n#fidkdWxOYHwnPyd1blppbHNgWjA0S0Y0SlBGTlFta3ViMT1%2FdWJNUmEyZH9xQE5HdDNCMFVzUm5LQEBfN2dRTmRzMlZVblVnMVdTVW40X1ZxY05AdFdsNnZ1SWxhf2N%2FSjdKVXRXSW5kNUdUNTVwUTdDVFRgXycpJ3VpbGtuQH11anZgYUxhJz8nNz1qM3dGYEdjMGJDMENgMWJiJ3gl" target="_blank"><span>Prosseguir</span><i></i></a></button>
-    </article>
+        
+            <div class="field-container">
+                <label for="name" name="name">Nome</label>
+                <input id="name" maxlength="20" type="text" autocomplete="off" name="name">
+            </div>
+            <div class="field-container">
+                <label for="cardnumber">Número do cartão</label><span id="generatecard">alatório</span>
+                <input id="cardnumber" type="text"  inputmode="numeric">
+                <svg id="ccicon" class="ccicon" width="750" height="471" viewBox="0 0 750 471" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                </svg>
+            </div>
+            <div class="field-container">
+                <label for="expirationdate">Expiração (mm/yy)</label>
+                <input id="expirationdate" type="text" pattern="[0-9]*" inputmode="numeric">
+            </div>
+            <div class="field-container">
+                <label for="securitycode">Código de segurança</label>
+                <input id="securitycode" type="text" pattern="[0-9]*" inputmode="numeric">
+            </div>
+                </div>
+                
+            </section>
+            <article id="container-confirmar">
+                <h3>Confirmar dados e determinar a quantia</h3>
+                <button id="prosseguir" name="prosseguir"><a href="https://checkout.stripe.com/c/pay/cs_live_a1RAzfb0e7XAFQXgTPsHLVj8WlprEM77D25uyMyoOGUUMj3fRLVJdwwx7n#fidkdWxOYHwnPyd1blppbHNgWjA0S0Y0SlBGTlFta3ViMT1%2FdWJNUmEyZH9xQE5HdDNCMFVzUm5LQEBfN2dRTmRzMlZVblVnMVdTVW40X1ZxY05AdFdsNnZ1SWxhf2N%2FSjdKVXRXSW5kNUdUNTVwUTdDVFRgXycpJ3VpbGtuQH11anZgYUxhJz8nNz1qM3dGYEdjMGJDMENgMWJiJ3gl" target="_blank"><span>Prosseguir</span><i></i></a></button>
+            </article>
+        </form>
 
     </main>
 
