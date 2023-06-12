@@ -48,19 +48,18 @@
             
             <div id="alinhamento-paragrafo-home" class="espaco-texto">
                 <h2>O Projeto</h2>
-                <p>Self Help Cummunity é um espaço que oferece refeições gratuitas para pessoas que enfrentam dificuldades
-                    financeiras, sem-teto ou em situação de vulnerabilidade social. Esses projetos de solidariedade são
+                <p>Doe e alimente é uma plataforma que arrecada doações para projetos e ONG`s com foco na luta contra a fome no Brasil. Esse dinheiro, ajuda na construção e distribuição de marmitas para pessoas que enfrentam dificuldades
+                    financeiras, sem-teto ou em situação de vulnerabilidade social. Cada um dos projetos que estão nessa luta, são
                     importantes para garantir que todos tenham acesso a alimentos saudáveis e nutritivos, independentemente da
                     sua situação financeira.</p>
-                <p>A ideia de uma cozinha solidária em uma comunidade pode ser um processo desafiador, mas recompensador. É
-                    importante estabelecer parcerias com organizações locais, como igrejas, escolas, instituições de caridade e
+                <p> É importante estabelecer parcerias com organizações locais, como igrejas, escolas, instituições de caridade e
                     governos locais para garantir o apoio necessário.</p>
                 <p>Também é importante considerar a estrutura física da cozinha, incluindo equipamentos de cozinha, espaço de
                     armazenamento de alimentos e espaço para servir as refeições. A contratação de funcionários e voluntários
                     para ajudar com a preparação de alimentos, limpeza e serviços de atendimento também é essencial.</p>
-                <p>Além disso, a divulgação da cozinha solidária para a comunidade é fundamental para garantir que aqueles que
+                <p>Além disso, a divulgação dos projetos e ONG`s com esse foco, para a comunidade é fundamental, para garantir que aqueles que
                     precisam tenham conhecimento da disponibilidade de alimentos e serviços.</p>
-                <p>A criação de uma cozinha solidária é uma forma de ajudar a construir uma comunidade mais unida, garantindo que
+                <p>A criação desta plataforma é uma forma de ajudar a construir uma comunidade mais unida e inclusiva, garantindo que
                 ninguém seja deixado para trás quando se trata de ter acesso a alimentos saudáveis e nutritivos, sabendo que
                 mais de 33 milhões de pessoas passam fome no Brasil.</p>
             </div>
