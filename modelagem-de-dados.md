@@ -1,0 +1,19 @@
+# Modelagem Física Doe e alimente
+
+```sql
+CREATE TABLE doadores(
+    id SMALLINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(45) NOT NULL,
+    data DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+```
+
+```sql
+CREATE TABLE contatos(
+    id SMALLINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(45) NOT NULL,
+    email VARCHAR(45) NOT NULL UNIQUE,
+    telefone BIGINT(14) NOT NULL,
+    mensagem TEXT NOT NULL
+);
+```

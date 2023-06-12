@@ -1,3 +1,17 @@
+<?php 
+require_once "includes/conecta.php";
+require_once "includes/funcoes-usuarios.php";
+
+
+if(isset($_POST['prosseguir'])){
+
+	$nome = $_POST['name'];
+	$data = $_POST['data'];
+	
+	inserirDoadores($conexao, $nome, $data);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -23,6 +37,7 @@
                     <li><a href="oq-fazemos.php">O que fazemos</a></li>
                     <li><a href="contribuicao.php">Contribuição</a></li>
                     <li><a href="fale-conosco.php">Fale conosco</a></li>
+                    <li><a href="login.php">Admin</a></li>
                 </ul>
             </nav>
         </div>
@@ -91,104 +106,6 @@
         </section>
         <!-- Atenção -->
         <figure class="img-contribuicao"><img src="imagens/img-contribuicao.png" alt="Marmitas com comida"></figure>
-
-        <!-- <section id="contribuicao">
-            <h2 id="caminho-rapido">Contribuição</h2>
-
-            
-            <div id="container-iframe">
-                <iframe class="caixa-doacao" src="https://donorbox.org/embed/doe-e-alimente" name="donorbox" allowpaymentrequest="allowpaymentrequest" seamless="seamless" frameborder="0" scrolling="no" height="900px" width="100%" style="max-width: 500px; min-width: 250px; max-height:none!important" ></iframe>
-
-                
-                        </section>
-            </div> -->
-
-           
-<!-- 
-            <div id="container-selecao">
-
-                    <label for="trinta-reais">
-                        <input type="radio" name="dinheiro" value="trinta-reais" id="trinta-reais">
-                        R$ 30,00
-                    </label>
-
-                    <label for="60">
-                        <input type="radio" name="dinheiro" id="60-reais">
-                        R$ 60,00
-                    </label>
-
-                    <label for="90">
-                        <input type="radio" name="dinheiro" id="90-reais">
-                        R$ 90,00
-                    </label>
-
-                <div class="caixas">
-                    <label for="valor-inserido">
-                        <form action="">
-                             Doação personalizada:
-                            <textarea name="valor-inserido" id="valor-inserido" cols="15" rows="1" class="inputs" placeholder="Insira um valor"></textarea>
-                        </form>
-                    </label>
-                </div>
-
-            </div> -->
-
-        <!-- <section>
-            <form action="" method="post">
-                <div class="container-formularios">
-                    <div class="inputBox">
-                        <input type="text" name="nome" autocomplete="off" class="nomes" required>
-                        <span>Nome completo</span>
-                    </div>
-                    <div class="inputBox">
-                        <input type="email" name="email" autocomplete="off" class="emails" required>
-                        <span>E-mail</span>
-                    </div>
-                    <div class="inputBox">
-                        <input type="number" name="telefone" autocomplete="off" class="telefones">
-                        <span>Telefone</span>
-                    </div>
-                    <div class="inputBox">
-                        <input type="number" name="celular" autocomplete="off" class="celulares" required>
-                        <span>Celular</span>
-                    </div>
-                </div>
-            </form>
-        </section>
-
-        <section id="formas-de-pagamento">
-            <h2>Formas de pagamento</h2>
-
-
-            <div id="container-formas">
-                <div class="pagamento">
-                    <label for="pix">
-                        <input type="radio" name="pagamento" value="pix" id="pix">
-                        PIX
-                    </label>
-                </div>
-                <div class="pagamento">
-                    <label for="cartao-credito">
-                        <input type="radio" name="pagamento" id="cartao-credito"> Cartão de crédito
-                    </label>
-                </div>
-                <div class="pagamento">
-                    <label for="cartao-debito">
-                        <input type="radio" name="pagamento" id="cartao-debito"> Cartão de débito
-                    </label>
-                </div>
-
-                <div class="pagamento">
-                    <label for="transferencia">
-                        <input type="radio" name="pagamento" id="transferencia"> Transferência bancária
-                    </label>
-                </div>
-
-                <button type="submit">Doe agora</button>
-            </div>
-        </section> -->
-
-        <!-- <a class="link-tentativa" href="https://checkout.stripe.com/c/pay/cs_live_a1RAzfb0e7XAFQXgTPsHLVj8WlprEM77D25uyMyoOGUUMj3fRLVJdwwx7n#fidkdWxOYHwnPyd1blppbHNgWjA0S0Y0SlBGTlFta3ViMT1%2FdWJNUmEyZH9xQE5HdDNCMFVzUm5LQEBfN2dRTmRzMlZVblVnMVdTVW40X1ZxY05AdFdsNnZ1SWxhf2N%2FSjdKVXRXSW5kNUdUNTVwUTdDVFRgXycpJ3VpbGtuQH11anZgYUxhJz8nNz1qM3dGYEdjMGJDMENgMWJiJ3gl" target="_blank">Está tendo problemas para doar? Clique neste link.</a> -->
 
         <section class="container-cartao">
         <div class="payment-title">
@@ -294,8 +211,8 @@
     </div>
     <div class="form-container">
         <div class="field-container">
-            <label for="name">Nome</label>
-            <input id="name" maxlength="20" type="text" autocomplete="off">
+            <label for="name" name="name">Nome</label>
+            <input id="name" maxlength="20" type="text" autocomplete="off" name="name">
         </div>
         <div class="field-container">
             <label for="cardnumber">Número do cartão</label><span id="generatecard">alatório</span>
@@ -318,7 +235,7 @@
 </section>
     <article id="container-confirmar">
         <h3>Confirmar dados e determinar a quantia</h3>
-        <button><a href="https://checkout.stripe.com/c/pay/cs_live_a1RAzfb0e7XAFQXgTPsHLVj8WlprEM77D25uyMyoOGUUMj3fRLVJdwwx7n#fidkdWxOYHwnPyd1blppbHNgWjA0S0Y0SlBGTlFta3ViMT1%2FdWJNUmEyZH9xQE5HdDNCMFVzUm5LQEBfN2dRTmRzMlZVblVnMVdTVW40X1ZxY05AdFdsNnZ1SWxhf2N%2FSjdKVXRXSW5kNUdUNTVwUTdDVFRgXycpJ3VpbGtuQH11anZgYUxhJz8nNz1qM3dGYEdjMGJDMENgMWJiJ3gl" target="_blank"><span>Prosseguir</span><i></i></a></button>
+        <button id="prosseguir" name="prosseguir"><a href="https://checkout.stripe.com/c/pay/cs_live_a1RAzfb0e7XAFQXgTPsHLVj8WlprEM77D25uyMyoOGUUMj3fRLVJdwwx7n#fidkdWxOYHwnPyd1blppbHNgWjA0S0Y0SlBGTlFta3ViMT1%2FdWJNUmEyZH9xQE5HdDNCMFVzUm5LQEBfN2dRTmRzMlZVblVnMVdTVW40X1ZxY05AdFdsNnZ1SWxhf2N%2FSjdKVXRXSW5kNUdUNTVwUTdDVFRgXycpJ3VpbGtuQH11anZgYUxhJz8nNz1qM3dGYEdjMGJDMENgMWJiJ3gl" target="_blank"><span>Prosseguir</span><i></i></a></button>
     </article>
 
     </main>

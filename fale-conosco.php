@@ -1,3 +1,21 @@
+<?php 
+require_once "includes/conecta.php";
+require_once "includes/funcoes-usuarios.php";
+
+
+if(isset($_POST['enviar'])){
+
+	$nome = $_POST['nome'];
+	$email = $_POST['email'];
+	$telefone = $_POST['telefone'];
+	$mensagem = $_POST['mensagem'];
+	
+	inserirContato($conexao, $nome, $email, $telefone, $mensagem);
+
+	header("location:fale-conosco.php");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -23,6 +41,7 @@
                     <li><a href="oq-fazemos.php">O que fazemos</a></li>
                     <li><a href="contribuicao.php">Contribuição</a></li>
                     <li><a href="fale-conosco.php">Fale conosco</a></li>
+                    <li><a href="login.php">Admin</a></li>
                 </ul>
             </nav>
         </div>
@@ -57,7 +76,7 @@
         <h2 class="duvida">Qual é a sua dúvida?</h2>
         
            <section>
-            <section>
+            <section id="container-confirmar">
                 <form action="" method="post">
                     <div class="container-formularios">
                         <div class="inputBox">
@@ -76,6 +95,9 @@
                          <div class="inputTextarea">
                            <textarea name="mensagem" id="mensagem" cols="30" rows="7" autocomplete="off" placeholder="Digite sua dúvida"></textarea>
                         </div>
+
+                        <button id="enviar" name="enviar"><span>ENVIAR</span><i></i></button>
+
                     </div>
                 </form>
             </section>

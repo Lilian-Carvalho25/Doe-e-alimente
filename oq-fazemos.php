@@ -26,6 +26,7 @@
                     <li><a href="oq-fazemos.php">O que fazemos</a></li>
                     <li><a href="contribuicao.php">Contribuição</a></li>
                     <li><a href="fale-conosco.php">Fale conosco</a></li>
+                    <li><a href="login.php">Admin</a></li>
                 </ul>
             </nav>
         </div>
