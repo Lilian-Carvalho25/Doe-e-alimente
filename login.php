@@ -1,3 +1,19 @@
+<?php 
+require_once "includes/conecta.php";
+require_once "includes/funcoes-usuarios.php";
+require_once "includes/funcoes-sessao.php";
+
+if(isset($_GET["campos_obrigatorios"]) ){
+
+	$mensagem = "Você deve preencher e-mail e senha!";
+} elseif(isset($_GET["dados_incorretos"])){
+	$mensagem = "Dados incorretos, verifique e-mail e/ou senha!";
+} elseif(isset($_GET["logout"])){
+	$mensagem = "Voce saiu do sistema.";
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -11,10 +27,7 @@
     <title>Doe e alimente - login</title>
 
 </head>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-
-<body>
 
 
     <header>
@@ -32,20 +45,6 @@
             </nav>
         </div>
     </header>
-
-
-<?php 
-
-if(isset($_GET["campos_obrigatorios"]) ){
-
-	$mensagem = "Você deve preencher e-mail e senha!";
-} elseif(isset($_GET["dados_incorretos"])){
-	$mensagem = "Dados incorretos, verifique e-mail e/ou senha!";
-} elseif(isset($_GET["logout"])){
-	$mensagem = "Voce saiu do sistema.";
-}
-
-?>
 
         <div class="row">
             <div class="bg-white rounded shadow m-auto col-10 my-1 py-4">
@@ -84,12 +83,12 @@ if(isset($_GET["campos_obrigatorios"]) ){
             $email = $_POST['email'];
             $senha = $_POST['senha'];
         
-            // $dadosUsuario = buscaUsuario($conexao, $email);
+            $dadosUsuario = buscaAdministradores($conexao, $email);
         
             if( $dadosUsuario != null && password_verify($senha, $dadosUsuario['senha'])) {
         
-                // login($dadosUsuario['id'], $dadosUsuario['nome'], $dadosUsuario['tipo']);
-                // header("location:admin/index.php");
+                login($dadosUsuario['id'], $dadosUsuario['nome'], $dadosUsuario['tipo']);
+                header("location:doadores.php");
                 exit;
         
             } else {

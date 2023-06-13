@@ -17,3 +17,12 @@ CREATE TABLE contatos(
     mensagem TEXT NOT NULL
 );
 ```
+
+```sql
+CREATE TABLE administradores(
+    id SMALLINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(45) NOT NULL,
+    email VARCHAR(45) NOT NULL UNIQUE,
+    senha VARCHAR(255) NOT NULL
+);
+```

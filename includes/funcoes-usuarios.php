@@ -41,6 +41,21 @@ function formataData($data){
 
 
 
+// Usada em login.php
+function buscaAdministradores($conexao, $email){
+   
+    $sql = "SELECT * FROM administradores WHERE email = '$email'";
+
+    $resultado = mysqli_query($conexao, $sql) 
+                or die (mysqli_error($conexao));
+
+    return mysqli_fetch_assoc($resultado);
+    
+} // Fim buscaUsuario
+
+
+
+
 // função usada para sair 
 function logout() {
     session_start();
