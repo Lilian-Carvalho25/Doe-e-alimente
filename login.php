@@ -72,6 +72,8 @@ if(isset($_GET["campos_obrigatorios"]) ){
                     </form>
         
         <?php
+        
+
         if(isset($_POST["entrar"])){
         
             if(empty($_POST["email"]) || empty($_POST["senha"])){
@@ -82,12 +84,15 @@ if(isset($_GET["campos_obrigatorios"]) ){
         
             $email = $_POST['email'];
             $senha = $_POST['senha'];
+            var_dump($email, $senha);
+
         
             $dadosUsuario = buscaAdministradores($conexao, $email);
         
             if( $dadosUsuario != null && password_verify($senha, $dadosUsuario['senha'])) {
+
         
-                login($dadosUsuario['id'], $dadosUsuario['nome'], $dadosUsuario['tipo']);
+                login($dadosUsuario['id'], $dadosUsuario['email']);
                 header("location:doadores.php");
                 exit;
         

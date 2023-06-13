@@ -14,16 +14,16 @@ function verificaAcesso(){
 }
 
 
-function login ($id, $nome) {
+function login ($id, $email) {
     /* Criação de variáveis de sessão */
     $_SESSION['id'] = $id;
-    $_SESSION['nome'] = $nome;
+    $_SESSION['email'] = $email;
 }
 
 
-// function logout() {
-//     session_start();
-//     session_destroy();
-//     header("location:../login.php?logout");
-//     exit;
-// } 
+function logout() {
+    session_start();
+    session_destroy();
+    header("location:../login.php?logout");
+    exit;
+} 
