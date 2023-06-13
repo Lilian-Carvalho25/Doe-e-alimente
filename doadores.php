@@ -1,14 +1,17 @@
 <?php 
 require_once "includes/conecta.php";
 require_once "includes/funcoes-usuarios.php";
+require_once "includes/funcoes-sessao.php";
+verificaAcesso();
 
 if(isset($_GET["logout"])){
     logout();
 }
 
+$pagina = basename($_SERVER['PHP_SELF']);
+
 $doadores = lerTodosOsDoadores($conexao);
 ?>
-
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -67,8 +70,8 @@ $doadores = lerTodosOsDoadores($conexao);
 					foreach ($doadores as $doador) { ?>
     
                             <tr>
-                                <td> <?= $doadores["nome"] ?> </td>
-                                <td> <?= formataData($doadores["data"]) ?> </td>
+                                <td> <?= $doador["nome"] ?> </td>
+                                <td> <?= formataData($doador["data"]) ?> </td>
                             </tr>
                         <?php } ?>
                     </tbody>

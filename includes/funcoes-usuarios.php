@@ -52,14 +52,3 @@ function buscaAdministradores($conexao, $email){
     return mysqli_fetch_assoc($resultado);
     
 } // Fim buscaUsuario
-
-
-
-
-// função usada para sair 
-function logout() {
-    session_start();
-    session_destroy();
-    header("location:../login.php?logout");
-    exit;
-} 
