@@ -33,11 +33,9 @@
     </header>
 
     <main id="main-oq-fazemos">
-        <img src="imagens/dando-pote.jpg" alt="">
-        <section class="espaco-texto">
-            <p class="cor">O objetivo principal da Doe e alimente é redirecionar doações em dinheiro para projetos e ONG`s focados na luta contra a fome no Brasil. O público-alvo é direcionado para pessoas em situação de
-                vulnerabilidade social, como pessoas sem-teto, desempregadas ou com baixa renda. Essa iniciativa tem como
-                objetivo garantir que todas as pessoas tenham acesso a alimentos saudáveis e nutritivos.</p>
+            <img class="oq-fazemos-img oq-contein" src="imagens/dando-pote.jpg" alt="">
+            <section class="espaco-texto">
+           
             <p class="cor">Além disso, podemos ajudar a construir uma comunidade mais unida, inclusiva e justa, onde as pessoas se ajudam
                 mutuamente e trabalham juntas para enfrentar os desafios sociais. A sua doação é uma fonte de apoio
                 nutricional e emocional para aqueles que enfrentam dificuldades financeiras e sociais, e com certeza, salva vidas. </p>
@@ -47,10 +45,17 @@
                 desperdício e o impacto ambiental negativo. </p>
         </section>
 
-        <!-- <div class="aumento">
-            <p id="milhoes"><span id="sinal-mais">+</span> 32 milhões</p>
-            <p id="fome">De pessoas passam fome no Brasil</p>
-        </div> -->
+        <article class="fazemos-img1">
+                <div class="espaco-texto">
+                    <p class="cor">O objetivo principal da Doe e alimente é redirecionar doações em dinheiro para projetos e ONG`s focados na luta contra a fome no Brasil. O público-alvo é direcionado para pessoas em situação de
+                    vulnerabilidade social, como pessoas sem-teto, desempregadas ou com baixa renda. Essa iniciativa tem como
+                    objetivo garantir que todas as pessoas tenham acesso a alimentos saudáveis e nutritivos.</p>
+                </div>
+                <figure>
+                    <img class="" src="imagens/Meninofundo.png" alt="">
+                </figure>
+        </article>
+
     </main>
 
     <footer class="rodape">
