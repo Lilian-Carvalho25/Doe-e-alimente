@@ -8,8 +8,6 @@ if(isset($_GET["logout"])){
     logout();
 }
 
-$pagina = basename($_SERVER['PHP_SELF']);
-
 $doadores = lerTodosOsDoadores($conexao);
 ?>
 
