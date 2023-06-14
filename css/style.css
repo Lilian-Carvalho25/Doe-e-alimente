@@ -92,6 +92,17 @@ nav h2 a {
     color: #fffffa;
 }
 
+/* TEMA ESCURO */
+header nav li button {
+    border: none;
+    background: transparent;
+}
+
+.modo-noturno {
+    background-color: black;
+    color: white;
+}
+
 /* PÁGINA HOME */
 
 /* Destaque */
@@ -249,6 +260,10 @@ hr {
     max-height: 5vh;
 }
 
+.rodape img {
+    width: 40px;
+}
+
 .rodape p {
     padding-bottom: 6px;
 }
@@ -261,7 +276,6 @@ hr {
 /* Oq fazemos */
 
 #main-oq-fazemos {
-    /* background-color: */
     padding-bottom: 40px;
 }
 
