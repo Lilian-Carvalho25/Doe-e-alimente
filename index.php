@@ -29,6 +29,7 @@
                     <li><a href="contribuicao.php">Contribuição</a></li>
                     <li><a href="fale-conosco.php">Fale conosco</a></li>
                     <li><a href="login.php">Admin</a></li>
+                    <li><button id="noturno"><img src="imagens/icone-tema-claro-e-escuro.png" alt="" width="45px"></button></li>
                 </ul>
             </nav>
         </div>
@@ -36,12 +37,14 @@
 
     <main id="container-home">
 
-       <section id="destaque-home">
-        <div id="escrita">
-            <h2>Doe e alimente</h2>
-            <p>Sua doação pode salvar a vida de alguém.</p>
-            <button id="botao-rapido"><a href="contribuicao.php"><span>DOE AGORA</span><i></i></a></button>
-        </div>
+       <section id="video-container">
+           <div id="destaque-home">
+            <div id="escrita">
+                <h2>Doe e alimente</h2>
+                <p>Sua doação pode salvar a vida de alguém.</p>
+                <button id="botao-rapido"><a href="contribuicao.php"><span>DOE AGORA</span><i></i></a></button>
+            </div>
+           </div>
        </section>
 
         <section class="conteudo">
@@ -141,7 +144,7 @@
     <footer class="rodape">
         <p>Nos acompanhe em nossas redes sociais:</p>
         <img src="imagens/logo-instagram.png" alt="Logo Instagram">
-        <img src="imagens/logo-facebook.png" alt="Logo Facebook">
+        <img src="imagens/logo-github.png" alt="Logo Github">
         <p>2023</p>
     </footer>
 
