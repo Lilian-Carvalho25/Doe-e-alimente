@@ -29,7 +29,6 @@
                     <li><a href="contribuicao.php">Contribuição</a></li>
                     <li><a href="fale-conosco.php">Fale conosco</a></li>
                     <li><a href="login.php">Admin</a></li>
-                    <li><button id="noturno"><img src="imagens/icone-tema-claro-e-escuro.png" alt="" width="45px"></button></li>
                 </ul>
             </nav>
         </div>
@@ -143,8 +142,8 @@
 
     <footer class="rodape">
         <p>Nos acompanhe em nossas redes sociais:</p>
-        <img src="imagens/logo-instagram.png" alt="Logo Instagram">
-        <img src="imagens/logo-github.png" alt="Logo Github">
+        <a href="https://www.instagram.com/" target="_blank"><img src="imagens/logo-insta.png" alt="Logo Instagram"></a>
+        <a href="https://github.com/Lilian-Carvalho25/Doe-e-alimente" target="_blank"><img src="imagens/logo-github.png" alt="Logo Github"></a>
         <p>2023</p>
     </footer>
 

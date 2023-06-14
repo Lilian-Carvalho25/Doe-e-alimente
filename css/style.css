@@ -84,17 +84,6 @@ nav h2 a {
     color: #fffffa;
 }
 
-/* TEMA ESCURO */
-header nav li button {
-    border: none;
-    background: transparent;
-}
-
-.modo-noturno {
-    background-color: black;
-    color: white;
-}
-
 /* PÁGINA HOME */
 
 /* Destaque */
@@ -1479,7 +1468,7 @@ form{
     }
 
     .espaco-texto p {
-        font-size: 20px;
+        font-size: 17px;
     }
 
     .alinhamento-inseguranca p {
@@ -1487,7 +1476,7 @@ form{
     }
 
     .rodape p {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     #container-contribuicao img {
@@ -1548,7 +1537,7 @@ form{
     }
 
     .espaco-texto p {
-        font-size: 25px;
+        font-size: 19px;
     }
 
     .alinhamento-inseguranca p {
@@ -1556,7 +1545,7 @@ form{
     }
 
     .rodape p {
-        font-size: 25px;
+        font-size:18px;
     }
 
     #container-contribuicao img {

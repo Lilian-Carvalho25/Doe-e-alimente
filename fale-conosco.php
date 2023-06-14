@@ -107,8 +107,8 @@ if(isset($_POST['enviar'])){
 
     <footer class="rodape">
         <p>Nos acompanhe em nossas redes sociais:</p>
-        <img src="imagens/logo-instagram.png" alt="">
-        <img src="imagens/logo-facebook.png" alt="">
+        <a href="https://www.instagram.com/" target="_blank"><img src="imagens/logo-insta.png" alt="Logo Instagram"></a>
+        <a href="https://github.com/Lilian-Carvalho25/Doe-e-alimente" target="_blank"><img src="imagens/logo-github.png" alt="Logo Github"></a>
     </footer>
 
 

@@ -21,7 +21,6 @@ if(isset($_POST['prosseguir'])){
     <link rel="shortcut icon" href="imagens/panelinha.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <title>Doe e alimente - Contribuição</title>
-    <script src="https://donorbox.org/widget.js" paypalExpress="false"></script>
 
 <body>
 
@@ -245,8 +244,8 @@ if(isset($_POST['prosseguir'])){
 
     <footer class="rodape">
         <p>Nos acompanhe em nossas redes sociais:</p>
-        <img src="imagens/logo-instagram.png" alt="">
-        <img src="imagens/logo-facebook.png" alt="">
+        <a href="https://www.instagram.com/" target="_blank"><img src="imagens/logo-insta.png" alt="Logo Instagram"></a>
+        <a href="https://github.com/Lilian-Carvalho25/Doe-e-alimente" target="_blank"><img src="imagens/logo-github.png" alt="Logo Github"></a>
         <p>2023</p>
     </footer>
 
