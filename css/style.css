@@ -873,7 +873,7 @@ input {
     margin-top: 0.7rem;
 }
 
-.espaco-texto h2 {
+.alinhamento-flex h2, .alinhamento2-flex h2 {
     color: #8C0303;
 }
 
