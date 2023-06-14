@@ -49,11 +49,11 @@ if(isset($_POST['enviar'])){
 
 
 
-    <main>
+    <main class="contato-main">
         <h2 class="duvida">Fale conosco</h2>
 
         <div class="container-contato">
-        <figure>
+        <figure class="contato-figura">
             <img src="imagens/ft-lilian.png" alt="Lilian">
             <img src="imagens/ft-plinio.png" alt="Plínio">
             <img src="imagens/ft-salatiel.png" alt="Salatiel">

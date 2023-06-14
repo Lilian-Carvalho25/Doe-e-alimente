@@ -16,7 +16,7 @@
 
 
     <header>
-      
+
         <div class="limitador">
             <a href="index.php"><img src="imagens/Logo.png" alt=""></a>
             <nav>
@@ -33,33 +33,67 @@
     </header>
 
     <main id="main-oq-fazemos">
-            <img class="oq-fazemos-img oq-contein" src="imagens/dando-pote.jpg" alt="">
-            <section class="espaco-texto">
-           
-            <p class="cor">Além disso, podemos ajudar a construir uma comunidade mais unida, inclusiva e justa, onde as pessoas se ajudam
-                mutuamente e trabalham juntas para enfrentar os desafios sociais. A sua doação é uma fonte de apoio
-                nutricional e emocional para aqueles que enfrentam dificuldades financeiras e sociais, e com certeza, salva vidas. </p>
-            <p class="cor">O foco da Doe e alimente também é reduzir o desperdício de alimentos, já que em alguns casos, os alimentos que
-                são doados para essas cozinhas são produtos que de outra forma seriam jogados fora, mas que ainda estão em
-                perfeitas condições de consumo. Ao aproveitar esses alimentos, as cozinhas solidárias podem ajudar a reduzir o
-                desperdício e o impacto ambiental negativo. </p>
-        </section>
-
-        <article class="fazemos-img1">
-                <div class="espaco-texto">
-                    <p class="cor">O objetivo principal da Doe e alimente é redirecionar doações em dinheiro para projetos e ONG`s focados na luta contra a fome no Brasil. O público-alvo é direcionado para pessoas em situação de
-                    vulnerabilidade social, como pessoas sem-teto, desempregadas ou com baixa renda. Essa iniciativa tem como
-                    objetivo garantir que todas as pessoas tenham acesso a alimentos saudáveis e nutritivos.</p>
+        <!--  <img class="oq-fazemos-img oq-contein" src="imagens/dando-pote.jpg" alt=""> -->
+        <section class="espaco-texto">
+            <article class="fazemos-img1">
+                
+                
+                <h1>O que fazemos</h1>
+                <div class="texto-fazemos">
+                    <div class="fazemos">
+                        <p class="cor">Além disso, podemos ajudar a construir uma comunidade mais unida, inclusiva e justa,
+                            onde as pessoas se ajudam
+                            mutuamente e trabalham juntas para enfrentar os desafios sociais. A sua doação é uma fonte de
+                            apoio
+                            nutricional e emocional para aqueles que enfrentam dificuldades financeiras e sociais, e com
+                            certeza, salva vidas. </p>
+                    </div>
                 </div>
-                <figure>
-                    <img class="" src="imagens/Meninofundo.png" alt="">
-                </figure>
-        </article>
 
+
+                <div class="alinhamento-flex">
+                    <figure>
+                        <img src="imagens/meninaFundo.jpg" alt="">
+                    </figure>
+
+                    <div class="espaco-texto">
+                        <h2>Nosso foco</h2>
+                        <hr>
+                        <p class="cor">O foco da Doe e alimente também é reduzir o desperdício de alimentos, já que em
+                            alguns casos, os alimentos que
+                            são doados para essas cozinhas são produtos que de outra forma seriam jogados fora, mas que
+                            ainda estão em
+                            perfeitas condições de consumo. Ao aproveitar esses alimentos, as cozinhas solidárias podem
+                            ajudar a reduzir o
+                            desperdício e o impacto ambiental negativo. </p>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="fazemos-img1">
+                <div class="alinhamento2-flex">
+                    <figure>
+                        <img class="" src="imagens/meninoFundo.jpg" alt="">
+                    </figure>
+                    <div class="espaco-texto">
+                        <h2>Objetivo</h2>
+                        <hr>
+                        <p class="cor">O objetivo principal da Doe e alimente é redirecionar doações em dinheiro para
+                            projetos e ONG`s focados na luta contra a fome no Brasil. O público-alvo é direcionado para
+                            pessoas em situação de
+                            vulnerabilidade social, como pessoas sem-teto, desempregadas ou com baixa renda. Essa
+                            iniciativa tem como
+                            objetivo garantir que todas as pessoas tenham acesso a alimentos saudáveis e nutritivos.</p>
+                    </div>
+                </div>
+
+            </article>
+        </section>
     </main>
 
     <footer class="rodape">
-        <p>Nos acompanhe em nossas redes sociais:</p> 
+        <p>Nos acompanhe em nossas redes sociais:</p>
         <img src="imagens/logo-instagram.png" alt="">
         <img src="imagens/logo-facebook.png" alt="">
         <p>2023</p>

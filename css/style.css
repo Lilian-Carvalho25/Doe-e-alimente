@@ -2,31 +2,39 @@
 
 * {
     box-sizing: border-box;
-    
+
 }
 
 html {
     font-size: 14px;
 }
 
-body { 
-    font-family: "Plus Jakarta Sans",'Courier New', Courier, monospace; 
+body {
+    font-family: "Plus Jakarta Sans", 'Courier New', Courier, monospace;
     /* height: 100vh;   */
 }
 
 h2 {
-    font-family: "Raleway",'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Raleway", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-body, h1, h2, p, figure, .menu, img {
+body,
+h1,
+h2,
+p,
+figure,
+.menu,
+img {
     margin: 0;
     padding: 0;
 }
 
-a { text-decoration: none; }
+a {
+    text-decoration: none;
+}
 
 header {
-   /* margin-top: 0.4rem; */
+    /* margin-top: 0.4rem; */
     position: sticky;
     top: 0;
     background-color: #f5f5f5;
@@ -88,7 +96,7 @@ nav h2 a {
 
 /* Destaque */
 #destaque-home {
-    background:url(../imagens/dando-marmita.jpeg);
+    background: url(../imagens/dando-marmita.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -116,11 +124,11 @@ nav h2 a {
 }
 
 #destaque-home #escrita h2 {
-    font-size: clamp(3rem,6vw,6rem);
+    font-size: clamp(3rem, 6vw, 6rem);
 }
 
 #destaque-home #escrita p {
-    font-size: clamp(1rem,2vw,2rem);
+    font-size: clamp(1rem, 2vw, 2rem);
 }
 
 #destaque-home h2 {
@@ -151,7 +159,7 @@ nav h2 a {
     text-align: start;
     margin-top: 15px;
     max-width: 400px;
-    border-left: #f5f5f5 4px solid; 
+    border-left: #f5f5f5 4px solid;
     padding-left: 15px;
 }
 
@@ -249,10 +257,11 @@ hr {
     width: 95vw;
     margin: auto;
 }
+
 /* Oq fazemos */
 
 #main-oq-fazemos {
-    background-color:
+    /* background-color: */
     padding-bottom: 40px;
 }
 
@@ -262,11 +271,16 @@ hr {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
-.oq-contein{
-        
+
+.oq-contein {
+
     object-fit: cover;
+}
+.texto-fazemos{
+    text-align: center;
+    margin-left: 30px;
 }
 
 .cor {
@@ -277,14 +291,14 @@ hr {
     text-align: center;
     margin: 0 auto;
     padding-bottom: 1.6rem;
-    font-family: "Raleway",'Courier New', Courier, monospace;
+    font-family: "Raleway", 'Courier New', Courier, monospace;
 }
 
 .aumento #sinal-mais {
     font-size: 45px;
     color: #8C0303;
     font-weight: 700;
-    
+
 }
 
 .aumento #milhoes {
@@ -297,16 +311,20 @@ hr {
     font-weight: bold;
 }
 
-.fazemos-img1 img{
-    width: 250px;
-    height: 200px;
-}
-.fazemos-img1 figure{
+.fazemos-img1 img {
 
-    width: 250px;
-    margin: 0 auto;
-    
+    height: 300px;
+    margin-top: 20px;
+
 }
+
+.fazemos-img1 figure {
+    display: flex;
+    justify-content: center;
+
+
+}
+
 /* Contribução */
 
 /* Cartão interativo */
@@ -318,16 +336,16 @@ hr {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     min-height: 60vh;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     font-family: 'Raleway';
 }
 
@@ -366,7 +384,7 @@ hr {
     grid-column-gap: 10px;
     grid-template-columns: auto auto;
     grid-template-rows: 90px 90px 90px;
-    grid-template-areas: "name name""number number""expiration security";
+    grid-template-areas: "name name" "number number" "expiration security";
     max-width: 400px;
     padding: 20px;
     color: #707070;
@@ -429,7 +447,7 @@ input {
     border-radius: 22px;
 }
 
-#generatecard{
+#generatecard {
     cursor: pointer;
     float: right;
     font-size: 12px;
@@ -438,7 +456,7 @@ input {
     background-color: #909090;
     border-radius: 4px;
     cursor: pointer;
-    float:right;
+    float: right;
 }
 
 /* CHANGEABLE CARD ELEMENTS */
@@ -675,7 +693,7 @@ input {
 }
 
 #container-confirmar h3 {
-    font-family: "Fira sans",'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Fira sans", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: normal;
 }
 
@@ -686,7 +704,8 @@ input {
 /* Botões animados */
 
 
-#destaque-home button, #container-confirmar button {
+#destaque-home button,
+#container-confirmar button {
     position: relative;
     background: transparent;
     color: #8C0303;
@@ -697,35 +716,40 @@ input {
     font-size: 1rem;
     padding: 1rem 3rem;
     transition: 0.2s;
-  }
-  
-  #destaque-home button:hover, #container-confirmar button:hover {
+}
+
+#destaque-home button:hover,
+#container-confirmar button:hover {
     letter-spacing: 0.2rem;
     padding: 1.1rem 3.1rem;
     background: #8C0303;
     color: #8C0303;
     /* box-shadow: 0 0 35px var(--clr); */
     animation: box 3s infinite;
-  }
-  
-  #container-confirmar button::before {
+}
+
+#container-confirmar button::before {
     content: "";
     position: absolute;
     inset: 2px;
     background: white;
-  }
-  
-  #destaque-home button span, #container-confirmar button span {
+}
+
+#destaque-home button span,
+#container-confirmar button span {
     position: relative;
     z-index: 1;
-  }
-  #destaque-home button i, #container-confirmar button i {
+}
+
+#destaque-home button i,
+#container-confirmar button i {
     position: absolute;
     inset: 0;
     display: block;
-  }
-  
-   #destaque-home button i::before, #container-confirmar button i::before {
+}
+
+#destaque-home button i::before,
+#container-confirmar button i::before {
     content: "";
     position: absolute;
     width: 10px;
@@ -735,15 +759,17 @@ input {
     border: 2px solid #8C0303;
     background: white;
     transition: 0.2s;
-  }
-  
-  #destaque-home button:hover i::before, #container-confirmar button:hover i::before {
+}
+
+#destaque-home button:hover i::before,
+#container-confirmar button:hover i::before {
     width: 15px;
     left: 20%;
     animation: move 3s infinite;
-  }
-  
-  #destaque-home button i::after, #container-confirmar button i::after {
+}
+
+#destaque-home button i::after,
+#container-confirmar button i::after {
     content: "";
     position: absolute;
     width: 10px;
@@ -753,15 +779,18 @@ input {
     border: 2px solid #8C0303;
     background: white;
     transition: 0.2s;
-  }
-  
-  #destaque-home button:hover i::after, #destaque-home button:hover i::after {
+}
+
+#destaque-home button:hover i::after,
+#destaque-home button:hover i::after {
     width: 15px;
     left: 80%;
     animation: move 3s infinite;
-  }
+}
 
-  #botao-rapido, #botao-rapido::before, #botao-rapido::after {
+#botao-rapido,
+#botao-rapido::before,
+#botao-rapido::after {
     background: transparent;
     color: white;
 }
@@ -770,52 +799,79 @@ input {
     color: white;
 }
 
-#botao-rapido:hover , #botao-rapido a:hover{
+#botao-rapido:hover,
+#botao-rapido a:hover {
     background-color: #8C0303;
     color: white;
 }
 
-  
-  @keyframes move {
+
+@keyframes move {
     0% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
+
     50% {
-      transform: translateX(5px);
+        transform: translateX(5px);
     }
+
     100% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
-  }
-  
-  @keyframes box {
+}
+
+@keyframes box {
     0% {
-      box-shadow: #27272c;
+        box-shadow: #27272c;
     }
+
     50% {
-      box-shadow: 0 0 25px #8C0303;
+        box-shadow: 0 0 25px #8C0303;
     }
+
     100% {
-      box-shadow: #27272c;
+        box-shadow: #27272c;
     }
-  }
-  
+}
 
 
 
-#container-contribuicao p, #alinhamento-paragrafo-home p, #main-oq-fazemos p {
+
+#container-contribuicao p,
+#alinhamento-paragrafo-home p,
+#main-oq-fazemos p {
     text-align: left;
     margin-top: 22px;
-} 
+    line-height: 23px;
+}
+
+.espaco-texto h1 {
+    font-size: 1.8rem;
+    margin-top: 5px;
+}
 
 .espaco-texto {
     max-width: 90%;
     text-align: center;
     margin-left: 1.7rem;
+
+}
+
+
+.espaco-texto h2 {
+    margin-top: 1.5rem;
+
+}
+
+.espaco-texto hr {
+
+    width: 110px;
+    margin: 0 auto;
+    margin-top: 0.7rem;
 }
 
 .espaco-texto h2 {
-    margin-top: 2rem;
+    color: #8C0303;
 }
 
 #container-contribuicao figure {
@@ -825,7 +881,8 @@ input {
     margin-bottom: 1rem;
 }
 
-#contribuicao h2, #formas-de-pagamento h2 {
+#contribuicao h2,
+#formas-de-pagamento h2 {
     text-align: center;
 }
 
@@ -870,7 +927,7 @@ input {
     font-family: "fira sans", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#container-selecao .caixas textarea{
+#container-selecao .caixas textarea {
     border: none;
     border-bottom: white 1px solid;
 }
@@ -921,13 +978,12 @@ input {
     left: 0;
     padding: 10px;
     font-size: 0.95em;
-    color: rgba(128, 128, 128, 0.515); 
+    color: rgba(128, 128, 128, 0.515);
     text-transform: uppercase;
 }
 
-.inputBox input:valid ~ span ,
-.inputBox input:focus ~ span 
-{
+.inputBox input:valid~span,
+.inputBox input:focus~span {
     color: #8C0303;
     transform: translateX(10px) translateY(-7px);
     transition: 0.5s;
@@ -939,26 +995,26 @@ input {
     letter-spacing: 0.1em;
 }
 
-.inputBox:nth-child(1) input:valid ~ span ,
-.inputBox:nth-child(1) input:focus ~ span
-{
+.inputBox:nth-child(1) input:valid~span,
+.inputBox:nth-child(1) input:focus~span {
     background: #8C0303;
     color: white;
     border-radius: 2px;
 }
 
 .inputBox input:valid,
-.inputBox input:focus 
-{
+.inputBox input:focus {
     border: 1px solid #8C0303;
 }
 
-.inputTextarea textarea:focus, input:focus, select:focus {
+.inputTextarea textarea:focus,
+input:focus,
+select:focus {
     box-shadow: 0 0 0 0;
     border: none;
     border: #8C0303 2px solid;
     outline: 0;
-} 
+}
 
 /* Formas de pagamento */
 #container-formas:not(button) {
@@ -974,7 +1030,7 @@ input {
     background-color: #8C0303;
     color: #fffffa;
     text-transform: uppercase;
-    font-family: "raleway",'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "raleway", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-radius: 23px;
     display: flex;
     align-items: center;
@@ -990,7 +1046,7 @@ input {
 #container-formas button {
     background-color: #8C0303;
     color: #fffffa;
-    font-family: "raleway",'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "raleway", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-radius: 15px;
     text-transform: uppercase;
     padding: 10px 15px;
@@ -999,27 +1055,31 @@ input {
 
 /* Contato vinicius */
 
-main h2{
+.contato-main h2 {
     text-align: center;
     text-transform: inherit;
 }
+
 .container-contato {
     max-width: 100%;
 }
-figure{
+
+.contato-figura {
     display: flex;
     justify-content: space-around;
-    
+
 }
-.nome{
+
+.nome {
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-family: "Fira Sans";
-    margin:3px 0 3px 5px ;
-    
+    margin: 3px 0 3px 5px;
+
 }
-.email{
+
+.email {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -1028,26 +1088,33 @@ figure{
 .email img {
     width: 27px;
 }
-a{
+
+a {
     color: black;
 }
-a:hover{
-    color:rgb(25, 25, 155);
+
+a:hover {
+    color: rgb(25, 25, 155);
 }
-.duvida{
+
+.duvida {
     margin-top: 20px;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
-form{
+
+form {
     margin: 1rem;
 }
-.forme{
+
+.forme {
     margin-top: 20px;
 }
 
 /* LOGIN */
 
-#form-login button, .nao-autorizado a, .doadores h2 span {
+#form-login button,
+.nao-autorizado a,
+.doadores h2 span {
     background-color: #8C0303;
     color: white;
 }
@@ -1061,32 +1128,35 @@ form{
 /* RESPONSIVIDADE */
 
 /* RESPONSIVIDADE MENU */
-@media screen and (min-width: 600px){
-    nav h2{
-        display:none;
+@media screen and (min-width: 600px) {
+    nav h2 {
+        display: none;
     }
-    .menu{
+
+    .menu {
         display: flex;
         justify-content: end;
     }
-    .menu li{
+
+    .menu li {
         width: 100%
     }
-    nav{
+
+    nav {
         width: 70%;
     }
 
     nav ul li {
         display: inline-block;
         margin: 0 10px;
-      }
-      
-      nav a {
+    }
+
+    nav a {
         position: relative;
         transition: 0.3s ease;
-      }
-      
-      nav a:before {
+    }
+
+    nav a:before {
         content: '';
         position: absolute;
         width: 88%;
@@ -1097,29 +1167,29 @@ form{
         visibility: hidden;
         transform: scaleX(0);
         transition: 0.3s ease;
-      }
-      
-      nav a:hover:before {
+    }
+
+    nav a:hover:before {
         visibility: visible;
         transform: scaleX(1);
         text-decoration: none;
-      }
+    }
 }
 
 /* RESPONSIVIDADE DA PÁGINA HOME */
-@media screen and (min-width:1263px){
+@media screen and (min-width:1263px) {
 
     #container-inseguranca {
         padding: 90px;
     }
 
     #flex-cartoes {
-       display: flex;
+        display: flex;
         justify-content: space-evenly;
         align-items: center;
         gap: 20px;
     }
-    
+
     /* .alinhamento-inseguranca p {
         max-width: 500px;
     }
@@ -1132,19 +1202,19 @@ form{
     .alinhamento-inseguranca .titulo-e-paragrafo p {
         font-size: 80px;
     } */
-    .oq-contein{
-        
+    .oq-contein {
+
         object-fit: cover;
     }
 }
 
-@media screen and (min-width:1214px){
+@media screen and (min-width:1214px) {
     #destaque-home {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    } 
+    }
 
     .contexto {
         max-width: 70%;
@@ -1168,19 +1238,21 @@ form{
         width: 73px;
         height: 70px;
     }
-    .oq-contein{
-        
+
+    .oq-contein {
+
         object-fit: cover;
     }
 
 }
 
-@media screen and (min-width:1402px){
+@media screen and (min-width:1402px) {
     #container-contexto {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     .parte-de-cima {
         display: flex;
         align-items: center;
@@ -1196,24 +1268,26 @@ form{
         max-width: 80%;
         margin: 0 auto;
     }
-    .oq-contein{
-        
+
+    .oq-contein {
+
         object-fit: cover;
     }
 }
 
 /* A PARTIR DE 1601PX */
-@media screen and (min-width:1601px){
+@media screen and (min-width:1601px) {
     #carrossel-home {
         max-width: 87%;
         margin: 55px auto;
-    } 
+    }
 
     #container-contexto {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     .parte-de-cima {
         display: flex;
         align-items: center;
@@ -1276,15 +1350,16 @@ form{
         margin: 0 auto;
         gap: 80px;
     }
-    .oq-contein{
-        
+
+    .oq-contein {
+
         object-fit: cover;
     }
 }
 
 /* RESPONSIVIDADE DA PÁGINA CONTRIBUIÇÃO */
 @media screen and (min-width:540px) {
-    .espaco-texto{
+    .espaco-texto {
         margin-left: 2rem;
     }
 
@@ -1292,15 +1367,16 @@ form{
         font-size: 17px;
     }
 
-    .img-contribuicao{
+    .img-contribuicao {
         text-align: center;
     }
 
-    #container-contribuicao img{
+    #container-contribuicao img {
         width: 500px;
     }
-    .oq-contein{
-        
+
+    .oq-contein {
+
         object-fit: cover;
     }
 }
@@ -1312,15 +1388,16 @@ form{
         margin-left: 65px
     }
 
-    #container-contribuicao img{
+    #container-contribuicao img {
         width: 550px;
     }
 
     #container-formulario {
         max-width: 1400px;
     }
-    .oq-contein{
-        
+
+    .oq-contein {
+
         object-fit: cover;
     }
 
@@ -1328,15 +1405,28 @@ form{
 
 /* A PARTIR DE 778PX */
 @media screen and (min-width:778px) {
+    #main-oq-fazemos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .fazemos{
+        
+        text-align: center;
+        left: 50px;
+    }
     .espaco-texto {
-        margin-left: 75px;
+        margin: 0px 25px;
     }
 
     #titulo-inseguranca {
         font-size: 18px;
     }
 
-    #leve, #moderada, #grave {
+    #leve,
+    #moderada,
+    #grave {
         padding: 8px;
         border-radius: 6px;
         max-width: 550px;
@@ -1349,11 +1439,27 @@ form{
     /* .alinhamento-inseguranca p {
         margin-left: 130px;
     } */
-    .oq-contein{
-        
+    .oq-contein {
+
         object-fit: cover;
     }
+
+    .alinhamento-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .alinhamento2-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
 }
+
+
+
 
 /* A PARTIR DE 1158PX */
 @media screen and (min-width:1158px) {
@@ -1370,7 +1476,7 @@ form{
         margin-left: 190px;
     }
 
-    #container-contribuicao img{
+    #container-contribuicao img {
         width: 700px;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -1388,7 +1494,7 @@ form{
         font-size: 20px;
     }
 
-    #container-formas button{
+    #container-formas button {
         padding: 15px 20px;
     }
 
@@ -1398,7 +1504,7 @@ form{
         max-width: 150px;
     }
 
-    #container-selecao .caixas textarea{
+    #container-selecao .caixas textarea {
         margin-top: 7px;
     }
 
@@ -1406,23 +1512,23 @@ form{
         margin-bottom: 26px;
     }
 
-    .oq-contein{
-        
+    .oq-contein {
+
         object-fit: cover;
     }
 
 }
 
 /* A PARTIR DE 1334PX */
-@media screen and (min-width:1334px){
-    .espaco-texto{
+@media screen and (min-width:1334px) {
+    .espaco-texto {
         margin-left: 210px;
     }
 }
 
 /* A PARTIR DE 1450PX */
-@media screen and (min-width:1450px){
-    .espaco-texto{
+@media screen and (min-width:1450px) {
+    .espaco-texto {
         max-width: 62%;
         margin-left: 285px;
     }
@@ -1432,21 +1538,22 @@ form{
         width: 790px;
     }
 
-    #container-formulario form{
+    #container-formulario form {
         max-width: 600px;
     }
 
     #container-formulario label {
         font-size: 20px;
     }
-    .oq-contein{
-        
+
+    .oq-contein {
+
         object-fit: cover;
     }
 }
 
 /* A PARTIR DE 1450px */
-@media screen and (min-width:1450px){
+@media screen and (min-width:1450px) {
     nav a {
         font-size: 20px;
     }
@@ -1454,13 +1561,15 @@ form{
     header a img {
         width: 180px;
     }
-    
-    .espaco-texto{
+
+    .espaco-texto {
         max-width: 70%;
         margin: 0 auto;
     }
 
-    .espaco-texto h2, #contribuicao h2, #formas-de-pagamento h2 {
+    .espaco-texto h2,
+    #contribuicao h2,
+    #formas-de-pagamento h2 {
         font-size: 26px;
     }
 
@@ -1494,42 +1603,45 @@ form{
         width: 15rem;
     }
 
-    #container-selecao .caixas textarea::placeholder{
+    #container-selecao .caixas textarea::placeholder {
         font-size: 16px;
     }
 
     #container-formas label {
         width: 700px;
         margin-top: 4px;
-    } 
+    }
 
     #container-formas input {
         height: 1.3rem;
         width: 1.5rem;
         margin-left: 13px;
-        margin-bottom: 5px; 
+        margin-bottom: 5px;
     }
 
     #container-formas button {
         width: 130px;
     }
-    .oq-contein{
-        
+
+    .oq-contein {
+
         object-fit: cover;
     }
 }
 
 /* A PARTIR DE 1540PX */
-@media screen and (min-width:1540px){
+@media screen and (min-width:1540px) {
     nav a {
         font-size: 20px;
     }
 
-    .espaco-texto{
+    .espaco-texto {
         max-width: 75%;
     }
 
-    .espaco-texto h2, #contribuicao h2, #formas-de-pagamento h2 {
+    .espaco-texto h2,
+    #contribuicao h2,
+    #formas-de-pagamento h2 {
         font-size: 30px;
     }
 
@@ -1553,14 +1665,15 @@ form{
     #container-formulario .caixas {
         margin-left: 90px;
     }
-    .oq-contein{
-        
+
+    .oq-contein {
+
         object-fit: cover;
     }
 }
 
 /* A PARTIR DE 2021PX */
-@media screen and (min-width:2010px){
+@media screen and (min-width:2010px) {
     #container-formulario .caixas {
         margin-left: 300px;
         max-width: 900px;
@@ -1571,12 +1684,12 @@ form{
 /* RESPONSIVIDADE FALE CONOSCO */
 
 /* A PARTIR DE 740PX */
-@media screen and (min-width:740px){
+@media screen and (min-width:740px) {
     .container-contato figure img {
         margin-bottom: 6px;
         width: 100px;
     }
-    
+
     .container-contato p {
         font-size: 20px;
     }
@@ -1595,11 +1708,11 @@ form{
         margin-top: 25px;
     }
 
-    #container-formulario2 .caixas textarea::placeholder{
+    #container-formulario2 .caixas textarea::placeholder {
         font-size: 14px;
     }
 
-    #container-formulario2 ::placeholder{
+    #container-formulario2 ::placeholder {
         font-size: 13px;
     }
 
@@ -1607,13 +1720,10 @@ form{
         font-size: 22px;
         margin-top: 4px;
     }
-    .oq-contein{
-        
+
+    .oq-contein {
+
         object-fit: cover;
     }
 
 }
-
-
-
-
