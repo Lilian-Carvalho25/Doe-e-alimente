@@ -1486,6 +1486,9 @@ form {
     .espaco-texto {
         margin-left: 210px;
     }
+    .fundo-oq{
+        background-size: cover;
+    }
 }
 
 /* A PARTIR DE 1402PX - MAIORIA SOBRE AS PÁGINAS HOME/O QUE FAZEMOS */
