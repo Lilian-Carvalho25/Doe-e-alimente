@@ -11,7 +11,6 @@ html {
 
 body {
     font-family: "Plus Jakarta Sans", 'Courier New', Courier, monospace;
-    /* height: 100vh;   */
 }
 
 h2 {
@@ -33,6 +32,10 @@ img {
 
 a {
     text-decoration: none;
+}
+
+header li :hover {
+    color: black;
 }
 
 header {
@@ -986,7 +989,7 @@ select:focus {
 }
 
 
-/* RESPONSIVIDADE */
+/* RESPONSIVIDADE - DA MENOR PARA A MAIOR */
 
 /* A PARTIR DE 540PX - MAIORIA SOBRE ESPAÇAMENTO DE TEXTO */
 @media screen and (min-width:540px) {
