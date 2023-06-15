@@ -1140,7 +1140,31 @@ form {
 
 /* RESPONSIVIDADE */
 
-/* RESPONSIVIDADE MENU */
+/* A PARTIR DE 540PX - MAIORIA SOBRE ESPAÇAMENTO DE TEXTO */
+@media screen and (min-width:540px) {
+    .espaco-texto {
+        margin-left: 2rem;
+    }
+
+    .alinhamento-inseguranca p {
+        font-size: 17px;
+    }
+
+    .img-contribuicao {
+        text-align: center;
+    }
+
+    #container-contribuicao img {
+        width: 500px;
+    }
+
+    .oq-contein {
+
+        object-fit: cover;
+    }
+}
+
+/* A PARTIR DE 600PX - MENU INCLUÍDO */
 @media screen and (min-width: 600px) {
     nav h2 {
         display: none;
@@ -1189,237 +1213,11 @@ form {
     }
 }
 
-/* RESPONSIVIDADE DA PÁGINA HOME */
-@media screen and (min-width:1263px) {
-
-    #container-inseguranca {
-        padding: 90px;
-    }
-
-    #flex-cartoes {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        gap: 20px;
-    }
-
-    /* .alinhamento-inseguranca p {
-        max-width: 500px;
-    }
-
-    #titulo-inseguranca {
-        font-size: 90px;
-
-    }
-
-    .alinhamento-inseguranca .titulo-e-paragrafo p {
-        font-size: 80px;
-    } */
-    .oq-contein {
-
-        object-fit: cover;
-    }
-}
-
-@media screen and (min-width:1214px) {
-    #destaque-home {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .contexto {
-        max-width: 70%;
-        text-align: start;
-        margin-bottom: 35px;
-    }
-
-    .contexto h6 {
-        font-size: 22px;
-    }
-
-    .contexto p {
-        font-size: 17px;
-    }
-
-    .alinhamento-inseguranca p {
-        font-size: 17px;
-    }
-
-    .contexto img {
-        width: 73px;
-        height: 70px;
-    }
-
-    .oq-contein {
-
-        object-fit: cover;
-    }
-    .fundo-oq{
-        background-position: 0px -250px;
-        
-    }
-
-}
-
-@media screen and (min-width:1402px) {
-    #container-contexto {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .alinhamento-flex .espaco-texto, .alinhamento2-flex .espaco-texto {
-        margin-left: 0px;
-    }
-
-    .em-cima {
-        width: 100%;
-        width: 500px;
-    }
-
-    .em-baixo {
-        width: 100%;
-        width: 370px;
-    }
-
-    .parte-de-cima {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-width: 80%;
-        margin: 0 auto;
-    }
-
-    .parte-de-baixo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-width: 80%;
-        margin: 0 auto;
-    }
-
-    .oq-contein {
-
-        object-fit: cover;
-    }
-    .fundo-oq{
-        background-position: 0px -300px;
-    }
-}
-
-/* A PARTIR DE 1601PX */
-@media screen and (min-width:1601px) {
-    #carrossel-home {
-        max-width: 87%;
-        margin: 55px auto;
-    }
-
-    #container-contexto {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .parte-de-cima {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-width: 80%;
-        margin: 0 auto;
-    }
-
-    .parte-de-baixo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-width: 80%;
-        margin: 0 auto;
-    }
-
-    .contexto {
-        max-width: 50%;
-    }
-
-    .contexto h6 {
-        font-size: 29px;
-    }
-
-    .contexto p {
-        font-size: 24px;
-    }
-
-    .alinhamento-inseguranca p {
-        font-size: 24px;
-    }
-
-    .contexto img {
-        width: 95px;
-        height: 89px;
-    }
-
-}
-
-@media screen and (min-width:2021px) {
-
-    .contexto {
-        max-width: 40%;
-    }
-
-    .parte-de-cima {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-width: 80%;
-        margin: 0 auto;
-        gap: 80px;
-    }
-
-    .parte-de-baixo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-width: 80%;
-        margin: 0 auto;
-        gap: 80px;
-    }
-
-    .oq-contein {
-
-        object-fit: cover;
-    }
-}
-
-/* RESPONSIVIDADE DA PÁGINA CONTRIBUIÇÃO */
-@media screen and (min-width:540px) {
-    .espaco-texto {
-        margin-left: 2rem;
-    }
-
-    .alinhamento-inseguranca p {
-        font-size: 17px;
-    }
-
-    .img-contribuicao {
-        text-align: center;
-    }
-
-    #container-contribuicao img {
-        width: 500px;
-    }
-
-    .oq-contein {
-
-        object-fit: cover;
-    }
-}
-
-/* A PARTIR DE 700PX */
+/* A PARTIR DE 700PX - MAIORIA SOBRE A PÁGINA CONTRIBUIÇÃO */
 @media screen and (min-width:700px) {
     .espaco-texto {
         max-width: 80%;
-        margin-left: 65px
+        margin-left: 65px;
     }
 
     #container-contribuicao img {
@@ -1440,7 +1238,52 @@ form {
 
 }
 
-/* A PARTIR DE 778PX */
+/* A PARTIR DE 740PX - MAIORIA SOBRE A PÁGINA FALE CONOSCO */
+@media screen and (min-width:740px) {
+    .container-contato figure img {
+        margin-bottom: 6px;
+        width: 100px;
+    }
+
+    .container-contato p {
+        font-size: 20px;
+    }
+
+    .alinhamento-inseguranca p {
+        font-size: 20px;
+    }
+
+    .email a {
+        font-size: 13px;
+        margin-top: 5px;
+    }
+
+    .duvida {
+        font-size: 22px;
+        margin-top: 25px;
+    }
+
+    #container-formulario2 .caixas textarea::placeholder {
+        font-size: 14px;
+    }
+
+    #container-formulario2 ::placeholder {
+        font-size: 13px;
+    }
+
+    #container-formulario2 label {
+        font-size: 22px;
+        margin-top: 4px;
+    }
+
+    .oq-contein {
+
+        object-fit: cover;
+    }
+
+}
+
+/* A PARTIR DE 778PX - MAIORIA SOBRE A PÁGINA O QUE FAZEMOS */
 @media screen and (min-width:778px) {
     .fundo-oq {
         padding: 200px 0;
@@ -1499,6 +1342,7 @@ form {
     }
 }
 
+/* A PARTIR DE 900PX - MAIORIA SOBRE A PÁGINA O QUE FAZEMOS  */
 @media screen and (min-width:900px) {
     .alinhamento-flex .espaco-texto, .alinhamento2-flex .espaco-texto {
         margin: 0px 25px;
@@ -1524,8 +1368,7 @@ form {
     }
 }
 
-
-/* A PARTIR DE 1158PX */
+/* A PARTIR DE 1158PX - MAIORIA SOBRE A PÁGINA CONTRIBUIÇÃO */
 @media screen and (min-width:1158px) {
     .espaco-texto p {
         font-size: 18px;
@@ -1561,37 +1404,180 @@ form {
         margin-bottom: 20px;
     }
 
-    #container-formas button {
-        padding: 15px 20px;
-    }
-
-    #container-selecao input {
-        margin-bottom: 26px;
-    }
-
     .oq-contein {
         object-fit: cover;
     }
 
 }
 
-/* A PARTIR DE 1334PX */
+/* A PARTIR DE 1214PX - MAIORIA SOBRE A PÁGINA HOME */
+@media screen and (min-width:1214px) {
+    #destaque-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contexto {
+        max-width: 70%;
+        text-align: start;
+        margin-bottom: 35px;
+    }
+
+    .contexto h6 {
+        font-size: 22px;
+    }
+
+    .contexto p {
+        font-size: 17px;
+    }
+
+    .alinhamento-inseguranca p {
+        font-size: 17px;
+    }
+
+    .contexto img {
+        width: 73px;
+        height: 70px;
+    }
+
+    .oq-contein {
+
+        object-fit: cover;
+    }
+
+}
+
+/* A PARTIR DE 1263PX - MAIORIA PÁGINA HOME */
+@media screen and (min-width:1263px) {
+
+    #container-inseguranca {
+        padding: 90px;
+    }
+
+    #flex-cartoes {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* .alinhamento-inseguranca p {
+        max-width: 500px;
+    }
+
+    #titulo-inseguranca {
+        font-size: 90px;
+
+    }
+
+    .alinhamento-inseguranca .titulo-e-paragrafo p {
+        font-size: 80px;
+    } */
+    .oq-contein {
+
+        object-fit: cover;
+    }
+}
+
+/* A PARTIR DE 1334PX - MAIORIA SOBRE ESPAÇAMENTO DO TEXTO */
 @media screen and (min-width:1334px) {
     .espaco-texto {
         margin-left: 210px;
     }
 }
 
-/* A PARTIR DE 1450PX */
+/* A PARTIR DE 1402PX - MAIORIA SOBRE AS PÁGINAS HOME/O QUE FAZEMOS */
+@media screen and (min-width:1402px) {
+    #container-contexto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .alinhamento-flex .espaco-texto, .alinhamento2-flex .espaco-texto {
+        margin-left: 0px;
+    }
+
+    .em-cima {
+        width: 100%;
+        width: 500px;
+    }
+
+    .em-baixo {
+        width: 100%;
+        width: 370px;
+    }
+
+    .parte-de-cima {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .parte-de-baixo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .oq-contein {
+
+        object-fit: cover;
+    }
+}
+
+/* A PARTIR DE 1450PX - MAIORIA SOBRE A PÁGINA CONTRIBUIÇÃO */
 @media screen and (min-width:1450px) {
+    nav a {
+        font-size: 20px;
+    } 
+
+    header a img {
+        width: 180px;
+    }
+
     .espaco-texto {
         max-width: 62%;
         margin-left: 285px;
     }
 
+    .espaco-texto {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+    .espaco-texto h2,
+    #contribuicao h2,
+    #formas-de-pagamento h2 {
+        font-size: 26px;
+    }
+
+    .alinhamento-inseguranca p {
+        font-size: 20px;
+    }
+
+    .espaco-texto p {
+        font-size: 17px;
+    }
+
     #container-contribuicao img {
         height: 460px;
         width: 790px;
+    }
+
+    .rodape p {
+        font-size: 15px;
+    }
+
+    #container-contribuicao img {
+        height: 430px;
+        width: 810px;
     }
 
     #container-formulario form {
@@ -1608,84 +1594,7 @@ form {
     }
 }
 
-/* A PARTIR DE 1450px */
-@media screen and (min-width:1450px) {
-    nav a {
-        font-size: 20px;
-    }
-
-    header a img {
-        width: 180px;
-    }
-
-    .espaco-texto {
-        max-width: 70%;
-        margin: 0 auto;
-    }
-
-    .espaco-texto h2,
-    #contribuicao h2,
-    #formas-de-pagamento h2 {
-        font-size: 26px;
-    }
-
-    .espaco-texto p {
-        font-size: 17px;
-    }
-
-    .alinhamento-inseguranca p {
-        font-size: 20px;
-    }
-
-    .rodape p {
-        font-size: 15px;
-    }
-
-    #container-contribuicao img {
-        height: 430px;
-        width: 810px;
-    }
-
-    #container-selecao input {
-        margin: 1.9rem 1rem;
-        width: 23px;
-        height: 23px;
-    }
-
-    #container-selecao label {
-        background-color: #F28705;
-        font-size: 24px;
-        height: 11rem;
-        width: 15rem;
-    }
-
-    #container-selecao .caixas textarea::placeholder {
-        font-size: 16px;
-    }
-
-    #container-formas label {
-        width: 700px;
-        margin-top: 4px;
-    }
-
-    #container-formas input {
-        height: 1.3rem;
-        width: 1.5rem;
-        margin-left: 13px;
-        margin-bottom: 5px;
-    }
-
-    #container-formas button {
-        width: 130px;
-    }
-
-    .oq-contein {
-
-        object-fit: cover;
-    }
-}
-
-/* A PARTIR DE 1540PX */
+/* A PARTIR DE 1540PX - MAIORIA SOBRE A PÁGINA CONTRIBUIÇÃO */
 @media screen and (min-width:1540px) {
     nav a {
         font-size: 20px;
@@ -1728,58 +1637,81 @@ form {
     }
 }
 
-/* A PARTIR DE 2021PX */
-@media screen and (min-width:2010px) {
-    #container-formulario .caixas {
-        margin-left: 300px;
-        max-width: 900px;
-    }
-}
-
-
-/* RESPONSIVIDADE FALE CONOSCO */
-
-/* A PARTIR DE 740PX */
-@media screen and (min-width:740px) {
-    .container-contato figure img {
-        margin-bottom: 6px;
-        width: 100px;
+/* A PARTIR DE 1601PX - MAIORIA SOBRE A PÁGINA HOME */
+@media screen and (min-width:1601px) {
+    #container-contexto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .container-contato p {
-        font-size: 20px;
+    .parte-de-cima {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .parte-de-baixo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .contexto {
+        max-width: 50%;
+    }
+
+    .contexto h6 {
+        font-size: 29px;
+    }
+
+    .contexto p {
+        font-size: 24px;
     }
 
     .alinhamento-inseguranca p {
-        font-size: 20px;
+        font-size: 24px;
     }
 
-    .email a {
-        font-size: 13px;
-        margin-top: 5px;
+    .contexto img {
+        width: 95px;
+        height: 89px;
     }
 
-    .duvida {
-        font-size: 22px;
-        margin-top: 25px;
+}
+
+/* A PARTIR DE 2021PX - MAIORIA SOBRE A PÁGINA HOME */
+@media screen and (min-width:2021px) {
+
+    .contexto {
+        max-width: 40%;
     }
 
-    #container-formulario2 .caixas textarea::placeholder {
-        font-size: 14px;
+    .parte-de-cima {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 80%;
+        margin: 0 auto;
+        gap: 80px;
     }
 
-    #container-formulario2 ::placeholder {
-        font-size: 13px;
-    }
-
-    #container-formulario2 label {
-        font-size: 22px;
-        margin-top: 4px;
+    .parte-de-baixo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 80%;
+        margin: 0 auto;
+        gap: 80px;
     }
 
     .oq-contein {
 
         object-fit: cover;
     }
-
 }
+
