@@ -264,6 +264,15 @@ hr {
 }
 
 /* Oq fazemos */
+.fundo-oq{
+    background-image: url(../imagens/dando-pote2.jpg);
+    padding: 150px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
 
 #main-oq-fazemos {
     padding-bottom: 40px;
@@ -1247,6 +1256,10 @@ form {
 
         object-fit: cover;
     }
+    .fundo-oq{
+        background-position: 0px -250px;
+        
+    }
 
 }
 
@@ -1290,6 +1303,9 @@ form {
     .oq-contein {
 
         object-fit: cover;
+    }
+    .fundo-oq{
+        background-position: 0px -300px;
     }
 }
 
@@ -1418,11 +1434,18 @@ form {
 
         object-fit: cover;
     }
+    .fundo-oq{
+        padding: 170px 0;
+    }
 
 }
 
 /* A PARTIR DE 778PX */
 @media screen and (min-width:778px) {
+    .fundo-oq {
+        padding: 200px 0;
+    }
+
     #main-oq-fazemos{
         display: flex;
         align-items: center;
@@ -1496,7 +1519,9 @@ form {
         width: 100%;
         width: 290px;
     }
-
+    .fundo-oq{
+        padding: 230px 0px;
+    }
 }
 
 
