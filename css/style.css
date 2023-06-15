@@ -1257,6 +1257,20 @@ form {
         align-items: center;
     }
 
+    .alinhamento-flex .espaco-texto, .alinhamento2-flex .espaco-texto {
+        margin-left: 0px;
+    }
+
+    .em-cima {
+        width: 100%;
+        width: 500px;
+    }
+
+    .em-baixo {
+        width: 100%;
+        width: 370px;
+    }
+
     .parte-de-cima {
         display: flex;
         align-items: center;
