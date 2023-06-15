@@ -247,11 +247,7 @@ hr {
     padding-top: 0.7rem;
     padding-bottom: 0.5rem;
     max-height: 5vh;
-    background-color: #f5f5f5;
-}
-
-footer {
-    background-color: #f5f5f5;
+    margin-top: 30px;
 }
 
 .rodape img {
@@ -1424,7 +1420,7 @@ form {
         text-align: center;
         left: 50px;
     }
-    .espaco-texto {
+    .alinhamento-flex .espaco-texto, .alinhamento2-flex .espaco-texto {
         margin: 0px 25px;
     }
 
@@ -1454,19 +1450,40 @@ form {
 
     .alinhamento-flex {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
     }
 
     .alinhamento2-flex {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         flex-direction: row-reverse;
     }
 }
 
+@media screen and (min-width:900px) {
+    .alinhamento-flex .espaco-texto, .alinhamento2-flex .espaco-texto {
+        margin: 0px 25px;
+        max-width: 80%;
+    }
 
+    .alinhamento-flex {
+        margin-top: 20px;
+        margin-bottom: 18px;
+    }
+
+    .em-cima {
+        width: 100%;
+        width: 300px;
+    }
+
+    .em-baixo {
+        width: 100%;
+        width: 290px;
+    }
+
+}
 
 
 /* A PARTIR DE 1158PX */
@@ -1483,6 +1500,21 @@ form {
         max-width: 70%;
         margin-left: 190px;
     }
+    
+    .alinhamento-flex .espaco-texto, .alinhamento2-flex .espaco-texto {
+        max-width: 100%;
+        margin-left: 0px;
+    }
+
+    .em-cima {
+        width: 100%;
+        width: 400px;
+    }
+
+    .em-baixo {
+        width: 100%;
+        width: 390px;
+    }
 
     #container-contribuicao img {
         width: 700px;
@@ -1490,30 +1522,8 @@ form {
         margin-bottom: 20px;
     }
 
-    #container-selecao label {
-        height: 10rem;
-        width: 12rem;
-        font-size: 26px;
-    }
-
-    #container-formas label {
-        width: 520px;
-        height: 57px;
-        font-size: 20px;
-    }
-
     #container-formas button {
         padding: 15px 20px;
-    }
-
-    #container-selecao form {
-        font-size: 16px;
-        line-height: 2rem;
-        max-width: 150px;
-    }
-
-    #container-selecao .caixas textarea {
-        margin-top: 7px;
     }
 
     #container-selecao input {
@@ -1521,7 +1531,6 @@ form {
     }
 
     .oq-contein {
-
         object-fit: cover;
     }
 
