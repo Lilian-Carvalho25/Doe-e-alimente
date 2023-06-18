@@ -88,7 +88,7 @@ if(isset($_POST['enviar'])){
                             <span>E-mail</span>
                         </div>
                         <div class="inputBox">
-                            <input type="number" name="telefone" autocomplete="off" class="telefones">
+                            <input type="text" name="telefone"  placeholder="Digite aqui" autocomplete="off" class="telefones">
                             <span>Telefone</span>
                         </div>
                        
