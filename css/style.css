@@ -11,7 +11,6 @@ html {
 
 body {
     font-family: "Plus Jakarta Sans", 'Courier New', Courier, monospace;
-    /* height: 100vh;   */
 }
 
 h2 {
@@ -29,12 +28,17 @@ img {
     padding: 0;
 }
 
+/* MENU/HEADER */
+
 a {
     text-decoration: none;
 }
 
+header li :hover {
+    color: black;
+}
+
 header {
-    /* margin-top: 0.4rem; */
     position: sticky;
     top: 0;
     background-color: #f5f5f5;
@@ -92,9 +96,10 @@ nav h2 a {
     color: #fffffa;
 }
 
+
 /* PÁGINA HOME */
 
-/* Destaque */
+/* DESTAQUE */
 #destaque-home {
     background: url(../imagens/dando-marmita.jpeg);
     background-position: center;
@@ -148,6 +153,7 @@ nav h2 a {
     color: #fffffa;
 }
 
+/* MÓDULO INSEGURANÇA */
 #container-inseguranca {
     background-color: #8C0303;
     color: #fffffa;
@@ -199,6 +205,7 @@ nav h2 a {
     margin-right: auto;
 }
 
+/* MÓDULO CONTEXTO */
 #container-contexto {
     margin: 19px auto;
     display: flex;
@@ -242,28 +249,15 @@ hr {
     height: 62px;
 }
 
-.rodape {
-    text-align: center;
-    padding-top: 0.7rem;
-    padding-bottom: 0.5rem;
-    max-height: 5vh;
-    margin-top: 30px;
+/* PÁGINA O QUE FAZEMOS */
+/* DESTAQUE */
+.fundo-oq {
+    background-image: url(../imagens/dando-pote2.jpg);
+    padding: 150px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-
-.rodape img {
-    width: 40px;
-}
-
-.rodape p {
-    padding-bottom: 6px;
-}
-
-.limitador {
-    width: 95vw;
-    margin: auto;
-}
-
-/* Oq fazemos */
 
 #main-oq-fazemos {
     padding-bottom: 40px;
@@ -278,10 +272,11 @@ hr {
 
 }
 
+/* CONTEÚDO */
 .oq-contein {
-
     object-fit: cover;
 }
+
 .texto-fazemos{
     text-align: center;
     margin-left: 30px;
@@ -298,23 +293,6 @@ hr {
     font-family: "Raleway", 'Courier New', Courier, monospace;
 }
 
-.aumento #sinal-mais {
-    font-size: 45px;
-    color: #8C0303;
-    font-weight: 700;
-
-}
-
-.aumento #milhoes {
-    font-size: 30px;
-    font-weight: 700;
-}
-
-.aumento p {
-    color: #8C0303;
-    font-weight: bold;
-}
-
 .fazemos-img1 img {
 
     height: 300px;
@@ -329,13 +307,64 @@ hr {
 
 }
 
-/* Contribução */
 
-/* Cartão interativo */
+/* CONTRIBUIÇÃO */
+/* CONFIGURAÇÃO GLOBAL DE TEXTO PARA MOBILE FIRST */
+#container-contribuicao p,
+#alinhamento-paragrafo-home p,
+#main-oq-fazemos p {
+    text-align: left;
+    margin-top: 22px;
+    line-height: 23px;
+}
+
+.espaco-texto h1 {
+    font-size: 1.8rem;
+    margin-top: 5px;
+}
+
+.espaco-texto {
+    max-width: 90%;
+    text-align: center;
+    margin-left: 1.7rem;
+
+}
+
+.espaco-texto h2 {
+    margin-top: 1.5rem;
+
+}
+
+.espaco-texto hr {
+    width: 110px;
+    margin: 0 auto;
+    margin-top: 0.7rem;
+}
+
+.alinhamento-flex h2, .alinhamento2-flex h2 {
+    color: #8C0303;
+}
+
+#container-contribuicao figure {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#contribuicao h2,
+#formas-de-pagamento h2 {
+    text-align: center;
+}
+
+input {
+    accent-color: #8C0303;
+}
+
+
+/* CARTÃO INTERATIVO */
 .container-cartao {
     margin: 0;
     padding: 0;
-    /* background-color: #f9f9f9; */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -416,7 +445,7 @@ input {
     width: 60px;
 }
 
-/* CREDIT CARD IMAGE STYLING */
+/* ESTILIZAÇÃO DAS IMAGENS NO CARTÃO */
 .preload * {
     -webkit-transition: none !important;
     -moz-transition: none !important;
@@ -463,7 +492,7 @@ input {
     float: right;
 }
 
-/* CHANGEABLE CARD ELEMENTS */
+/* ELEMENTOS DE MUDANÇA DE COR DOS CARTÕES */
 .creditcard .lightcolor,
 .creditcard .darkcolor {
     -webkit-transition: fill .5s;
@@ -473,51 +502,39 @@ input {
 .creditcard .lightblue {
     fill: #03A9F4;
 }
-
 .creditcard .lightbluedark {
     fill: #0288D1;
 }
-
 .creditcard .red {
     fill: #ef5350;
 }
-
 .creditcard .reddark {
     fill: #d32f2f;
 }
-
 .creditcard .purple {
     fill: #ab47bc;
 }
-
 .creditcard .purpledark {
     fill: #7b1fa2;
 }
-
 .creditcard .cyan {
     fill: #26c6da;
 }
-
 .creditcard .cyandark {
     fill: #0097a7;
 }
-
 .creditcard .green {
     fill: #66bb6a;
 }
-
 .creditcard .greendark {
     fill: #388e3c;
 }
-
 .creditcard .lime {
     fill: #d4e157;
 }
-
 .creditcard .limedark {
     fill: #afb42b;
 }
-
 .creditcard .yellow {
     fill: #F2B705;
 }
@@ -525,137 +542,109 @@ input {
 .creditcard .yellowdark {
     fill: #f9a825;
 }
-
 .creditcard .orange {
     fill: #ff9800;
 }
-
 .creditcard .orangedark {
     fill: #ef6c00;
 }
-
 .creditcard .grey {
     fill: #bdbdbd;
 }
-
 .creditcard .greydark {
     fill: #616161;
 }
 
-/* FRONT OF CARD */
+/* PARTE DA FRENTE DO CARTÃO */
 #svgname {
     text-transform: uppercase;
 }
-
 #cardfront .st2 {
     fill: #FFFFFF;
 }
-
 #cardfront .st3 {
     font-family: 'Source Code Pro', monospace;
     font-weight: 600;
 }
-
 #cardfront .st4 {
     font-size: 54.7817px;
 }
-
 #cardfront .st5 {
     font-family: 'Source Code Pro', monospace;
     font-weight: 400;
 }
-
 #cardfront .st6 {
     font-size: 33.1112px;
 }
-
 #cardfront .st7 {
     opacity: 0.6;
     fill: #FFFFFF;
 }
-
 #cardfront .st8 {
     font-size: 24px;
 }
-
 #cardfront .st9 {
     font-size: 36.5498px;
 }
-
 #cardfront .st10 {
     font-family: 'Source Code Pro', monospace;
     font-weight: 300;
 }
-
 #cardfront .st11 {
     font-size: 16.1716px;
 }
-
 #cardfront .st12 {
     fill: #4C4C4C;
 }
 
-/* BACK OF CARD */
+/* PARTE DE TRÁS DO CARTÃO */
 #cardback .st0 {
     fill: none;
     stroke: #0F0F0F;
     stroke-miterlimit: 10;
 }
-
 #cardback .st2 {
     fill: #111111;
 }
-
 #cardback .st3 {
     fill: #F2F2F2;
 }
-
 #cardback .st4 {
     fill: #D8D2DB;
 }
-
 #cardback .st5 {
     fill: #C4C4C4;
 }
-
 #cardback .st6 {
     font-family: 'Source Code Pro', monospace;
     font-weight: 400;
 }
-
 #cardback .st7 {
     font-size: 27px;
 }
-
 #cardback .st8 {
     opacity: 0.6;
 }
-
 #cardback .st9 {
     fill: #FFFFFF;
 }
-
 #cardback .st10 {
     font-size: 24px;
 }
-
 #cardback .st11 {
     fill: #EAEAEA;
 }
-
 #cardback .st12 {
     font-family: 'Rock Salt', cursive;
 }
-
 #cardback .st13 {
     font-size: 37.769px;
 }
 
-/* FLIP ANIMATION */
+/* ANIMAÇÃO FLIP */
 .container {
     perspective: 1000px;
 }
-
 .creditcard {
     width: 100%;
     max-width: 400px;
@@ -705,8 +694,7 @@ input {
     text-decoration: none;
 }
 
-/* Botões animados */
-
+/* BOTÕES GLOBAIS ANIMADOS*/
 
 #destaque-home button,
 #container-confirmar button {
@@ -809,7 +797,7 @@ input {
     color: white;
 }
 
-
+/* ANIMAÇÃO HOVER DOS BOTÕES */
 @keyframes move {
     0% {
         transform: translateX(0);
@@ -838,119 +826,64 @@ input {
     }
 }
 
+/* CONTATO */
 
-
-
-#container-contribuicao p,
-#alinhamento-paragrafo-home p,
-#main-oq-fazemos p {
-    text-align: left;
-    margin-top: 22px;
-    line-height: 23px;
-}
-
-.espaco-texto h1 {
-    font-size: 1.8rem;
-    margin-top: 5px;
-}
-
-.espaco-texto {
-    max-width: 90%;
+.contato-main h2 {
     text-align: center;
-    margin-left: 1.7rem;
-
+    text-transform: inherit;
 }
 
-
-.espaco-texto h2 {
-    margin-top: 1.5rem;
-
+.container-contato {
+    max-width: 100%;
 }
 
-.espaco-texto hr {
-
-    width: 110px;
-    margin: 0 auto;
-    margin-top: 0.7rem;
-}
-
-.alinhamento-flex h2, .alinhamento2-flex h2 {
-    color: #8C0303;
-}
-
-#container-contribuicao figure {
-    /* Atenção */
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-#contribuicao h2,
-#formas-de-pagamento h2 {
-    text-align: center;
-}
-
-/* #container-selecao {
-    margin-top: 15px;
-    margin-bottom: 15px;
+.contato-figura {
     display: flex;
-    justify-content: center;
-    gap: 5px;
-    flex-wrap: wrap;
-} */
+    justify-content: space-around;
 
-input {
-    accent-color: #8C0303;
 }
 
-/* #container-selecao label {
-    background-color: #F28705;
-    color: #fffffa;
-    font-family: "raleway",'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
+.nome {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    border-radius: 26px;
-    height: 8rem;
-    width: 10rem;
-    margin: 5px 3px;
+    font-family: "Fira Sans";
+    margin: 3px 0 3px 5px;
+
 }
 
-#container-selecao .caixas .inputs {
-    max-width: 90%;
-    padding: 5px;
-    border: 0;
-    background-color: #F28705;
-    border-bottom: 2px solid white;
-    outline: 0;
-} */
-
-#container-selecao .caixas textarea::placeholder {
-    color: #fffffa;
-    font-family: "fira sans", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.email {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-#container-selecao .caixas textarea {
-    border: none;
-    border-bottom: white 1px solid;
+.email img {
+    width: 27px;
 }
 
-#container-selecao input {
-    margin: 1.3rem;
-    width: 20px;
-    height: 20px;
+a {
+    color: black;
 }
 
-#container-selecao form {
-    margin-top: 18px;
-    font-size: 12px;
-    line-height: 3rem;
-    text-align: center;
-    max-width: 150px;
+a:hover {
+    color: rgb(25, 25, 155);
 }
 
-/* Formulário/ Contribuição*/
+.duvida {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form {
+    margin: 1rem;
+}
+
+.forme {
+    margin-top: 20px;
+}
+
+/* FORMULÁRIO */
 
 .container-formularios {
     display: flex;
@@ -1020,102 +953,7 @@ select:focus {
     outline: 0;
 }
 
-/* Formas de pagamento */
-#container-formas:not(button) {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-#container-formas label {
-    background-color: #8C0303;
-    color: #fffffa;
-    text-transform: uppercase;
-    font-family: "raleway", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-radius: 23px;
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    width: 392px;
-    height: 56px;
-}
-
-#container-formas input {
-    width: 40px;
-}
-
-#container-formas button {
-    background-color: #8C0303;
-    color: #fffffa;
-    font-family: "raleway", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-radius: 15px;
-    text-transform: uppercase;
-    padding: 10px 15px;
-    cursor: pointer;
-}
-
-/* Contato vinicius */
-
-.contato-main h2 {
-    text-align: center;
-    text-transform: inherit;
-}
-
-.container-contato {
-    max-width: 100%;
-}
-
-.contato-figura {
-    display: flex;
-    justify-content: space-around;
-
-}
-
-.nome {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: "Fira Sans";
-    margin: 3px 0 3px 5px;
-
-}
-
-.email {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.email img {
-    width: 27px;
-}
-
-a {
-    color: black;
-}
-
-a:hover {
-    color: rgb(25, 25, 155);
-}
-
-.duvida {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-form {
-    margin: 1rem;
-}
-
-.forme {
-    margin-top: 20px;
-}
-
 /* LOGIN */
-
 #form-login button,
 .nao-autorizado a,
 .doadores h2 span {
@@ -1128,10 +966,56 @@ form {
 }
 
 
+/* FOOTER */
+.rodape {
+    text-align: center;
+    padding-top: 0.7rem;
+    padding-bottom: 0.5rem;
+    max-height: 5vh;
+    margin-top: 30px;
+}
 
-/* RESPONSIVIDADE */
+.rodape img {
+    width: 40px;
+}
 
-/* RESPONSIVIDADE MENU */
+.rodape p {
+    padding-bottom: 6px;
+}
+
+.limitador {
+    width: 95vw;
+    margin: auto;
+}
+
+
+/* RESPONSIVIDADE - DA MENOR PARA A MAIOR */
+
+/* A PARTIR DE 540PX - MAIORIA SOBRE ESPAÇAMENTO DE TEXTO */
+@media screen and (min-width:540px) {
+    .espaco-texto {
+        margin-left: 2rem;
+    }
+
+    .alinhamento-inseguranca p {
+        font-size: 17px;
+    }
+
+    .img-contribuicao {
+        text-align: center;
+    }
+
+    #container-contribuicao img {
+        width: 500px;
+    }
+
+    .oq-contein {
+
+        object-fit: cover;
+    }
+}
+
+/* A PARTIR DE 600PX - MENU INCLUÍDO */
 @media screen and (min-width: 600px) {
     nav h2 {
         display: none;
@@ -1180,216 +1064,11 @@ form {
     }
 }
 
-/* RESPONSIVIDADE DA PÁGINA HOME */
-@media screen and (min-width:1263px) {
-
-    #container-inseguranca {
-        padding: 90px;
-    }
-
-    #flex-cartoes {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        gap: 20px;
-    }
-
-    /* .alinhamento-inseguranca p {
-        max-width: 500px;
-    }
-
-    #titulo-inseguranca {
-        font-size: 90px;
-
-    }
-
-    .alinhamento-inseguranca .titulo-e-paragrafo p {
-        font-size: 80px;
-    } */
-    .oq-contein {
-
-        object-fit: cover;
-    }
-}
-
-@media screen and (min-width:1214px) {
-    #destaque-home {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .contexto {
-        max-width: 70%;
-        text-align: start;
-        margin-bottom: 35px;
-    }
-
-    .contexto h6 {
-        font-size: 22px;
-    }
-
-    .contexto p {
-        font-size: 17px;
-    }
-
-    .alinhamento-inseguranca p {
-        font-size: 17px;
-    }
-
-    .contexto img {
-        width: 73px;
-        height: 70px;
-    }
-
-    .oq-contein {
-
-        object-fit: cover;
-    }
-
-}
-
-@media screen and (min-width:1402px) {
-    #container-contexto {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .parte-de-cima {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-width: 80%;
-        margin: 0 auto;
-    }
-
-    .parte-de-baixo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-width: 80%;
-        margin: 0 auto;
-    }
-
-    .oq-contein {
-
-        object-fit: cover;
-    }
-}
-
-/* A PARTIR DE 1601PX */
-@media screen and (min-width:1601px) {
-    #carrossel-home {
-        max-width: 87%;
-        margin: 55px auto;
-    }
-
-    #container-contexto {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .parte-de-cima {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-width: 80%;
-        margin: 0 auto;
-    }
-
-    .parte-de-baixo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-width: 80%;
-        margin: 0 auto;
-    }
-
-    .contexto {
-        max-width: 50%;
-    }
-
-    .contexto h6 {
-        font-size: 29px;
-    }
-
-    .contexto p {
-        font-size: 24px;
-    }
-
-    .alinhamento-inseguranca p {
-        font-size: 24px;
-    }
-
-    .contexto img {
-        width: 95px;
-        height: 89px;
-    }
-
-}
-
-@media screen and (min-width:2021px) {
-
-    .contexto {
-        max-width: 40%;
-    }
-
-    .parte-de-cima {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-width: 80%;
-        margin: 0 auto;
-        gap: 80px;
-    }
-
-    .parte-de-baixo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-width: 80%;
-        margin: 0 auto;
-        gap: 80px;
-    }
-
-    .oq-contein {
-
-        object-fit: cover;
-    }
-}
-
-/* RESPONSIVIDADE DA PÁGINA CONTRIBUIÇÃO */
-@media screen and (min-width:540px) {
-    .espaco-texto {
-        margin-left: 2rem;
-    }
-
-    .alinhamento-inseguranca p {
-        font-size: 17px;
-    }
-
-    .img-contribuicao {
-        text-align: center;
-    }
-
-    #container-contribuicao img {
-        width: 500px;
-    }
-
-    .oq-contein {
-
-        object-fit: cover;
-    }
-}
-
-/* A PARTIR DE 700PX */
+/* A PARTIR DE 700PX - MAIORIA SOBRE A PÁGINA CONTRIBUIÇÃO */
 @media screen and (min-width:700px) {
     .espaco-texto {
         max-width: 80%;
-        margin-left: 65px
+        margin-left: 65px;
     }
 
     #container-contribuicao img {
@@ -1404,11 +1083,63 @@ form {
 
         object-fit: cover;
     }
+    .fundo-oq{
+        padding: 170px 0;
+    }
 
 }
 
-/* A PARTIR DE 778PX */
+/* A PARTIR DE 740PX - MAIORIA SOBRE A PÁGINA FALE CONOSCO */
+@media screen and (min-width:740px) {
+    .container-contato figure img {
+        margin-bottom: 6px;
+        width: 100px;
+    }
+
+    .container-contato p {
+        font-size: 20px;
+    }
+
+    .alinhamento-inseguranca p {
+        font-size: 20px;
+    }
+
+    .email a {
+        font-size: 13px;
+        margin-top: 5px;
+    }
+
+    .duvida {
+        font-size: 22px;
+        margin-top: 25px;
+    }
+
+    #container-formulario2 .caixas textarea::placeholder {
+        font-size: 14px;
+    }
+
+    #container-formulario2 ::placeholder {
+        font-size: 13px;
+    }
+
+    #container-formulario2 label {
+        font-size: 22px;
+        margin-top: 4px;
+    }
+
+    .oq-contein {
+
+        object-fit: cover;
+    }
+
+}
+
+/* A PARTIR DE 778PX - MAIORIA SOBRE A PÁGINA O QUE FAZEMOS */
 @media screen and (min-width:778px) {
+    .fundo-oq {
+        padding: 200px 0;
+    }
+
     #main-oq-fazemos{
         display: flex;
         align-items: center;
@@ -1462,6 +1193,7 @@ form {
     }
 }
 
+/* A PARTIR DE 900PX - MAIORIA SOBRE A PÁGINA O QUE FAZEMOS  */
 @media screen and (min-width:900px) {
     .alinhamento-flex .espaco-texto, .alinhamento2-flex .espaco-texto {
         margin: 0px 25px;
@@ -1482,11 +1214,12 @@ form {
         width: 100%;
         width: 290px;
     }
-
+    .fundo-oq{
+        padding: 230px 0px;
+    }
 }
 
-
-/* A PARTIR DE 1158PX */
+/* A PARTIR DE 1158PX - MAIORIA SOBRE A PÁGINA CONTRIBUIÇÃO */
 @media screen and (min-width:1158px) {
     .espaco-texto p {
         font-size: 18px;
@@ -1522,37 +1255,183 @@ form {
         margin-bottom: 20px;
     }
 
-    #container-formas button {
-        padding: 15px 20px;
-    }
-
-    #container-selecao input {
-        margin-bottom: 26px;
-    }
-
     .oq-contein {
         object-fit: cover;
     }
 
 }
 
-/* A PARTIR DE 1334PX */
+/* A PARTIR DE 1214PX - MAIORIA SOBRE A PÁGINA HOME */
+@media screen and (min-width:1214px) {
+    #destaque-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contexto {
+        max-width: 70%;
+        text-align: start;
+        margin-bottom: 35px;
+    }
+
+    .contexto h6 {
+        font-size: 22px;
+    }
+
+    .contexto p {
+        font-size: 17px;
+    }
+
+    .alinhamento-inseguranca p {
+        font-size: 17px;
+    }
+
+    .contexto img {
+        width: 73px;
+        height: 70px;
+    }
+
+    .oq-contein {
+
+        object-fit: cover;
+    }
+
+}
+
+/* A PARTIR DE 1263PX - MAIORIA PÁGINA HOME */
+@media screen and (min-width:1263px) {
+
+    #container-inseguranca {
+        padding: 90px;
+    }
+
+    #flex-cartoes {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* .alinhamento-inseguranca p {
+        max-width: 500px;
+    }
+
+    #titulo-inseguranca {
+        font-size: 90px;
+
+    }
+
+    .alinhamento-inseguranca .titulo-e-paragrafo p {
+        font-size: 80px;
+    } */
+    .oq-contein {
+
+        object-fit: cover;
+    }
+}
+
+/* A PARTIR DE 1334PX - MAIORIA SOBRE ESPAÇAMENTO DO TEXTO */
 @media screen and (min-width:1334px) {
     .espaco-texto {
         margin-left: 210px;
     }
+    .fundo-oq{
+        background-size: cover;
+    }
 }
 
-/* A PARTIR DE 1450PX */
+/* A PARTIR DE 1402PX - MAIORIA SOBRE AS PÁGINAS HOME/O QUE FAZEMOS */
+@media screen and (min-width:1402px) {
+    #container-contexto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .alinhamento-flex .espaco-texto, .alinhamento2-flex .espaco-texto {
+        margin-left: 0px;
+    }
+
+    .em-cima {
+        width: 100%;
+        width: 500px;
+    }
+
+    .em-baixo {
+        width: 100%;
+        width: 370px;
+    }
+
+    .parte-de-cima {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .parte-de-baixo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .oq-contein {
+
+        object-fit: cover;
+    }
+}
+
+/* A PARTIR DE 1450PX - MAIORIA SOBRE A PÁGINA CONTRIBUIÇÃO */
 @media screen and (min-width:1450px) {
+    nav a {
+        font-size: 20px;
+    } 
+
+    header a img {
+        width: 180px;
+    }
+
     .espaco-texto {
         max-width: 62%;
         margin-left: 285px;
     }
 
+    .espaco-texto {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+    .espaco-texto h2,
+    #contribuicao h2,
+    #formas-de-pagamento h2 {
+        font-size: 26px;
+    }
+
+    .alinhamento-inseguranca p {
+        font-size: 20px;
+    }
+
+    .espaco-texto p {
+        font-size: 17px;
+    }
+
     #container-contribuicao img {
         height: 460px;
         width: 790px;
+    }
+
+    .rodape p {
+        font-size: 15px;
+    }
+
+    #container-contribuicao img {
+        height: 430px;
+        width: 810px;
     }
 
     #container-formulario form {
@@ -1569,84 +1448,7 @@ form {
     }
 }
 
-/* A PARTIR DE 1450px */
-@media screen and (min-width:1450px) {
-    nav a {
-        font-size: 20px;
-    }
-
-    header a img {
-        width: 180px;
-    }
-
-    .espaco-texto {
-        max-width: 70%;
-        margin: 0 auto;
-    }
-
-    .espaco-texto h2,
-    #contribuicao h2,
-    #formas-de-pagamento h2 {
-        font-size: 26px;
-    }
-
-    .espaco-texto p {
-        font-size: 17px;
-    }
-
-    .alinhamento-inseguranca p {
-        font-size: 20px;
-    }
-
-    .rodape p {
-        font-size: 15px;
-    }
-
-    #container-contribuicao img {
-        height: 430px;
-        width: 810px;
-    }
-
-    #container-selecao input {
-        margin: 1.9rem 1rem;
-        width: 23px;
-        height: 23px;
-    }
-
-    #container-selecao label {
-        background-color: #F28705;
-        font-size: 24px;
-        height: 11rem;
-        width: 15rem;
-    }
-
-    #container-selecao .caixas textarea::placeholder {
-        font-size: 16px;
-    }
-
-    #container-formas label {
-        width: 700px;
-        margin-top: 4px;
-    }
-
-    #container-formas input {
-        height: 1.3rem;
-        width: 1.5rem;
-        margin-left: 13px;
-        margin-bottom: 5px;
-    }
-
-    #container-formas button {
-        width: 130px;
-    }
-
-    .oq-contein {
-
-        object-fit: cover;
-    }
-}
-
-/* A PARTIR DE 1540PX */
+/* A PARTIR DE 1540PX - MAIORIA SOBRE A PÁGINA CONTRIBUIÇÃO */
 @media screen and (min-width:1540px) {
     nav a {
         font-size: 20px;
@@ -1689,58 +1491,81 @@ form {
     }
 }
 
-/* A PARTIR DE 2021PX */
-@media screen and (min-width:2010px) {
-    #container-formulario .caixas {
-        margin-left: 300px;
-        max-width: 900px;
-    }
-}
-
-
-/* RESPONSIVIDADE FALE CONOSCO */
-
-/* A PARTIR DE 740PX */
-@media screen and (min-width:740px) {
-    .container-contato figure img {
-        margin-bottom: 6px;
-        width: 100px;
+/* A PARTIR DE 1601PX - MAIORIA SOBRE A PÁGINA HOME */
+@media screen and (min-width:1601px) {
+    #container-contexto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .container-contato p {
-        font-size: 20px;
+    .parte-de-cima {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .parte-de-baixo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .contexto {
+        max-width: 50%;
+    }
+
+    .contexto h6 {
+        font-size: 29px;
+    }
+
+    .contexto p {
+        font-size: 24px;
     }
 
     .alinhamento-inseguranca p {
-        font-size: 20px;
+        font-size: 24px;
     }
 
-    .email a {
-        font-size: 13px;
-        margin-top: 5px;
+    .contexto img {
+        width: 95px;
+        height: 89px;
     }
 
-    .duvida {
-        font-size: 22px;
-        margin-top: 25px;
+}
+
+/* A PARTIR DE 2021PX - MAIORIA SOBRE A PÁGINA HOME */
+@media screen and (min-width:2021px) {
+
+    .contexto {
+        max-width: 40%;
     }
 
-    #container-formulario2 .caixas textarea::placeholder {
-        font-size: 14px;
+    .parte-de-cima {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 80%;
+        margin: 0 auto;
+        gap: 80px;
     }
 
-    #container-formulario2 ::placeholder {
-        font-size: 13px;
-    }
-
-    #container-formulario2 label {
-        font-size: 22px;
-        margin-top: 4px;
+    .parte-de-baixo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 80%;
+        margin: 0 auto;
+        gap: 80px;
     }
 
     .oq-contein {
 
         object-fit: cover;
     }
-
 }
+

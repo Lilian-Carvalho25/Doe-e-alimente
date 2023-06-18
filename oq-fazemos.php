@@ -31,8 +31,15 @@
             </nav>
         </div>
     </header>
+    
+    <div class="fundo-oq">
+            
+    </div>
+
 
     <main id="main-oq-fazemos">
+        
+
         <!--  <img class="oq-fazemos-img oq-contein" src="imagens/dando-pote.jpg" alt=""> -->
         <div class="segundo-container">
             <section class="espaco-texto">

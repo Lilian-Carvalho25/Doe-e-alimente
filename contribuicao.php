@@ -8,6 +8,7 @@ if(isset($_POST['prosseguir'])){
 	$nome = $_POST['name'];
 	
 	inserirDoadores($conexao, $nome);
+    header("location:https://checkout.stripe.com/c/pay/cs_live_a1RAzfb0e7XAFQXgTPsHLVj8WlprEM77D25uyMyoOGUUMj3fRLVJdwwx7n#fidkdWxOYHwnPyd1blppbHNgWjA0S0Y0SlBGTlFta3ViMT1%2FdWJNUmEyZH9xQE5HdDNCMFVzUm5LQEBfN2dRTmRzMlZVblVnMVdTVW40X1ZxY05AdFdsNnZ1SWxhf2N%2FSjdKVXRXSW5kNUdUNTVwUTdDVFRgXycpJ3VpbGtuQH11anZgYUxhJz8nNz1qM3dGYEdjMGJDMENgMWJiJ3gl");
 }
 ?>
 
@@ -212,7 +213,7 @@ if(isset($_POST['prosseguir'])){
     <div class="form-container">
         
             <div class="field-container">
-                <label for="name" name="name">Nome</label>
+                <label for="name" name="name">Nome (Para doação anônima, digite "ânonimo")</label>
                 <input id="name" maxlength="20" type="text" autocomplete="off" name="name">
             </div>
             <div class="field-container">
@@ -235,7 +236,7 @@ if(isset($_POST['prosseguir'])){
             </section>
             <article id="container-confirmar">
                 <h3>Confirmar dados e determinar a quantia</h3>
-                <button id="prosseguir" name="prosseguir"><a href="https://checkout.stripe.com/c/pay/cs_live_a1RAzfb0e7XAFQXgTPsHLVj8WlprEM77D25uyMyoOGUUMj3fRLVJdwwx7n#fidkdWxOYHwnPyd1blppbHNgWjA0S0Y0SlBGTlFta3ViMT1%2FdWJNUmEyZH9xQE5HdDNCMFVzUm5LQEBfN2dRTmRzMlZVblVnMVdTVW40X1ZxY05AdFdsNnZ1SWxhf2N%2FSjdKVXRXSW5kNUdUNTVwUTdDVFRgXycpJ3VpbGtuQH11anZgYUxhJz8nNz1qM3dGYEdjMGJDMENgMWJiJ3gl" target="_blank"><span>Prosseguir</span><i></i></a></button>
+                <button id="prosseguir" name="prosseguir"><span>Prosseguir</span><i></i></button>
             </article>
         </form>
 
