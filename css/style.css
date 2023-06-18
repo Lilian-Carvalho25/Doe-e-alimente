@@ -837,37 +837,26 @@ input {
     max-width: 100%;
 }
 
+.alinhamento-contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 7px;
+}
+
 .contato-figura {
     display: flex;
-    justify-content: space-around;
-
-}
-
-.nome {
-    display: flex;
-    justify-content: space-around;
     align-items: center;
-    font-family: "Fira Sans";
-    margin: 3px 0 3px 5px;
-
+    justify-content: space-evenly;
 }
 
-.email {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.email img {
+.alinhamento-contato .email {
     width: 27px;
 }
 
 a {
     color: black;
-}
-
-a:hover {
-    color: rgb(25, 25, 155);
 }
 
 .duvida {
@@ -1091,7 +1080,7 @@ select:focus {
 
 /* A PARTIR DE 740PX - MAIORIA SOBRE A PÁGINA FALE CONOSCO */
 @media screen and (min-width:740px) {
-    .container-contato figure img {
+    .alinhamento-contato img {
         margin-bottom: 6px;
         width: 100px;
     }
@@ -1102,11 +1091,6 @@ select:focus {
 
     .alinhamento-inseguranca p {
         font-size: 20px;
-    }
-
-    .email a {
-        font-size: 13px;
-        margin-top: 5px;
     }
 
     .duvida {
@@ -1193,7 +1177,7 @@ select:focus {
     }
 }
 
-/* A PARTIR DE 900PX - MAIORIA SOBRE A PÁGINA O QUE FAZEMOS  */
+/* A PARTIR DE 900PX - MAIORIA SOBRE A PÁGINAS O QUE FAZEMOS/FALE CONOSCO  */
 @media screen and (min-width:900px) {
     .alinhamento-flex .espaco-texto, .alinhamento2-flex .espaco-texto {
         margin: 0px 25px;
@@ -1217,6 +1201,114 @@ select:focus {
     .fundo-oq{
         padding: 230px 0px;
     }
+
+    /* CONTATO */
+
+    .alinhamento-contato img {
+        margin-bottom: 9px;
+        width: 120px;
+    }
+
+    .container-contato p {
+        font-size: 28px;
+    }
+
+    .alinhamento-inseguranca p {
+        font-size: 25px;
+    }
+
+    .alinhamento-contato .email {
+        width: 32px;
+    }
+
+    .duvida {
+        font-size: 27px;
+        margin-top: 25px;
+    }
+
+    #container-formulario2 .caixas textarea::placeholder {
+        font-size: 19px;
+    }
+
+    #container-formulario2 ::placeholder {
+        font-size: 17px;
+    }
+
+    #container-formulario2 label {
+        font-size: 30px;
+        margin-top: 4px;
+    }
+
+    .inputBox{
+        width: 300px;
+    }
+
+    textarea{
+        width: 300px;
+        height: 100px;
+    }
+    /* button{
+        width: 200px;
+            height: 50px;
+    } */
+}
+
+/* A PARTIR DE 1050PX - MAIORIA SOBRE A PÁGINA FALE CONOSCO */
+@media screen and (min-width:1050px) {
+
+    .alinhamento-contato img {
+        margin-bottom: 11px;
+        width: 120px;
+    }
+
+    .container-contato p {
+        font-size: 28px;
+    }
+
+    .alinhamento-inseguranca p {
+        font-size: 33px;
+    }
+
+    .alinhamento-contato .email{
+       width: 42px;
+      }
+
+    .duvida {
+        font-size: 32px;
+        margin-top: 25px;
+    }
+
+    #container-formulario2 .caixas textarea::placeholder {
+        font-size: 24px;
+    }
+
+    #container-formulario2 ::placeholder {
+        font-size: 23px;
+    }
+
+    #container-formulario2 label {
+        font-size: 35px;
+        margin-top: 4px;
+    }
+
+    .oq-contein {
+
+        object-fit: cover;
+    }
+
+    .inputBox{
+        width: 350px;
+    }
+
+    textarea{
+        width: 350px;
+        height: 100px;
+    }
+    /* button{
+        width: 250px;
+            height: 100px;
+    } */
+
 }
 
 /* A PARTIR DE 1158PX - MAIORIA SOBRE A PÁGINA CONTRIBUIÇÃO */
@@ -1298,6 +1390,67 @@ select:focus {
         object-fit: cover;
     }
 
+}
+
+/* A PARTIR DE 1250PX - MAIORIA SOBRE A PÁGINA FALE CONOSCO */
+@media screen and (min-width:1250px) {
+    .alinhamento-contato {
+        gap: 12px;
+    }
+
+    .alinhamento-contato img {
+        margin-bottom: 13px;
+        width: 150px;
+    }
+
+    .container-contato p {
+        font-size: 30px;
+    }
+
+    .alinhamento-inseguranca p {
+        font-size: 38px;
+    }
+
+    .alinhamento-contato .email {
+       width: 45px;
+    }
+
+    .duvida {
+        font-size: 33px;
+        margin-top: 25px;
+    }
+
+    #container-formulario2 .caixas textarea::placeholder {
+        font-size: 29px;
+    }
+
+    #container-formulario2 ::placeholder {
+        font-size: 28px;
+    }
+
+    #container-formulario2 label {
+        font-size: 40px;
+        margin-top: 4px;
+    }
+
+    .oq-contein {
+
+        object-fit: cover;
+    }
+
+    .inputBox{
+        width: 400px;
+    }
+
+    textarea{
+        width: 400px;
+        height: 150px;
+    }
+    /* button{
+        width: 300px;
+            height: 150px;
+    } */
+    
 }
 
 /* A PARTIR DE 1263PX - MAIORIA PÁGINA HOME */

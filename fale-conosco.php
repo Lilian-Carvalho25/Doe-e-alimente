@@ -51,27 +51,31 @@ if(isset($_POST['enviar'])){
 
     <main class="contato-main">
         <h2 class="duvida">Fale conosco</h2>
+       
+            <section class="container-contato">
+                <article class="contato-figura">
 
-        <div class="container-contato">
-        <figure class="contato-figura">
-            <img src="imagens/ft-lilian.png" alt="Lilian">
-            <img src="imagens/ft-plinio.png" alt="Plínio">
-            <img src="imagens/ft-salatiel.png" alt="Salatiel">
-        </figure>
-        <div class="nome">
-            <p><strong>Lilian</strong></p>
-            <p><strong>Plínio</strong></p>
-            <p><strong>Vinícius</strong></p>
-        </div>
+                    <div class="alinhamento-contato">
+                        <img src="imagens/ft-lilian.png" alt="Lilian">
+                        <p><strong>Lilian</strong></p>
+                        <a href="mailto:kleidk74@gmail.com"><img src="imagens/gmail-icone.png" alt="ícone gmail" class="email"></a>
+                    </div>
 
+                    <div class="alinhamento-contato">
+                        <img src="imagens/ft-plinio.png" alt="Plínio">
+                        <p><strong>Plínio</strong></p>
+                        <a href="mailto:plinio.t.vasconcellos@gmail.com"><img src="imagens/gmail-icone.png" alt="ícone gmail" class="email"></a>
+                    </div>
 
+                    <div class="alinhamento-contato">
+                        <img src="imagens/ft-salatiel.png" alt="Salatiel">
+                        <p><strong>Vinícius</strong></p>
+                        <a href="mailto:viniciusdemirandabarbosa@gmail.com"><img src="imagens/gmail-icone.png" alt="ícone gmail" class="email"></a>
+                    </div>
 
-            <div class="email">
-                <a href="mailto:kleidk74@gmail.com"><img src="imagens/gmail-icone.png" alt="ícone gmail"></a>
-                <a href="mailto:plinio.t.vasconcellos@gmail.com"><img src="imagens/gmail-icone.png" alt="ícone gmail"></a>
-                <a href="mailto:viniciusdemirandabarbosa@gmail.com"><img src="imagens/gmail-icone.png" alt="ícone gmail"></a>
-            </div>
-        </div>
+                </article>
+            </section>
+       
 
         <h2 class="duvida">Qual é a sua dúvida?</h2>
         
@@ -88,7 +92,7 @@ if(isset($_POST['enviar'])){
                             <span>E-mail</span>
                         </div>
                         <div class="inputBox">
-                            <input type="text" name="telefone"  placeholder="Digite aqui" autocomplete="off" class="telefones">
+                            <input id="telefone" type="text" name="telefone"  placeholder="Digite aqui" autocomplete="off" class="telefones">
                             <span>Telefone</span>
                         </div>
                        
@@ -112,8 +116,11 @@ if(isset($_POST['enviar'])){
     </footer>
 
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/contato.js"></script>
+
 </body>
 
 </html>
