@@ -214,33 +214,32 @@ if(isset($_POST['doar'])){
         
             <div class="field-container">
                 <label for="name" name="name">Nome (Para doação anônima, digite "ânonimo")</label>
-                <input id="name" maxlength="20" type="text" autocomplete="off" name="name">
+                <input id="name" maxlength="20" type="text" autocomplete="off" name="name" required>
             </div>
             <div class="field-container">
                 <label for="cardnumber">Número do cartão</label><span id="generatecard">alatório</span>
-                <input id="cardnumber" type="text"  inputmode="numeric">
+                <input id="cardnumber" type="text"  inputmode="numeric" required>
                 <svg id="ccicon" class="ccicon" width="750" height="471" viewBox="0 0 750 471" version="1.1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink">
                 </svg>
             </div>
             <div class="field-container">
                 <label for="expirationdate">Expiração (mm/yy)</label>
-                <input id="expirationdate" class="data" type="text">
+                <input id="expirationdate" class="data" type="text" required>
             </div>
             <div class="field-container">
                 <label for="securitycode">Código de segurança</label>
-                <input id="securitycode" type="text" pattern="[0-9]*" inputmode="numeric">
+                <input id="securitycode" type="text" pattern="[0-9]*" inputmode="numeric" required>
             </div>
 
             <div class="field-container">
                 <label for="securitycode">Valor</label>
-                <input id="securitycode" class="valor" type="text" name="valor">
+                <input id="securitycode" class="valor" type="text" name="valor" required>
             </div>
                 </div>
                 
             </section>
             <article id="container-confirmar">
-                <!-- <h3>Confirmar dados e determinar a quantia</h3> -->
                 <button id="prosseguir" name="doar"><span>DOAR</span><i></i></button>
             </article>
         </form>
