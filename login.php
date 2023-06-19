@@ -33,7 +33,7 @@ if(isset($_GET["campos_obrigatorios"]) ){
     <header>
         
         <div class="limitador">
-            <a href="index.ph"><img src="imagens/Logo.png" alt=""></a>
+            <a href="index.php"><img src="imagens/Logo.png" alt=""></a>
             <nav>
                 <h2><a href="" class="icone"> &equiv; </a></h2>
                 <ul class="menu">

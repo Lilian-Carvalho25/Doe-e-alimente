@@ -996,6 +996,15 @@ form div:last-child {
     color: white;
 }
 
+/* DOADORES */
+.main-doadores {
+    background: url(../imagens/fundo-amora.png) center center no-repeat;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* FOOTER */
 .rodape {
