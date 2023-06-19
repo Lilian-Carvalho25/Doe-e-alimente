@@ -2,6 +2,12 @@
 require_once "includes/conecta.php";
 require_once "includes/funcoes-usuarios.php";
 require_once "includes/funcoes-sessao.php";
+
+if ( $_SESSION['id'] != 1 ||  $_SESSION['id'] != 2 || $_SESSION['id'] != 3  ) {
+    header("location:nao-autorizado.php");
+    exit;
+}
+
 verificaAcesso();
 
 if(isset($_GET["logout"])){

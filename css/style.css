@@ -13,6 +13,23 @@ body {
     font-family: "Plus Jakarta Sans", 'Courier New', Courier, monospace;
 }
 
+/* BARRINHA DE SCROLL */
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #bdbdbd8f;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #8C0303;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #a80303;
+  }
+
 h2 {
     font-family: "Raleway", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -943,6 +960,31 @@ select:focus {
 }
 
 /* LOGIN */
+.main-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    background: url(../imagens/fundo-abacaxiiii.png) no-repeat center center;
+    background-size: cover;
+    height: 90vh;
+}
+
+.caixa-login {
+    
+}
+
+form div:last-child {
+    position: relative;
+}
+  
+.lnr-eye {       
+    position: absolute;
+    top: 5px;         
+    right: 18px;
+    cursor: pointer;
+}
+
 #form-login button,
 .nao-autorizado a,
 .doadores h2 span {
@@ -1369,11 +1411,11 @@ select:focus {
     }
 
     .contexto h6 {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .contexto p {
-        font-size: 17px;
+        font-size: 14px;
     }
 
     .alinhamento-inseguranca p {
@@ -1673,11 +1715,11 @@ select:focus {
     }
 
     .contexto h6 {
-        font-size: 29px;
+        font-size: 22px;
     }
 
     .contexto p {
-        font-size: 24px;
+        font-size: 16px;
     }
 
     .alinhamento-inseguranca p {
