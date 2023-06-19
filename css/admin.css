@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&family=Raleway:wght@700&display=swap');
+
+
+html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: "Plus Jakarta Sans", 'Courier New', Courier, monospace;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  /* BARRINHA DE SCROLL */
+  body::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  body::-webkit-scrollbar-track {
+    background: #bdbdbd8f;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background: #8C0303;
+  }
+
+  body::-webkit-scrollbar-thumb:hover {
+    background: #a80303;
+  }
+  
+  main {
+    flex: 1;
+  }
+
+  header {
+    background-color: #f5f5f5;
+  }
+  
+  header a[href="mensagens.php"], header a[href="doadores.php"] {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  header a[href="?logout"] {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  header a img {
+    width: 25px;
+  }
+  
+  h2 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+
+  #main-mensagens {
+    background: url(../imagens/fundo-mangaa.png) center center no-repeat;
+    background-size: cover;
+  }
+
+  #main-mensagens .usuarios {
+    color: white;
+    font-weight: 700;
+  }
+
+  .cor-caixinha {
+    background-color: #8C0303;
+    font-weight: 700;
+  }
+  
+  .centralize {
+    display: flex;
+    align-items: center;
+  }
+  
+  section p {
+    font-size: 1.7rem;
+    color: #2d2d2d;
+  }
+  
+  .card-user {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 0 4px;
+    border: #8C0303 solid 1px;
+  }
+
+
+  /* DOADORES */
+.main-doadores {
+    background: url(../imagens/fundo-amora.png) center center no-repeat;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

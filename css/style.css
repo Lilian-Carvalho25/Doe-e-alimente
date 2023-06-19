@@ -970,8 +970,9 @@ select:focus {
     height: 90vh;
 }
 
-.caixa-login {
-    
+.main-login input:focus {
+    border: #8C0303;
+    box-shadow: #8C0303 0px 0px 8px;
 }
 
 form div:last-child {
@@ -996,15 +997,6 @@ form div:last-child {
     color: white;
 }
 
-/* DOADORES */
-.main-doadores {
-    background: url(../imagens/fundo-amora.png) center center no-repeat;
-    background-size: cover;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 /* FOOTER */
 .rodape {

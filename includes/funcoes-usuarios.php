@@ -9,6 +9,24 @@ function inserirContato ($conexao, $nome, $email, $telefone, $mensagem){
 
 
 
+
+// função usada para ler as informações do fale conosco
+function lerContatos ($conexao){
+    $sql = "SELECT * FROM contatos ORDER BY data DESC";
+
+    $resultado = mysqli_query($conexao, $sql)
+    or die (mysqli_error($conexao));
+
+    $contatos = [];
+
+    while ($contato = mysqli_fetch_assoc($resultado)){
+        array_push($contatos, $contato);
+    }
+    return $contatos;
+}
+
+
+
 // função usada para capturar as informações da contribuição.php
 function inserirDoadores ($conexao, $nome){
     $sql = "INSERT INTO doadores (nome) VALUES ('$nome')";
@@ -34,10 +52,18 @@ function lerTodosOsDoadores($conexao){
 
 
 
+
+
+
 // função usada para mostrar a data formatada na tabela
 function formataData($data){
-    return date("d/m/Y H:i", strtotime($data));
-} 
+    return date('d/m/Y', strtotime($data));
+}
+
+function formataHora($data){
+    return date('H:i', strtotime($data));
+}
+
 
 
 

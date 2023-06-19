@@ -1,47 +1,72 @@
-<!DOCTYPE html>
-<html lang="pt-br" class="h-100">
+<?php
+require_once "../Self-help-community/includes/funcoes-sessao.php";
+require_once "../Self-help-community/includes/funcoes-usuarios.php";
+
+verificaAcesso();
+
+if(isset($_GET["logout"])){
+    logout();
+}
+
+$contatos = lerContatos($conexao);
+?>
+
+<!doctype html>
+<html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Microblog</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-
-
-<link rel="stylesheet" href="../css/style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Feedbacks | Admin</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="shortcut icon" href="imagens/panelinha.png" type="image/x-icon">
 </head>
-<body id="admin" class="d-flex flex-column h-100 bg-light bg-gradient">
-    
-<header id="topo" class="border-bottom sticky-top">
+<body>
+    <header>
+        <div class="container py-4">
+            <nav class="d-flex align-items-center justify-content-between navbar-expand-lg p-2 px-5">
+                <div class="d-flex align-items-center">
+                    <a class="navbar-brand" href="doadores.php">Admin | Doe e alimente</a>
+                </div>
+              <div>
+                <a class="navbar-brand" href="doadores.php">Doadores</a></div>
+                <a class="navbar-brand" href="?logout">Sair<img src="imagens/exit.svg" alt="icone de saída" class="ms-3"></a></div>
+            </nav>
+        </div>
+    </header>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
-  <div class="container">
-    <h1><a class="navbar-brand" href="index.php">Admin | Microblog</a></h1>
+    <main id="main-mensagens">
+      <h2 class="text-center my-5 usuarios">Feedbacks <span class="badge cor-caixinha"><?=count($contatos)?></span></h2>
+      <section class="container">
+        <?php foreach ($contatos as $contato) { ?>
+        <article class="card-user w-75 m-auto bg-light p-5 mb-5">
+          <div class="centralize justify-content-between mb-5">
+            <div class="centralize">
+              <img src="imagens/bonequinho-do-nome.svg" alt="icone de usuário" class="me-5">
+              <p class="m-0"><?=$contato['nome']?></p>
+            </div>
+            <div class="centralize">
+              <p class="m-0 text-muted"><span class="me-4"><?=formataHora($contato['data'])?></span>-<span class="ms-4"><?=formataData($contato['data'])?></span></p>
+            </div>
+          </div>
+          <div class="centralize mb-5">
+            <img src="imagens/icone-do-email.svg" alt="icone de usuário" class="me-5">
+            <p class="m-0"><?=$contato['email']?></p>
+          </div>
+          <div class="centralize mb-5">
+            <img src="imagens/icone-do-telefone.svg" alt="icone de usuário" class="me-5">
+            <p class="m-0"><?=$contato['telefone']?></p>
+          </div>
+          <div class="centralize align-items-start mb-5">
+            <img src="imagens/icone-da-mensagem.svg" alt="icone de usuário" class="me-5">
+            <p class="m-0"><?=$contato['mensagem']?></p>
+          </div>
+        </article>
+        <?php } ?>
+      </section>
+    </main>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-                <!-- Programação logout/sair
-                1) Criar um parâmetro de URL no href. Neste exemplo, criamos com o nome de ?logout (ou ?sair)
-                -->
-                <a class="nav-link fw-bold" href="?logout"> Sair <i class="bi bi-x-circle"></i></a>
-            </li>
-        </ul>
-
-    </div>
-  </div>
-</nav>
-
-</header>
-
-<main class="flex-shrink-0">
-    <div class="container">
-
-    
+</body>
+</html>
