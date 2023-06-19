@@ -3,12 +3,12 @@ require_once "includes/conecta.php";
 require_once "includes/funcoes-usuarios.php";
 
 
-if(isset($_POST['prosseguir'])){
+if(isset($_POST['doar'])){
 
 	$nome = $_POST['name'];
+	$valor = $_POST['valor'];
 	
-	inserirDoadores($conexao, $nome);
-    header("location:https://checkout.stripe.com/c/pay/cs_live_a1RAzfb0e7XAFQXgTPsHLVj8WlprEM77D25uyMyoOGUUMj3fRLVJdwwx7n#fidkdWxOYHwnPyd1blppbHNgWjA0S0Y0SlBGTlFta3ViMT1%2FdWJNUmEyZH9xQE5HdDNCMFVzUm5LQEBfN2dRTmRzMlZVblVnMVdTVW40X1ZxY05AdFdsNnZ1SWxhf2N%2FSjdKVXRXSW5kNUdUNTVwUTdDVFRgXycpJ3VpbGtuQH11anZgYUxhJz8nNz1qM3dGYEdjMGJDMENgMWJiJ3gl");
+	inserirDoadores($conexao, $nome, $valor);
 }
 ?>
 
@@ -225,18 +225,23 @@ if(isset($_POST['prosseguir'])){
             </div>
             <div class="field-container">
                 <label for="expirationdate">Expiração (mm/yy)</label>
-                <input id="expirationdate" type="text" pattern="[0-9]*" inputmode="numeric">
+                <input id="expirationdate" class="data" type="text">
             </div>
             <div class="field-container">
                 <label for="securitycode">Código de segurança</label>
                 <input id="securitycode" type="text" pattern="[0-9]*" inputmode="numeric">
             </div>
+
+            <div class="field-container">
+                <label for="securitycode">Valor</label>
+                <input id="securitycode" class="valor" type="text" name="valor">
+            </div>
                 </div>
                 
             </section>
             <article id="container-confirmar">
-                <h3>Confirmar dados e determinar a quantia</h3>
-                <button id="prosseguir" name="prosseguir"><span>Prosseguir</span><i></i></button>
+                <!-- <h3>Confirmar dados e determinar a quantia</h3> -->
+                <button id="prosseguir" name="doar"><span>DOAR</span><i></i></button>
             </article>
         </form>
 
@@ -261,6 +266,7 @@ if(isset($_POST['prosseguir'])){
 
 
     <script src="js/menu.js"></script>
+    <script src="js/contribuicao.js"></script>
 </body>
 
 </html>

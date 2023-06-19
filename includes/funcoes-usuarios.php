@@ -28,8 +28,8 @@ function lerContatos ($conexao){
 
 
 // função usada para capturar as informações da contribuição.php
-function inserirDoadores ($conexao, $nome){
-    $sql = "INSERT INTO doadores (nome) VALUES ('$nome')";
+function inserirDoadores ($conexao, $nome, $valor){
+    $sql = "INSERT INTO doadores (nome, valor) VALUES ('$nome', '$valor')";
     mysqli_query($conexao, $sql) or die (mysqli_error($conexao));
 }
 
@@ -37,7 +37,7 @@ function inserirDoadores ($conexao, $nome){
 
 // função usada para ler as informações dos doadores
 function lerTodosOsDoadores($conexao){
-    $sql = "SELECT nome, data FROM doadores ORDER BY data DESC";
+    $sql = "SELECT nome, data, valor FROM doadores ORDER BY data DESC";
 
     $resultado = mysqli_query($conexao, $sql)
     or die (mysqli_error($conexao));

@@ -90,11 +90,19 @@ html {
 
 
   /* DOADORES */
-.main-doadores {
+  #main-doadores {
     background: url(../imagens/fundo-amora.png) center center no-repeat;
     background-size: cover;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+table th {
+  font-size: 2rem;
+}
+
+table td {
+  font-size: 1.6rem;
+}
+
+.doadores {
+  color: #f5f5f5;
 }

@@ -93,35 +93,7 @@ window.onload = function () {
     });
     
     //Mask the Expiration Date
-  var expirationdate_mask = new IMask(expirationdate, {
-    mask: "MM{/}YY",
-    groups: {
-      YY: {
-        mask: IMask.MaskedPattern.defaultPlaceholder,
-        blocks: {
-          YY: {
-            mask: IMask.MaskedPattern.Custom,
-            validate: function (value) {
-              var intValue = parseInt(value);
-              return intValue >= 0 && intValue <= 99;
-            },
-          },
-        },
-      },
-      MM: {
-        mask: IMask.MaskedPattern.defaultPlaceholder,
-        blocks: {
-          MM: {
-            mask: IMask.MaskedPattern.Custom,
-            validate: function (value) {
-              var intValue = parseInt(value);
-              return intValue >= 1 && intValue <= 12;
-            },
-          },
-        },
-      },
-    },
-  });
+    $('.data').mask('00/00');
     
     //Mask the security code
     var securitycode_mask = new IMask(securitycode, {
