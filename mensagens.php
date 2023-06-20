@@ -55,7 +55,7 @@ $contatos = lerContatos($conexao);
           </div>
           <div class="centralize mb-5">
             <img src="imagens/icone-do-email.svg" alt="icone de usuário" class="me-5">
-            <p class="m-0"><?=$contato['email']?></p>
+            <p class="m-0 text-break"><?=$contato['email']?></p>
           </div>
           <div class="centralize mb-5">
             <img src="imagens/icone-do-telefone.svg" alt="icone de usuário" class="me-5">
