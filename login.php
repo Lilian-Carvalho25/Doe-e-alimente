@@ -24,16 +24,19 @@ if(isset($_GET["campos_obrigatorios"]) ){
     <link rel="shortcut icon" href="imagens/panelinha.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <title>Doe e alimente - login</title>
+    <title>Doe e alimente</title>
 
 </head>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+<body>
 
 
     <header>
         
         <div class="limitador">
-            <a href="index.php"><img src="imagens/Logo.png" alt=""></a>
+            <a href="index.ph"><img src="imagens/Logo.png" alt=""></a>
             <nav>
                 <h2><a href="" class="icone"> &equiv; </a></h2>
                 <ul class="menu">
@@ -110,5 +113,6 @@ if(isset($_GET["campos_obrigatorios"]) ){
         </main>
 
         <script src="js/olhinho.js"></script>
+        <script src="js/menu.js"></script>
 </html>
 
