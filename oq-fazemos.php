@@ -31,9 +31,19 @@
             </nav>
         </div>
     </header>
+
+    <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
     
     <div class="fundo-oq">
-            
     </div>
 
 
@@ -59,7 +69,7 @@
                     </div>
                     <div class="alinhamento-flex">
                         <figure>
-                            <img src="imagens/meninaFundo.jpg" alt="">
+                            <img src="imagens/meninaFundo.jpg" alt="mulher sorrindo com colheres na mão">
                         </figure>
                         <div class="espaco-texto">
                             <h2>Nosso foco</h2>
@@ -77,7 +87,7 @@
                 <article class="fazemos-img1">
                     <div class="alinhamento2-flex">
                         <figure>
-                            <img class="" src="imagens/meninoFundo.jpg" alt="">
+                            <img class="" src="imagens/meninoFundo.jpg" alt="menino comendo maçã">
                         </figure>
                         <div class="espaco-texto">
                             <h2>Objetivo</h2>
