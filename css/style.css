@@ -269,7 +269,7 @@ hr {
 /* PÁGINA O QUE FAZEMOS */
 /* DESTAQUE */
 .fundo-oq {
-    background-image: url(../imagens/dando-pote.jpg);
+    background-image: url(../imagens/dando-pote3.jpg);
     padding: 150px 0;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1493,7 +1493,9 @@ form div:last-child {
         width: 300px;
             height: 150px;
     } */
-    
+    .fundo-oq{
+        background-position: 0 -220px ;
+    }
 }
 
 /* A PARTIR DE 1263PX - MAIORIA PÁGINA HOME */
@@ -1526,6 +1528,7 @@ form div:last-child {
 
         object-fit: cover;
     }
+
 }
 
 /* A PARTIR DE 1334PX - MAIORIA SOBRE ESPAÇAMENTO DO TEXTO */
@@ -1535,6 +1538,9 @@ form div:last-child {
     }
     .fundo-oq{
         background-size: cover;
+    }
+    .fundo-oq{
+        background-position: 0 -280px ;
     }
 }
 
@@ -1579,6 +1585,9 @@ form div:last-child {
     .oq-contein {
 
         object-fit: cover;
+    }
+    .fundo-oq{
+        background-position: 0 -320px ;
     }
 }
 
@@ -1642,6 +1651,9 @@ form div:last-child {
 
         object-fit: cover;
     }
+    .fundo-oq{
+        background-position: 0 -25rem ;
+    }
 }
 
 /* A PARTIR DE 1540PX - MAIORIA SOBRE A PÁGINA CONTRIBUIÇÃO */
@@ -1684,6 +1696,9 @@ form div:last-child {
     .oq-contein {
 
         object-fit: cover;
+    }
+    .fundo-oq{
+        background-position: 0 -30rem ;
     }
 }
 
@@ -1731,8 +1746,21 @@ form div:last-child {
         width: 95px;
         height: 89px;
     }
+    .fundo-oq{
+        background-position: 0 -35rem ;
+    }
+    .fazemos-img1 img{
+        height: 400px;
 
+    }
+    #main-oq-fazemos p {
+        text-align: left;
+        margin-top: 25px;
+        line-height: 25px;
+        
+    }
 }
+
 
 /* A PARTIR DE 2021PX - MAIORIA SOBRE A PÁGINA HOME */
 @media screen and (min-width:2021px) {
@@ -1762,6 +1790,9 @@ form div:last-child {
     .oq-contein {
 
         object-fit: cover;
+    }
+    .fazemos-img1 img{
+        height: 500px;
     }
 }
 
