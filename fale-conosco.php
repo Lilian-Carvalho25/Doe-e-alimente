@@ -68,7 +68,7 @@ if(isset($_POST['enviar'])){
                     </div>
 
                     <div class="alinhamento-contato">
-                        <img src="imagens/ft-salatiel.png" alt="Salatiel">
+                        <img src="imagens/ft-vinicius.png" alt="Vinicius">
                         <p><strong>Vinícius</strong></p>
                         <a href="mailto:viniciusdemirandabarbosa@gmail.com"><img src="imagens/gmail-icone.png" alt="ícone gmail" class="email"></a>
                     </div>

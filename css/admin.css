@@ -74,7 +74,7 @@ html {
   
   .centralize {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
   }
   
   section p {
@@ -105,4 +105,25 @@ table td {
 
 .doadores {
   color: #f5f5f5;
+}
+
+
+@media screen and (min-width:370px) {
+    .date {
+      justify-content: flex-end;
+    }
+}
+
+@media screen and (max-width:746px) {
+  header a[href="mensagens.php"], header a[href="doadores.php"] {
+    font-size: 1.5rem;
+  }
+  
+  header a[href="?logout"] {
+    font-size: 1.5rem;
+  }
+
+  header a img {
+    width: 17px;
+  }
 }
