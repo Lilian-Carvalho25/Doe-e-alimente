@@ -67,7 +67,7 @@ if(isset($_POST['enviar'])){
                 <article class="contato-figura">
 
                     <div class="alinhamento-contato">
-                        <img src="imagens/ft-vinicius 1.svg" alt="Lilian">
+                        <img src="imagens/ft-lilian 1.svg" alt="Lilian">
                         <p><strong>Lilian</strong></p>
                         <a href="mailto:kleidk74@gmail.com"><img src="imagens/gmail-icone.png" alt="ícone gmail" class="email"></a>
                     </div>
