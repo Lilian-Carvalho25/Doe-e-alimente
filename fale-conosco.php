@@ -67,19 +67,19 @@ if(isset($_POST['enviar'])){
                 <article class="contato-figura">
 
                     <div class="alinhamento-contato">
-                        <img src="imagens/foto-Lilian.png" alt="Lilian">
+                        <img src="imagens/ft-vinicius 1.svg" alt="Lilian">
                         <p><strong>Lilian</strong></p>
                         <a href="mailto:kleidk74@gmail.com"><img src="imagens/gmail-icone.png" alt="ícone gmail" class="email"></a>
                     </div>
 
                     <div class="alinhamento-contato">
-                        <img src="imagens/ft-plinio.png" alt="Plínio">
+                        <img src="imagens/ft-plinio 1.svg" alt="Plinio">
                         <p><strong>Plínio</strong></p>
                         <a href="mailto:plinio.t.vasconcellos@gmail.com"><img src="imagens/gmail-icone.png" alt="ícone gmail" class="email"></a>
                     </div>
 
                     <div class="alinhamento-contato">
-                        <img src="imagens/ft-vinicius.png" alt="Vinicius">
+                        <img src="imagens/ft-vinicius 1.svg" alt="Vinicius">
                         <p><strong>Vinícius</strong></p>
                         <a href="mailto:viniciusdemirandabarbosa@gmail.com"><img src="imagens/gmail-icone.png" alt="ícone gmail" class="email"></a>
                     </div>
