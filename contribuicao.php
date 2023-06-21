@@ -27,7 +27,6 @@ if(isset($_POST['doar'])){
 <body>
 
     <header>
-        
         <div class="limitador">
             <a href="index.php"><img src="imagens/Logo.png" alt=""></a>
             <nav>
@@ -42,17 +41,6 @@ if(isset($_POST['doar'])){
             </nav>
         </div>
     </header>
-
-    <div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
-    </div>
-  </div>
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
 
 
     <main id="container-contribuicao">
@@ -240,13 +228,13 @@ if(isset($_POST['doar'])){
                 <input id="expirationdate" class="data" type="text" required>
             </div>
             <div class="field-container">
-                <label for="securitycode">Código de segurança</label>
-                <input id="securitycode" type="text" pattern="[0-9]*" inputmode="numeric" required>
+                <label for="securitycode1">Código de segurança</label>
+                <input id="securitycode1" type="text" pattern="[0-9]*" inputmode="numeric" required>
             </div>
 
             <div class="field-container">
-                <label for="securitycode">Valor</label>
-                <input id="securitycode" class="valor" type="text" name="valor" required>
+                <label for="securitycode2">Valor</label>
+                <input id="securitycode2" class="valor" type="text" name="valor" required>
             </div>
                 </div>
                 
@@ -256,28 +244,44 @@ if(isset($_POST['doar'])){
             </article>
         </form>
 
+ 
     </main>
+
+    
+    <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
 
 
     <footer class="rodape">
-        <p>Nos acompanhe em nossas redes sociais:</p>
-        <a href="https://www.instagram.com/" target="_blank"><img src="imagens/logo-insta.png" alt="Logo Instagram"></a>
-        <a href="https://github.com/Lilian-Carvalho25/Doe-e-alimente" target="_blank"><img src="imagens/logo-github.png" alt="Logo Github"></a>
-        <p>2023</p>
+        <div class="rodape-cor">
+            <p>Nos acompanhe em nossas redes sociais:</p>
+            <a href="https://www.instagram.com/" target="_blank"><img src="imagens/logo-insta.png" alt="Logo Instagram"></a>
+            <a href="https://github.com/Lilian-Carvalho25/Doe-e-alimente" target="_blank"><img src="imagens/logo-github.png" alt="Logo Github"></a>
+            <p>2023</p>
+        </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/6.6.1/imask.min.js"></script>
-    <script src="js/cartao.js"></script>
-
+    
     <!-- Importando a Biblioteca jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-
+    
     <!-- Importando o plugin jQuery Mask -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
-
+    
 
     <script src="js/menu.js"></script>
     <script src="js/contribuicao.js"></script>
+    <script src="js/cartao.js"></script>
+    
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
 </body>
 
 </html>
