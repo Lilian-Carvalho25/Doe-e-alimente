@@ -260,10 +260,12 @@ if(isset($_POST['doar'])){
 
 
     <footer class="rodape">
-        <p>Nos acompanhe em nossas redes sociais:</p>
-        <a href="https://www.instagram.com/" target="_blank"><img src="imagens/logo-insta.png" alt="Logo Instagram"></a>
-        <a href="https://github.com/Lilian-Carvalho25/Doe-e-alimente" target="_blank"><img src="imagens/logo-github.png" alt="Logo Github"></a>
-        <p>2023</p>
+        <div class="rodape-cor">
+            <p>Nos acompanhe em nossas redes sociais:</p>
+            <a href="https://www.instagram.com/" target="_blank"><img src="imagens/logo-insta.png" alt="Logo Instagram"></a>
+            <a href="https://github.com/Lilian-Carvalho25/Doe-e-alimente" target="_blank"><img src="imagens/logo-github.png" alt="Logo Github"></a>
+            <p>2023</p>
+        </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/6.6.1/imask.min.js"></script>

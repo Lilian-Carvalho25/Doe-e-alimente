@@ -1001,7 +1001,7 @@ form div:last-child {
 /* FOOTER */
 .rodape {
     text-align: center;
-    padding-top: 0.7rem;
+    padding-top: 0.8rem;
     padding-bottom: 0.5rem;
     max-height: 5vh;
     margin-top: 30px;
@@ -1012,7 +1012,11 @@ form div:last-child {
 }
 
 .rodape p {
-    padding-bottom: 6px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.rodape-cor{
+    background-color: #f5f5f5;
 }
 
 .limitador {
