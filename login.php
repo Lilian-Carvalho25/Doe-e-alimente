@@ -36,7 +36,13 @@ if(isset($_GET["campos_obrigatorios"]) ){
     <header>
         
         <div class="limitador">
-            <a href="index.ph"><img src="imagens/Logo.png" alt=""></a>
+        <a href="index.php">
+            <picture>
+        <source class="panelinha" media="(max-width: 600px)" srcset="imagens/panelinhaaa.svg">
+        <source media="(min-width: 601px)" srcset="imagens/Logo.png">
+        <img src="imagens/Logo.png" alt="Logo doe e alimente">
+    </picture>
+            </a>
             <nav>
                 <h2><a href="" class="icone"> &equiv; </a></h2>
                 <ul class="menu">

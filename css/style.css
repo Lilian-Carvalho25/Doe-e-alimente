@@ -13,23 +13,6 @@ body {
     font-family: "Plus Jakarta Sans", 'Courier New', Courier, monospace;
 }
 
-/* BARRINHA DE SCROLL */
-body::-webkit-scrollbar {
-  width: 15px;
-}
-
-body::-webkit-scrollbar-track {
-  background: #bdbdbd8f;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: #8C0303;
-}
-
-body::-webkit-scrollbar-thumb:hover {
-    background: #a80303;
-  }
-
 h2 {
     font-family: "Raleway", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -63,6 +46,10 @@ header {
     z-index: 10;
 }
 
+header picture .panelinha {
+    width: 20px;
+}
+
 header nav h2 a {
     font-size: 35px;
     font-weight: normal;
@@ -73,7 +60,6 @@ header .limitador {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 100%;
 }
 
 
@@ -136,11 +122,11 @@ nav h2 a {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background: rgba(140, 3, 3, 0.455);
+    background: rgba(139, 9, 9, 0.455);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(1px);
     border: 1px solid rgba(140, 3, 3, 0.22);
     padding: 30px 20px;
 }
@@ -1011,8 +997,13 @@ form div:last-child {
     width: 40px;
 }
 
-.rodape p {
+.rodape .cadeado {
+    width: 20px;
+    margin-top: 2px;
     padding-bottom: 10px;
+}
+
+.rodape p {
     padding-top: 10px;
 }
 .rodape-cor{
@@ -1768,6 +1759,9 @@ form div:last-child {
 
 /* A PARTIR DE 2021PX - MAIORIA SOBRE A PÁGINA HOME */
 @media screen and (min-width:2021px) {
+    .limitador {
+        max-width: 2000px;
+    }
 
     .contexto {
         max-width: 40%;

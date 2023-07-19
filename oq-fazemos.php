@@ -18,7 +18,13 @@
     <header>
 
         <div class="limitador">
-            <a href="index.php"><img src="imagens/Logo.png" alt=""></a>
+        <a href="index.php">
+            <picture>
+        <source class="panelinha" media="(max-width: 600px)" srcset="imagens/panelinhaaa.svg">
+        <source media="(min-width: 601px)" srcset="imagens/Logo.png">
+        <img src="imagens/Logo.png" alt="Logo doe e alimente">
+    </picture>
+            </a>
             <nav>
                 <h2><a href="" class="icone"> &equiv; </a></h2>
                 <ul class="menu">
@@ -26,7 +32,6 @@
                     <li><a href="oq-fazemos.php">O que fazemos</a></li>
                     <li><a href="contribuicao.php">Contribuição</a></li>
                     <li><a href="fale-conosco.php">Fale conosco</a></li>
-                    <li><a href="login.php">Admin</a></li>
                 </ul>
             </nav>
         </div>
@@ -111,6 +116,7 @@
             <a href="https://www.instagram.com/" target="_blank"><img src="imagens/logo-insta.png" alt="Logo Instagram"></a>
             <a href="https://github.com/Lilian-Carvalho25/Doe-e-alimente" target="_blank"><img src="imagens/logo-github.png" alt="Logo Github"></a>
             <p>2023</p>
+            <a href="login.php"><img class="cadeado" src="imagens/icon-cadeado.svg" alt="ícone de cadeado"></a>
         </div>
     </footer>
 
