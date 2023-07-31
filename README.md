@@ -29,4 +29,4 @@ O objetivo principal da Doe e alimente é redirecionar doações em dinheiro par
 
 **Contribuintes:** [@viniciusmbarbosa](https://github.com/viniciusmbarbosa) e [@plinioteixeira](https://github.com/plinioteixeira) .
 
-**Link do site:** <i>[clique aqui](https://doe-e-alimente.000webhostapp.com/index.php) 
+**Link do site:** <i>[clique aqui](http://dooe-e-alimente.x10.mx/index.php) 
