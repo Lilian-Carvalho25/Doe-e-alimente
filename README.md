@@ -7,6 +7,8 @@ O objetivo principal da Doe e alimente é redirecionar doações em dinheiro par
 - Registro das informações informadas pelos usuários, no banco de dados. <br>
 - Área administrativa: Onde os ADMINISTRADORES podem logar com e-mail e senha, e ver informações sobre doadores, e os feedbaks da página fale conosco. <br><br>
 
+<img src="https://i.imgur.com/wE8nMuS.png" width="600px" />
+
 ## 🖥️ Tecnologias utilizadas:<br>
 ###
 
